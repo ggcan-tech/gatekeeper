@@ -1,0 +1,32 @@
+name: lab-exp2
+description: >
+  Gatekeeper lab experiment #2 (development track only — pre-cutoff data).
+  Estimates the judge self-consistency ceiling, retrains persona loops with
+  parameterized levers, and dry-run scores on the validation slice. NEVER
+  touches the exam window; claims are made only via a new public
+  pre-registration on a fresh post-cutoff window (PIVOT.md).
+provider: claude
+nodes:
+  - id: self-consistency
+    bash: "python3 pipeline/self_consistency.py"
+    timeout: 60000
+
+  - id: persona-loops
+    bash: "python3 pipeline/persona_loop.py"
+    timeout: 5400000
+    depends_on: [self-consistency]
+
+  - id: dry-run-report
+    prompt: |
+      You are the lab analyst for the Gatekeeper experiment repo (read
+      PREREGISTRATION.md and PIVOT.md first). Inputs: the self-consistency
+      ceiling estimate ($self-consistency.output), the persona-loop training
+      history in data/persona_history.jsonl, and the frozen exam scorecard in
+      data/scorecard.json (July window — context only, never re-scored).
+      Write $ARTIFACTS_DIR/lab-report.md: (1) ceiling estimate vs current best
+      arm (78.7%), remaining headroom per motion type; (2) which levers to
+      pull next (full opinion texts, PACER briefs, per-motion-type personas,
+      ensemble) ranked by expected points-per-engineering-day; (3) an explicit
+      NO-GO line: what result would mean the +10 margin is unreachable and
+      the lab should stand down. Be terse and numeric.
+    depends_on: [persona-loops]

@@ -1,0 +1,97 @@
+{
+  "overall_within_cell_pair_agreement": 0.6509,
+  "note": "coarse ceiling proxy \u2014 pair agreement within (judge, motion type) cells; case facts explain the rest",
+  "cells": [
+    {
+      "judge": "Furman",
+      "motion_type": "motion_to_compel_discovery",
+      "n": 26,
+      "y_rate": 0.615,
+      "pair_agreement": 0.508
+    },
+    {
+      "judge": "Furman",
+      "motion_type": "motion_to_dismiss",
+      "n": 96,
+      "y_rate": 0.792,
+      "pair_agreement": 0.667
+    },
+    {
+      "judge": "Furman",
+      "motion_type": "preliminary_injunction_tro",
+      "n": 32,
+      "y_rate": 0.594,
+      "pair_agreement": 0.502
+    },
+    {
+      "judge": "Furman",
+      "motion_type": "summary_judgment",
+      "n": 14,
+      "y_rate": 0.857,
+      "pair_agreement": 0.736
+    },
+    {
+      "judge": "Liman",
+      "motion_type": "motion_to_compel_discovery",
+      "n": 65,
+      "y_rate": 0.585,
+      "pair_agreement": 0.507
+    },
+    {
+      "judge": "Liman",
+      "motion_type": "motion_to_dismiss",
+      "n": 128,
+      "y_rate": 0.797,
+      "pair_agreement": 0.674
+    },
+    {
+      "judge": "Liman",
+      "motion_type": "preliminary_injunction_tro",
+      "n": 23,
+      "y_rate": 0.391,
+      "pair_agreement": 0.502
+    },
+    {
+      "judge": "Liman",
+      "motion_type": "summary_judgment",
+      "n": 76,
+      "y_rate": 0.921,
+      "pair_agreement": 0.853
+    },
+    {
+      "judge": "Subramanian",
+      "motion_type": "class_certification",
+      "n": 10,
+      "y_rate": 0.9,
+      "pair_agreement": 0.8
+    },
+    {
+      "judge": "Subramanian",
+      "motion_type": "motion_to_compel_discovery",
+      "n": 35,
+      "y_rate": 0.486,
+      "pair_agreement": 0.486
+    },
+    {
+      "judge": "Subramanian",
+      "motion_type": "motion_to_dismiss",
+      "n": 98,
+      "y_rate": 0.724,
+      "pair_agreement": 0.597
+    },
+    {
+      "judge": "Subramanian",
+      "motion_type": "preliminary_injunction_tro",
+      "n": 17,
+      "y_rate": 0.706,
+      "pair_agreement": 0.559
+    },
+    {
+      "judge": "Subramanian",
+      "motion_type": "summary_judgment",
+      "n": 61,
+      "y_rate": 0.77,
+      "pair_agreement": 0.64
+    }
+  ]
+}
