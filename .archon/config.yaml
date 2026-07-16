@@ -1,14 +1,6 @@
 # Repo-scoped Archon config
-tiers:
-  large:
-    provider: claude
-    model: claude-fable-5    # full senior — implementation + review nodes
-  medium:
-    provider: claude
-    model: claude-fable-5    # per founder call 2026-07-16: all real work on Fable 5
-  small:
-    provider: claude
-    model: haiku             # title generation & mechanical steps
+# Tiers are managed via the CLI (`archon ai tier set ...`) — do not hand-author
+# a tiers: block here; Archon's validator rejects it. See global ~/.archon/config.yaml.
 worktree:
   copyFiles:
     - openai_key.txt
