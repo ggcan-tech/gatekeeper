@@ -24,6 +24,18 @@ VALIDATION_SLICE = 0.25
 MAX_ITER = 12
 PLATEAU_STOP = 3
 SEED = 42
+OUT_SUFFIX = os.environ.get("PERSONA_OUT_SUFFIX", "")      # "2" -> persona2_{judge}.md
+USE_FULL_TEXTS = os.environ.get("PERSONA_FULL_TEXTS") == "1"
+
+def _load_texts() -> dict:
+    """id -> full opinion text (lab lever #1); empty when not fetched."""
+    path = "data/opinion_texts.jsonl"
+    if not (USE_FULL_TEXTS and os.path.exists(path)):
+        return {}
+    return {json.loads(l)["id"]: json.loads(l)["text"]
+            for l in open(path, encoding="utf-8")}
+
+TEXTS = _load_texts()
 
 DRAFT_PROMPT = """You are building a decision-profile ("persona") of a real US federal
 district judge from their actual rulings. Study the rulings below and write a persona
@@ -61,9 +73,15 @@ def evaluate(persona: str, judge: str, items: list) -> tuple[float, list]:
 def rulings_digest(items: list, cap: int = 60) -> str:
     rng = random.Random(SEED)
     sample = rng.sample(items, min(cap, len(items)))
-    return "\n".join(f"- {i['date']} {i['motion_type']}: outcome={i['label']} | "
-                     f"{arms.strip_outcome_language(i['description'])[:180]}"
-                     for i in sample)
+    lines = []
+    for i in sample:
+        if TEXTS.get(i["id"]):
+            # v2 diet: the judge's actual written reasoning (excerpt)
+            body = TEXTS[i["id"]][:1500].replace("\n", " ")
+        else:
+            body = arms.strip_outcome_language(i["description"])[:180]
+        lines.append(f"- {i['date']} {i['motion_type']}: outcome={i['label']} | {body}")
+    return "\n".join(lines)
 
 
 def run_judge(judge: str, grounding: list, log) -> None:
@@ -98,10 +116,10 @@ def run_judge(judge: str, grounding: list, log) -> None:
         persona = arms.call_model_long(
             REVISE_PROMPT, f"CURRENT PERSONA:\n{persona}\n\nMISTAKES:\n{mistakes_txt}")
 
-    with open(f"data/persona_{judge.lower()}.md", "w", encoding="utf-8") as f:
+    out_path = f"data/persona{OUT_SUFFIX}_{judge.lower()}.md"
+    with open(out_path, "w", encoding="utf-8") as f:
         f.write(best_persona)
-    print(f"[{judge}] FROZEN persona at val acc {best_acc*100:.1f}% -> "
-          f"data/persona_{judge.lower()}.md")
+    print(f"[{judge}] BEST persona at val acc {best_acc*100:.1f}% -> {out_path}")
 
 
 def main() -> None:

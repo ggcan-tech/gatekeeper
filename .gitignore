@@ -18,6 +18,6 @@ __pycache__/
 !data/hand_check_key.json
 !data/leakage_audit.json
 !data/persona_history.jsonl
-data/persona_*.md
+data/persona*.md
 !data/predictions.jsonl
 !data/scorecard.json
