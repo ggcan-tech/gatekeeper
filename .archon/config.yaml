@@ -1,12 +1,18 @@
 # Repo-scoped Archon config
 tiers:
-  large: claude/claude-fable-5    # full senior — deep implementation + review nodes
-  medium: claude/claude-fable-5   # per founder call 2026-07-16: all real work on Fable 5
-  small: claude/haiku             # title generation & mechanical steps — senior here is waste
+  large:
+    provider: claude
+    model: claude-fable-5    # full senior — implementation + review nodes
+  medium:
+    provider: claude
+    model: claude-fable-5    # per founder call 2026-07-16: all real work on Fable 5
+  small:
+    provider: claude
+    model: haiku             # title generation & mechanical steps
 worktree:
   copyFiles:
     - openai_key.txt
     - token.txt
-    - "data/persona_liman.md -> data/persona_liman.md"
-    - "data/persona_furman.md -> data/persona_furman.md"
-    - "data/persona_subramanian.md -> data/persona_subramanian.md"
+    - data/persona_liman.md
+    - data/persona_furman.md
+    - data/persona_subramanian.md

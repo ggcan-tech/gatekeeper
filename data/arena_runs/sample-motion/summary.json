@@ -1,0 +1,117 @@
+{
+  "n_runs": 5,
+  "outcome_distribution": {
+    "Y": 5,
+    "N": 0
+  },
+  "attack_table": {
+    "rules 8/9(c)/15 defeat hypertechnical dismissal": {
+      "appeared": 1,
+      "won": 0
+    },
+    "wrong-standard overreach": {
+      "appeared": 1,
+      "won": 0
+    },
+    "rule-9(c)-and-foman knockout": {
+      "appeared": 1,
+      "won": 0
+    },
+    "no complaint-specific deficiency shown": {
+      "appeared": 1,
+      "won": 0
+    },
+    "standards-first complaint-specific failure": {
+      "appeared": 1,
+      "won": 0
+    }
+  },
+  "survival_table": {
+    "no specific contractual breach": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 1
+    },
+    "no facts on conditions precedent or damages": {
+      "appeared": 2,
+      "held": 2,
+      "decisive": 0
+    },
+    "fraud not pled with particularity": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "dismiss fraud with prejudice": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "contract claim lacks essential facts": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 1
+    },
+    "fraud fails rule 9(b) particularity": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "prior amendment shows futility/prejudice dismissal": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "twombly-iqbal plausibility failure": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "no pleaded contractual breach facts": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 1
+    },
+    "rule 9(b) particularity defect": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "fraud dismissal with prejudice": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "no pleaded contractual breach term": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 1
+    },
+    "rule 9(b) particularity failure": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "group pleading and no scienter basis": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "twombly/iqbal plausibility failure": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    },
+    "no specific contract breach or conditions precedent": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 1
+    },
+    "rule 9(b) particularity and group pleading defect": {
+      "appeared": 1,
+      "held": 1,
+      "decisive": 0
+    }
+  },
+  "label": "SIMULATED"
+}
