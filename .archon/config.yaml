@@ -1,0 +1,8 @@
+# Repo-scoped Archon config
+worktree:
+  copyFiles:
+    - openai_key.txt
+    - token.txt
+    - "data/persona_liman.md -> data/persona_liman.md"
+    - "data/persona_furman.md -> data/persona_furman.md"
+    - "data/persona_subramanian.md -> data/persona_subramanian.md"

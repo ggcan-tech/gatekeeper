@@ -1,0 +1,19 @@
+Defendants move to dismiss the Complaint in its entirety under Federal Rule of
+Civil Procedure 12(b)(6) for failure to state a claim. Even accepting the
+well-pleaded factual allegations as true, the Complaint offers only threadbare
+recitals of the elements of a breach-of-contract claim and conclusory assertions
+of harm. Plaintiff never identifies the specific contractual provision breached,
+pleads no facts showing that any condition precedent was satisfied, and alleges
+damages only in the abstract. Under Iqbal and Twombly, such formulaic pleading
+does not cross the line from conceivable to plausible, and the claim must be
+dismissed.
+
+The fraud count fails independently under Rule 9(b), which requires that the
+circumstances constituting fraud be stated with particularity. The Complaint
+does not specify who made the allegedly false statements, when or where they
+were made, or how they were communicated to Plaintiff, and it pleads scienter
+only by labeling the conduct "knowing" and "intentional." Group pleading against
+all Defendants collectively cannot satisfy Rule 9(b)'s particularity
+requirement. Because the deficiencies are ones of substance rather than form,
+and Plaintiff has already amended once, the Court should dismiss the fraud claim
+with prejudice.
