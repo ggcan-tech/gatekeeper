@@ -1,0 +1,8 @@
+{
+  "n": 291,
+  "blinded_acc": 72.5,
+  "majority_acc": 67.0,
+  "margin_points": 5.5,
+  "p_one_sided_vs_majority_plus_3": 0.3104,
+  "verdict": "PASS"
+}

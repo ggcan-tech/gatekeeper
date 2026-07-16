@@ -1,0 +1,21 @@
+# Secrets — never in the public pre-registration repo
+.env
+token.txt
+openai_key.txt
+
+# Raw pulled data (public court records, but large; regenerate via pipeline)
+data/*.jsonl
+
+# Local artifacts
+__pycache__/
+*.pyc
+
+# Publish derived, reproducible artifacts (public court data) — keep raw bulk + personas private
+!data/labeled.jsonl
+!data/exam.jsonl
+!data/grounding.jsonl
+!data/hand_check_items.json
+!data/hand_check_key.json
+!data/leakage_audit.json
+!data/persona_history.jsonl
+data/persona_*.md

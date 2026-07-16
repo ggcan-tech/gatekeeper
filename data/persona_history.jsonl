@@ -1,0 +1,13 @@
+{"judge": "Furman", "iter": 1, "acc": 0.8333, "mistakes": 5}
+{"judge": "Furman", "iter": 2, "acc": 1.0, "mistakes": 0}
+{"judge": "Liman", "iter": 1, "acc": 0.8636, "mistakes": 6}
+{"judge": "Liman", "iter": 2, "acc": 0.7727, "mistakes": 10}
+{"judge": "Liman", "iter": 3, "acc": 0.8864, "mistakes": 5}
+{"judge": "Liman", "iter": 4, "acc": 0.8636, "mistakes": 6}
+{"judge": "Liman", "iter": 5, "acc": 0.8864, "mistakes": 5}
+{"judge": "Liman", "iter": 6, "acc": 0.75, "mistakes": 11}
+{"judge": "Subramanian", "iter": 1, "acc": 0.7143, "mistakes": 8}
+{"judge": "Subramanian", "iter": 2, "acc": 0.8214, "mistakes": 5}
+{"judge": "Subramanian", "iter": 3, "acc": 0.8214, "mistakes": 5}
+{"judge": "Subramanian", "iter": 4, "acc": 0.6786, "mistakes": 9}
+{"judge": "Subramanian", "iter": 5, "acc": 0.8214, "mistakes": 5}

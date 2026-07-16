@@ -1,0 +1,62 @@
+# Gatekeeper kill-experiment config.
+# Everything is a parameter (Archon-style dynamic testing) — but values marked
+# FROZEN are pre-registered and may not change once PREREGISTRATION.md is hashed.
+
+judges:                      # FROZEN at pre-registration
+  - name: "Liman"
+    court: "nysd"
+    full: "Lewis J. Liman"
+  - name: "Furman"
+    court: "nysd"
+    full: "Jesse M. Furman"
+  - name: "Subramanian"      # added pre-freeze 2026-07-15: post-audit filters cut exam n to 180 (<200 floor);
+    court: "nysd"            # floor stays, corpus grows — decision made before any arm ran
+    full: "Arun Subramanian"
+
+exam:
+  # FROZEN: an item is post-cutoff iff decision/docket-entry date > model_cutoff
+  model_id: "gpt-5.4-2026-03-05"             # FROZEN — dated snapshot (alias gpt-5.4); reasoning_effort=none
+  model_cutoff: "2025-08-31"                 # FROZEN — published knowledge cutoff (developers.openai.com/api/docs/models/gpt-5.4)
+  ingest_window_start: "2023-07-14"          # 3 years of grounding + exam data
+  min_items_per_judge_before_pooling: 100    # FROZEN
+  pooled_scoring: always                     # FROZEN — per-judge reported descriptively only
+  target_pooled_n: 200                       # FROZEN — below this => UNDERPOWERED = fail
+  win_margin_points: 10                      # FROZEN — vs metadata arm AND name-only arm, each
+  mcnemar_alpha: 0.025                       # FROZEN — Bonferroni-corrected: two replica arms tested
+  floor_arm: majority                        # FROZEN — replica must exceed majority-class arm
+  replica_arms: [retrieval, rsi_persona]     # FROZEN — company claim passes if EITHER passes
+  persona_loop:                              # arm (e) development params (pre-cutoff data only)
+    validation_slice: 0.25                   # of grounding set, held out for loop scoring
+    max_iterations: 12
+    plateau_stop: 3                          # stop after N rounds without improvement
+
+labels:                       # FROZEN
+  schema: "relief_substantially_granted"     # binary y/n
+  granted_in_part_rule: "YES if movant obtains dismissal/judgment/compulsion on >=1 claim of the primary motion"
+  excluded_outcomes: ["denied as moot", "administrative termination", "referred to magistrate"]
+  motion_inclusion:          # contested substantive motions only
+    - motion_to_dismiss
+    - summary_judgment
+    - class_certification
+    - preliminary_injunction_tro
+    - motion_to_compel_discovery
+    - daubert_expert_exclusion
+  hand_verify_fraction: 0.20                 # FROZEN — min 40 items, >=95% agreement required
+  hand_verify_min_items: 40
+  hand_verify_min_agreement: 0.95
+
+leakage_audit:                # FROZEN — applies to opinion-derived inputs only
+  scope: opinion_derived_only
+  max_points_over_majority: 3
+  test: "one-sided paired, H0: blinded <= majority + 3pts; reject at p<.05 = FAIL"
+  rebuild_cap: 1
+  fallback: docket_derived_inputs_only       # fallback exam counts as audit-passed
+
+budget:
+  total_usd_cap: 1000
+  pacer_usd_cap: 500
+
+courtlistener:
+  base: "https://www.courtlistener.com/api/rest/v4"
+  token_env: "COURTLISTENER_TOKEN"           # $25 Tier-2 membership recommended for rate limits
+  rate_limit_per_min: 4                      # stay under free tier 5/min when unauthenticated
