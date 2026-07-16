@@ -10,6 +10,10 @@ data/*.jsonl
 __pycache__/
 *.pyc
 
+# Product IP — learned extraction instruction sets + digest caches
+data/extractor_*.md
+data/digests/
+
 # Publish derived, reproducible artifacts (public court data) — keep raw bulk + personas private
 !data/labeled.jsonl
 !data/exam.jsonl
