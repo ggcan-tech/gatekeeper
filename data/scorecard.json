@@ -1,0 +1,50 @@
+{
+  "n": 291,
+  "accuracy": {
+    "majority": 67.0103092783505,
+    "metadata": 72.16494845360825,
+    "name_only": 71.47766323024055,
+    "retrieval": 78.00687285223368,
+    "rsi_persona": 78.69415807560138
+  },
+  "per_arm": {
+    "retrieval": {
+      "comparisons": {
+        "metadata": {
+          "margin_points": 5.841924398625437,
+          "discordant_b": 35,
+          "discordant_c": 18,
+          "p_one_sided": 0.013504158826861179
+        },
+        "name_only": {
+          "margin_points": 6.529209621993132,
+          "discordant_b": 37,
+          "discordant_c": 18,
+          "p_one_sided": 0.007226916766913866
+        }
+      },
+      "floor_ok": true,
+      "passes": false
+    },
+    "rsi_persona": {
+      "comparisons": {
+        "metadata": {
+          "margin_points": 6.529209621993132,
+          "discordant_b": 30,
+          "discordant_c": 11,
+          "p_one_sided": 0.002162002467230195
+        },
+        "name_only": {
+          "margin_points": 7.2164948453608275,
+          "discordant_b": 33,
+          "discordant_c": 12,
+          "p_one_sided": 0.0012294501610483621
+        }
+      },
+      "floor_ok": true,
+      "passes": false
+    }
+  },
+  "winning_arms": [],
+  "verdict": "LOSS"
+}

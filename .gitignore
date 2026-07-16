@@ -19,3 +19,5 @@ __pycache__/
 !data/leakage_audit.json
 !data/persona_history.jsonl
 data/persona_*.md
+!data/predictions.jsonl
+!data/scorecard.json
