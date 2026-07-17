@@ -584,6 +584,138 @@
    "post_fable_docs": 259,
    "proj_exam_gpt": 17,
    "proj_exam_fable": 6
+  },
+  {
+   "judge": "Wood",
+   "court": "nysd",
+   "exam1": false,
+   "query_name": "Kimba Wood",
+   "excluded": null,
+   "post_gpt_docs": 505,
+   "post_fable_docs": 327,
+   "proj_exam_gpt": 12,
+   "proj_exam_fable": 8
+  },
+  {
+   "judge": "Berman",
+   "court": "nysd",
+   "exam1": false,
+   "query_name": "Berman",
+   "excluded": null,
+   "post_gpt_docs": 299,
+   "post_fable_docs": 163,
+   "proj_exam_gpt": 7,
+   "proj_exam_fable": 4
+  },
+  {
+   "judge": "Buchwald",
+   "court": "nysd",
+   "exam1": false,
+   "query_name": "Buchwald",
+   "excluded": null,
+   "post_gpt_docs": 697,
+   "post_fable_docs": 297,
+   "proj_exam_gpt": 16,
+   "proj_exam_fable": 7
+  },
+  {
+   "judge": "Crotty",
+   "court": "nysd",
+   "exam1": false,
+   "query_name": "Crotty",
+   "excluded": null,
+   "post_gpt_docs": 6,
+   "post_fable_docs": 2,
+   "proj_exam_gpt": 0,
+   "proj_exam_fable": 0
+  },
+  {
+   "judge": "Gardephe",
+   "court": "nysd",
+   "exam1": false,
+   "query_name": "Gardephe",
+   "excluded": null,
+   "post_gpt_docs": 806,
+   "post_fable_docs": 314,
+   "proj_exam_gpt": 19,
+   "proj_exam_fable": 7
+  },
+  {
+   "judge": "Briccetti",
+   "court": "nysd",
+   "exam1": false,
+   "query_name": "Briccetti",
+   "excluded": null,
+   "post_gpt_docs": 697,
+   "post_fable_docs": 232,
+   "proj_exam_gpt": 16,
+   "proj_exam_fable": 5
+  },
+  {
+   "judge": "Korman",
+   "court": "nyed",
+   "exam1": false,
+   "query_name": "Korman",
+   "excluded": null,
+   "post_gpt_docs": 63,
+   "post_fable_docs": 12,
+   "proj_exam_gpt": 1,
+   "proj_exam_fable": 0
+  },
+  {
+   "judge": "Gershon",
+   "court": "nyed",
+   "exam1": false,
+   "query_name": "Gershon",
+   "excluded": null,
+   "post_gpt_docs": 154,
+   "post_fable_docs": 63,
+   "proj_exam_gpt": 4,
+   "proj_exam_fable": 1
+  },
+  {
+   "judge": "Hurley",
+   "court": "nyed",
+   "exam1": false,
+   "query_name": "Hurley",
+   "excluded": null,
+   "post_gpt_docs": 2,
+   "post_fable_docs": 0,
+   "proj_exam_gpt": 0,
+   "proj_exam_fable": 0
+  },
+  {
+   "judge": "Merle",
+   "court": "nyed",
+   "exam1": false,
+   "query_name": "Merle",
+   "excluded": null,
+   "post_gpt_docs": 1535,
+   "post_fable_docs": 774,
+   "proj_exam_gpt": 35,
+   "proj_exam_fable": 18
+  },
+  {
+   "judge": "Reyes",
+   "court": "nyed",
+   "exam1": false,
+   "query_name": "Reyes",
+   "excluded": "former_magistrate",
+   "post_gpt_docs": 2425,
+   "post_fable_docs": 0,
+   "proj_exam_gpt": 56,
+   "proj_exam_fable": 0
+  },
+  {
+   "judge": "Bulsara",
+   "court": "nyed",
+   "exam1": false,
+   "query_name": "Bulsara",
+   "excluded": "former_magistrate",
+   "post_gpt_docs": 0,
+   "post_fable_docs": 0,
+   "proj_exam_gpt": 0,
+   "proj_exam_fable": 0
   }
  ],
  "pi_booster": {
