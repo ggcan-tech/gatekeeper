@@ -62,6 +62,20 @@ contamination protocol (snapshot cut at fully-briefed date, docket canaries,
 boxed-vs-unboxed audit). Skip: transcript mining, specialist personas.
 **Always report TWO numbers** — absolute and judge-edge — conflating them is
 how competitors minted fake 86.7% claims.
+**Exam #2 is DUAL-MODEL (founder question, 2026-07-16):** each candidate
+frozen model (GPT-5.4 for continuity + a stronger model, e.g. claude-fable-5,
+cutoff Jan 2026) sits the exam with its OWN name-only control and its OWN
+cutoff-respecting post-window. This measures the open question directly:
+how much of the edge is our system vs the base model's intelligence, and
+whether the edge survives smarter examinees. Attribution on GPT-5.4 (July
+exam): model intelligence+memorization +4.5 over majority; our system +7.2
+on top. Structural floor argument: post-cutoff rulings are permanently
+un-memorizable by any model — grounding fuel no pretraining can contain.
+**Frontier-substitution risk (named):** if a future model's name-only arm
+≈ full-system accuracy, the "judge-calibrated" line weakens and the product
+stands on rehearsal quality + the validation/trust institution + the
+calibration ledger — which is why the company sells the report, not the +7.
+
 **Stop rule (pre-registered now):** if after briefs + ensemble + one model
 upgrade the judge-edge's 95% CI upper bound is <+10 on ≥250 fresh post-cutoff
 rulings in two consecutive exam windows, the digital-twin bar is declared
