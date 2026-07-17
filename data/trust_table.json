@@ -1,0 +1,281 @@
+{
+ "measured_inputs": {
+  "n_exam1": 291,
+  "q_discordant_vs_name_only": 0.1546,
+  "q_discordant_vs_metadata": 0.1409,
+  "exam1_margin_vs_name_only_pts": 7.22,
+  "motion_type_mix": {
+   "motion_to_dismiss": 101,
+   "preliminary_injunction_tro": 34,
+   "motion_to_compel_discovery": 80,
+   "class_certification": 7,
+   "summary_judgment": 68,
+   "daubert_expert_exclusion": 1
+  },
+  "exam_window": [
+   "2025-09-02",
+   "2026-07-13"
+  ],
+  "yield_per_judge_per_month": 9.33
+ },
+ "rows": [
+  {
+   "block": "judge-edge margin CI (q=0.155 measured)",
+   "n": 291,
+   "ci_halfwidth_pts": 4.44
+  },
+  {
+   "block": "judge-edge margin CI (q=0.155 measured)",
+   "n": 500,
+   "ci_halfwidth_pts": 3.39
+  },
+  {
+   "block": "judge-edge margin CI (q=0.155 measured)",
+   "n": 750,
+   "ci_halfwidth_pts": 2.77
+  },
+  {
+   "block": "judge-edge margin CI (q=0.155 measured)",
+   "n": 1000,
+   "ci_halfwidth_pts": 2.4
+  },
+  {
+   "block": "judge-edge margin CI (q=0.155 measured)",
+   "n": 1500,
+   "ci_halfwidth_pts": 1.96
+  },
+  {
+   "block": "judge-edge margin CI (q=0.155 measured)",
+   "n": 2000,
+   "ci_halfwidth_pts": 1.69
+  },
+  {
+   "block": "P(observed>=+10) at true margin +7",
+   "n": 291,
+   "power_pct": 9.3
+  },
+  {
+   "block": "P(observed>=+10) at true margin +7",
+   "n": 500,
+   "power_pct": 4.1
+  },
+  {
+   "block": "P(observed>=+10) at true margin +7",
+   "n": 1000,
+   "power_pct": 0.7
+  },
+  {
+   "block": "P(observed>=+10) at true margin +7",
+   "n": 2000,
+   "power_pct": 0.0
+  },
+  {
+   "block": "P(observed>=+10) at true margin +10",
+   "n": 291,
+   "power_pct": 50.0
+  },
+  {
+   "block": "P(observed>=+10) at true margin +10",
+   "n": 500,
+   "power_pct": 50.0
+  },
+  {
+   "block": "P(observed>=+10) at true margin +10",
+   "n": 1000,
+   "power_pct": 50.0
+  },
+  {
+   "block": "P(observed>=+10) at true margin +10",
+   "n": 2000,
+   "power_pct": 50.0
+  },
+  {
+   "block": "P(observed>=+10) at true margin +11",
+   "n": 291,
+   "power_pct": 67.4
+  },
+  {
+   "block": "P(observed>=+10) at true margin +11",
+   "n": 500,
+   "power_pct": 72.3
+  },
+  {
+   "block": "P(observed>=+10) at true margin +11",
+   "n": 1000,
+   "power_pct": 79.9
+  },
+  {
+   "block": "P(observed>=+10) at true margin +11",
+   "n": 2000,
+   "power_pct": 88.2
+  },
+  {
+   "block": "P(observed>=+10) at true margin +12",
+   "n": 291,
+   "power_pct": 81.9
+  },
+  {
+   "block": "P(observed>=+10) at true margin +12",
+   "n": 500,
+   "power_pct": 88.4
+  },
+  {
+   "block": "P(observed>=+10) at true margin +12",
+   "n": 1000,
+   "power_pct": 95.4
+  },
+  {
+   "block": "P(observed>=+10) at true margin +12",
+   "n": 2000,
+   "power_pct": 99.2
+  },
+  {
+   "block": "P(observed>=+10) at true margin +13",
+   "n": 291,
+   "power_pct": 91.6
+  },
+  {
+   "block": "P(observed>=+10) at true margin +13",
+   "n": 500,
+   "power_pct": 96.5
+  },
+  {
+   "block": "P(observed>=+10) at true margin +13",
+   "n": 1000,
+   "power_pct": 99.5
+  },
+  {
+   "block": "P(observed>=+10) at true margin +13",
+   "n": 2000,
+   "power_pct": 100.0
+  },
+  {
+   "block": "hierarchy: n per motion-type cell for adjacent-level delta CI",
+   "ci_halfwidth_pts": 3.0,
+   "n_cell_needed": 509
+  },
+  {
+   "block": "hierarchy: n per motion-type cell for adjacent-level delta CI",
+   "ci_halfwidth_pts": 4.0,
+   "n_cell_needed": 286
+  },
+  {
+   "block": "hierarchy: n per motion-type cell for adjacent-level delta CI",
+   "ci_halfwidth_pts": 5.0,
+   "n_cell_needed": 184
+  },
+  {
+   "block": "projected cell sizes at total n",
+   "n": 600,
+   "cells": {
+    "motion_to_dismiss": 208,
+    "motion_to_compel_discovery": 165,
+    "summary_judgment": 140,
+    "preliminary_injunction_tro": 70,
+    "class_certification": 14,
+    "daubert_expert_exclusion": 2
+   }
+  },
+  {
+   "block": "projected cell sizes at total n",
+   "n": 1000,
+   "cells": {
+    "motion_to_dismiss": 347,
+    "motion_to_compel_discovery": 275,
+    "summary_judgment": 234,
+    "preliminary_injunction_tro": 117,
+    "class_certification": 24,
+    "daubert_expert_exclusion": 3
+   }
+  },
+  {
+   "block": "projected cell sizes at total n",
+   "n": 1500,
+   "cells": {
+    "motion_to_dismiss": 521,
+    "motion_to_compel_discovery": 412,
+    "summary_judgment": 351,
+    "preliminary_injunction_tro": 175,
+    "class_certification": 36,
+    "daubert_expert_exclusion": 5
+   }
+  },
+  {
+   "block": "projected cell sizes at total n",
+   "n": 2000,
+   "cells": {
+    "motion_to_dismiss": 694,
+    "motion_to_compel_discovery": 550,
+    "summary_judgment": 467,
+    "preliminary_injunction_tro": 234,
+    "class_certification": 48,
+    "daubert_expert_exclusion": 7
+   }
+  },
+  {
+   "block": "absolute accuracy CI at ~80%",
+   "n": 291,
+   "ci_halfwidth_pts": 4.6
+  },
+  {
+   "block": "absolute accuracy CI at ~80%",
+   "n": 500,
+   "ci_halfwidth_pts": 3.51
+  },
+  {
+   "block": "absolute accuracy CI at ~80%",
+   "n": 1000,
+   "ci_halfwidth_pts": 2.48
+  },
+  {
+   "block": "absolute accuracy CI at ~80%",
+   "n": 2000,
+   "ci_halfwidth_pts": 1.75
+  },
+  {
+   "block": "projected exam n \u2014 gpt54_historical (2025-09-02..2026-07-13)",
+   "judges": 3,
+   "n_projected": 291
+  },
+  {
+   "block": "projected exam n \u2014 gpt54_historical (2025-09-02..2026-07-13)",
+   "judges": 12,
+   "n_projected": 1164
+  },
+  {
+   "block": "projected exam n \u2014 gpt54_historical (2025-09-02..2026-07-13)",
+   "judges": 15,
+   "n_projected": 1455
+  },
+  {
+   "block": "projected exam n \u2014 fable5_historical (2026-02-01..2026-07-13)",
+   "judges": 3,
+   "n_projected": 151
+  },
+  {
+   "block": "projected exam n \u2014 fable5_historical (2026-02-01..2026-07-13)",
+   "judges": 12,
+   "n_projected": 604
+  },
+  {
+   "block": "projected exam n \u2014 fable5_historical (2026-02-01..2026-07-13)",
+   "judges": 15,
+   "n_projected": 755
+  },
+  {
+   "block": "projected exam n \u2014 future_2B (2026-08-01..2026-09-30)",
+   "judges": 3,
+   "n_projected": 56
+  },
+  {
+   "block": "projected exam n \u2014 future_2B (2026-08-01..2026-09-30)",
+   "judges": 12,
+   "n_projected": 224
+  },
+  {
+   "block": "projected exam n \u2014 future_2B (2026-08-01..2026-09-30)",
+   "judges": 15,
+   "n_projected": 280
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "rule": "top-12 nysd + top-3 nyed by proj_exam_gpt; floor 40; exclusions per PREREGISTRATION-2.md; frozen at pre-registration",
+ "selected": [
+  {
+   "judge": "Daniels",
+   "court": "nysd",
+   "query_name": "Daniels"
+  },
+  {
+   "judge": "Stein",
+   "court": "nysd",
+   "query_name": "Stein"
+  },
+  {
+   "judge": "Rochon",
+   "court": "nysd",
+   "query_name": "Rochon"
+  },
+  {
+   "judge": "Torres",
+   "court": "nysd",
+   "query_name": "Torres"
+  },
+  {
+   "judge": "Woods",
+   "court": "nysd",
+   "query_name": "Woods"
+  },
+  {
+   "judge": "Ho",
+   "court": "nysd",
+   "query_name": "Ho"
+  },
+  {
+   "judge": "Carter",
+   "court": "nysd",
+   "query_name": "Carter"
+  },
+  {
+   "judge": "Broderick",
+   "court": "nysd",
+   "query_name": "Broderick"
+  },
+  {
+   "judge": "Garnett",
+   "court": "nysd",
+   "query_name": "Garnett"
+  },
+  {
+   "judge": "Vargas",
+   "court": "nysd",
+   "query_name": "Vargas"
+  },
+  {
+   "judge": "Koeltl",
+   "court": "nysd",
+   "query_name": "Koeltl"
+  },
+  {
+   "judge": "Engelmayer",
+   "court": "nysd",
+   "query_name": "Engelmayer"
+  },
+  {
+   "judge": "Cogan",
+   "court": "nyed",
+   "query_name": "Cogan"
+  },
+  {
+   "judge": "Donnelly",
+   "court": "nyed",
+   "query_name": "Donnelly"
+  },
+  {
+   "judge": "Morrison",
+   "court": "nyed",
+   "query_name": "Morrison"
+  }
+ ],
+ "projected_exam_n_gpt": 1084,
+ "projected_exam_n_fable": 560,
+ "cap_per_judge": 120
+}

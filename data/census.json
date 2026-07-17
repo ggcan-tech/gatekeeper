@@ -1,0 +1,593 @@
+{
+ "calibration": {
+  "raw_post_cutoff_docs": 12628,
+  "exam_n": 291,
+  "ratio": 0.02304402914159012
+ },
+ "cutoffs": {
+  "gpt": "2025-08-31",
+  "fable": "2026-01-31"
+ },
+ "judges": [
+  {
+   "judge": "Abrams",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1829,
+   "post_fable_docs": 843,
+   "proj_exam_gpt": 42,
+   "proj_exam_fable": 19
+  },
+  {
+   "judge": "Broderick",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2689,
+   "post_fable_docs": 1403,
+   "proj_exam_gpt": 62,
+   "proj_exam_fable": 32
+  },
+  {
+   "judge": "Caproni",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1860,
+   "post_fable_docs": 725,
+   "proj_exam_gpt": 43,
+   "proj_exam_fable": 17
+  },
+  {
+   "judge": "Carter",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2704,
+   "post_fable_docs": 1168,
+   "proj_exam_gpt": 62,
+   "proj_exam_fable": 27
+  },
+  {
+   "judge": "Castel",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2188,
+   "post_fable_docs": 1241,
+   "proj_exam_gpt": 50,
+   "proj_exam_fable": 29
+  },
+  {
+   "judge": "Clarke",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1699,
+   "post_fable_docs": 720,
+   "proj_exam_gpt": 39,
+   "proj_exam_fable": 17
+  },
+  {
+   "judge": "Cote",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1791,
+   "post_fable_docs": 752,
+   "proj_exam_gpt": 41,
+   "proj_exam_fable": 17
+  },
+  {
+   "judge": "Cronan",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2188,
+   "post_fable_docs": 1132,
+   "proj_exam_gpt": 50,
+   "proj_exam_fable": 26
+  },
+  {
+   "judge": "Daniels",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 10084,
+   "post_fable_docs": 7179,
+   "proj_exam_gpt": 232,
+   "proj_exam_fable": 165
+  },
+  {
+   "judge": "Engelmayer",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2272,
+   "post_fable_docs": 1100,
+   "proj_exam_gpt": 52,
+   "proj_exam_fable": 25
+  },
+  {
+   "judge": "Failla",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2248,
+   "post_fable_docs": 1194,
+   "proj_exam_gpt": 52,
+   "proj_exam_fable": 28
+  },
+  {
+   "judge": "Furman",
+   "court": "nysd",
+   "exam1": true,
+   "post_gpt_docs": 2689,
+   "post_fable_docs": 1278,
+   "proj_exam_gpt": 62,
+   "proj_exam_fable": 29
+  },
+  {
+   "judge": "Garnett",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2370,
+   "post_fable_docs": 1010,
+   "proj_exam_gpt": 55,
+   "proj_exam_fable": 23
+  },
+  {
+   "judge": "Halpern",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1226,
+   "post_fable_docs": 575,
+   "proj_exam_gpt": 28,
+   "proj_exam_fable": 13
+  },
+  {
+   "judge": "Hellerstein",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1340,
+   "post_fable_docs": 546,
+   "proj_exam_gpt": 31,
+   "proj_exam_fable": 13
+  },
+  {
+   "judge": "Ho",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2709,
+   "post_fable_docs": 1297,
+   "proj_exam_gpt": 62,
+   "proj_exam_fable": 30
+  },
+  {
+   "judge": "Kaplan",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1982,
+   "post_fable_docs": 885,
+   "proj_exam_gpt": 46,
+   "proj_exam_fable": 20
+  },
+  {
+   "judge": "Karas",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1469,
+   "post_fable_docs": 654,
+   "proj_exam_gpt": 34,
+   "proj_exam_fable": 15
+  },
+  {
+   "judge": "Koeltl",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2300,
+   "post_fable_docs": 1117,
+   "proj_exam_gpt": 53,
+   "proj_exam_fable": 26
+  },
+  {
+   "judge": "Liman",
+   "court": "nysd",
+   "exam1": true,
+   "post_gpt_docs": 3991,
+   "post_fable_docs": 1276,
+   "proj_exam_gpt": 92,
+   "proj_exam_fable": 29
+  },
+  {
+   "judge": "Marrero",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1115,
+   "post_fable_docs": 638,
+   "proj_exam_gpt": 26,
+   "proj_exam_fable": 15
+  },
+  {
+   "judge": "McMahon",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1270,
+   "post_fable_docs": 523,
+   "proj_exam_gpt": 29,
+   "proj_exam_fable": 12
+  },
+  {
+   "judge": "Oetken",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2090,
+   "post_fable_docs": 972,
+   "proj_exam_gpt": 48,
+   "proj_exam_fable": 22
+  },
+  {
+   "judge": "Preska",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1623,
+   "post_fable_docs": 822,
+   "proj_exam_gpt": 37,
+   "proj_exam_fable": 19
+  },
+  {
+   "judge": "Rakoff",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1497,
+   "post_fable_docs": 721,
+   "proj_exam_gpt": 34,
+   "proj_exam_fable": 17
+  },
+  {
+   "judge": "Ramos",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2145,
+   "post_fable_docs": 973,
+   "proj_exam_gpt": 49,
+   "proj_exam_fable": 22
+  },
+  {
+   "judge": "Rearden",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1790,
+   "post_fable_docs": 775,
+   "proj_exam_gpt": 41,
+   "proj_exam_fable": 18
+  },
+  {
+   "judge": "Rochon",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 3163,
+   "post_fable_docs": 1540,
+   "proj_exam_gpt": 73,
+   "proj_exam_fable": 35
+  },
+  {
+   "judge": "Roman",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1409,
+   "post_fable_docs": 599,
+   "proj_exam_gpt": 32,
+   "proj_exam_fable": 14
+  },
+  {
+   "judge": "Schofield",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1773,
+   "post_fable_docs": 901,
+   "proj_exam_gpt": 41,
+   "proj_exam_fable": 21
+  },
+  {
+   "judge": "Seibel",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1050,
+   "post_fable_docs": 409,
+   "proj_exam_gpt": 24,
+   "proj_exam_fable": 9
+  },
+  {
+   "judge": "Stanton",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 278,
+   "post_fable_docs": 77,
+   "proj_exam_gpt": 6,
+   "proj_exam_fable": 2
+  },
+  {
+   "judge": "Stein",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 5089,
+   "post_fable_docs": 1908,
+   "proj_exam_gpt": 117,
+   "proj_exam_fable": 44
+  },
+  {
+   "judge": "Subramanian",
+   "court": "nysd",
+   "exam1": true,
+   "post_gpt_docs": 3415,
+   "post_fable_docs": 1531,
+   "proj_exam_gpt": 79,
+   "proj_exam_fable": 35
+  },
+  {
+   "judge": "Swain",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1974,
+   "post_fable_docs": 884,
+   "proj_exam_gpt": 45,
+   "proj_exam_fable": 20
+  },
+  {
+   "judge": "Torres",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2968,
+   "post_fable_docs": 1378,
+   "proj_exam_gpt": 68,
+   "proj_exam_fable": 32
+  },
+  {
+   "judge": "Vargas",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2321,
+   "post_fable_docs": 1090,
+   "proj_exam_gpt": 53,
+   "proj_exam_fable": 25
+  },
+  {
+   "judge": "Vyskocil",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 1659,
+   "post_fable_docs": 788,
+   "proj_exam_gpt": 38,
+   "proj_exam_fable": 18
+  },
+  {
+   "judge": "Woods",
+   "court": "nysd",
+   "exam1": false,
+   "post_gpt_docs": 2947,
+   "post_fable_docs": 1542,
+   "proj_exam_gpt": 68,
+   "proj_exam_fable": 36
+  },
+  {
+   "judge": "Amon",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 743,
+   "post_fable_docs": 341,
+   "proj_exam_gpt": 17,
+   "proj_exam_fable": 8
+  },
+  {
+   "judge": "Azrack",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1500,
+   "post_fable_docs": 536,
+   "proj_exam_gpt": 35,
+   "proj_exam_fable": 12
+  },
+  {
+   "judge": "Block",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 807,
+   "post_fable_docs": 298,
+   "proj_exam_gpt": 19,
+   "proj_exam_fable": 7
+  },
+  {
+   "judge": "Brodie",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 885,
+   "post_fable_docs": 435,
+   "proj_exam_gpt": 20,
+   "proj_exam_fable": 10
+  },
+  {
+   "judge": "Brown",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1444,
+   "post_fable_docs": 734,
+   "proj_exam_gpt": 33,
+   "proj_exam_fable": 17
+  },
+  {
+   "judge": "Chen",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1606,
+   "post_fable_docs": 688,
+   "proj_exam_gpt": 37,
+   "proj_exam_fable": 16
+  },
+  {
+   "judge": "Choudhury",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1626,
+   "post_fable_docs": 754,
+   "proj_exam_gpt": 37,
+   "proj_exam_fable": 17
+  },
+  {
+   "judge": "Cogan",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 2039,
+   "post_fable_docs": 910,
+   "proj_exam_gpt": 47,
+   "proj_exam_fable": 21
+  },
+  {
+   "judge": "Dearie",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 12,
+   "post_fable_docs": 0,
+   "proj_exam_gpt": 0,
+   "proj_exam_fable": 0
+  },
+  {
+   "judge": "Donnelly",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1749,
+   "post_fable_docs": 932,
+   "proj_exam_gpt": 40,
+   "proj_exam_fable": 21
+  },
+  {
+   "judge": "Garaufis",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1278,
+   "post_fable_docs": 681,
+   "proj_exam_gpt": 29,
+   "proj_exam_fable": 16
+  },
+  {
+   "judge": "Glasser",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 5,
+   "post_fable_docs": 1,
+   "proj_exam_gpt": 0,
+   "proj_exam_fable": 0
+  },
+  {
+   "judge": "Gonzalez",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 965,
+   "post_fable_docs": 491,
+   "proj_exam_gpt": 22,
+   "proj_exam_fable": 11
+  },
+  {
+   "judge": "Gujarati",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1209,
+   "post_fable_docs": 617,
+   "proj_exam_gpt": 28,
+   "proj_exam_fable": 14
+  },
+  {
+   "judge": "Hall",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1568,
+   "post_fable_docs": 665,
+   "proj_exam_gpt": 36,
+   "proj_exam_fable": 15
+  },
+  {
+   "judge": "Irizarry",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 474,
+   "post_fable_docs": 195,
+   "proj_exam_gpt": 11,
+   "proj_exam_fable": 4
+  },
+  {
+   "judge": "Komitee",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1299,
+   "post_fable_docs": 610,
+   "proj_exam_gpt": 30,
+   "proj_exam_fable": 14
+  },
+  {
+   "judge": "Kovner",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1285,
+   "post_fable_docs": 540,
+   "proj_exam_gpt": 30,
+   "proj_exam_fable": 12
+  },
+  {
+   "judge": "Kuntz",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 420,
+   "post_fable_docs": 134,
+   "proj_exam_gpt": 10,
+   "proj_exam_fable": 3
+  },
+  {
+   "judge": "Matsumoto",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1122,
+   "post_fable_docs": 489,
+   "proj_exam_gpt": 26,
+   "proj_exam_fable": 11
+  },
+  {
+   "judge": "Merchant",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1479,
+   "post_fable_docs": 641,
+   "proj_exam_gpt": 34,
+   "proj_exam_fable": 15
+  },
+  {
+   "judge": "Morrison",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1742,
+   "post_fable_docs": 795,
+   "proj_exam_gpt": 40,
+   "proj_exam_fable": 18
+  },
+  {
+   "judge": "Ross",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 1369,
+   "post_fable_docs": 619,
+   "proj_exam_gpt": 32,
+   "proj_exam_fable": 14
+  },
+  {
+   "judge": "Seybert",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 319,
+   "post_fable_docs": 93,
+   "proj_exam_gpt": 7,
+   "proj_exam_fable": 2
+  },
+  {
+   "judge": "Vitaliano",
+   "court": "nyed",
+   "exam1": false,
+   "post_gpt_docs": 736,
+   "post_fable_docs": 259,
+   "proj_exam_gpt": 17,
+   "proj_exam_fable": 6
+  }
+ ],
+ "pi_booster": {
+  "nysd": 2561,
+  "nyed": 615
+ }
+}
