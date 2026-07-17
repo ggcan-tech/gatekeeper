@@ -76,6 +76,16 @@ un-memorizable by any model — grounding fuel no pretraining can contain.
 stands on rehearsal quality + the validation/trust institution + the
 calibration ledger — which is why the company sells the report, not the +7.
 
+**Exam #2 additional pre-registrations (founder questions, 2026-07-16):**
+- Arm (f) pooled-bench control: replica grounded on ALL judges' rulings mixed,
+  vs per-judge grounding — decides whether named-judge calibration adds real
+  value over court-calibration. Either result is product-compatible (the
+  report already labels judge-flavor honestly).
+- Between-judge variance finding (from our corpus, to be re-verified sealed):
+  judge identity barely matters on MTDs (grant-rate spread ~8pts across our
+  three judges) but is decisive on PI/TROs (39% vs 71%). Product rule: weight
+  and disclose judge-identity relevance PER MOTION TYPE in every report.
+
 **Stop rule (pre-registered now):** if after briefs + ensemble + one model
 upgrade the judge-edge's 95% CI upper bound is <+10 on ≥250 fresh post-cutoff
 rulings in two consecutive exam windows, the digital-twin bar is declared
