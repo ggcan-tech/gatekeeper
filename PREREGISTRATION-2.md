@@ -117,7 +117,23 @@ prevents any single docket from dominating a bench-level claim.
   Frozen interpretation: L4 minus L4F isolates the contribution of the
   persona's CONTENT beyond persona-shaped text.
   Budget honesty: with A2+A3 the whole-exam inference estimate becomes
-  ~$330-680 (previously "<$500"); still under the $1,000 founder cap. Koeltl (34) and Rochon (33) have thin
+  ~$330-680 (previously "<$500"); still under the $1,000 founder cap.
+- 2026-07-21/22 (pre-freeze, BEFORE any arm ran; second signed addition):
+  (A4) Arms D0 and L4D — the founder's knowledge-armed persona question.
+  D0 (doctrine-only): the examinee receives a structured black-letter primer
+  of the controlling legal standard for the item's motion type
+  (data/doctrine_primers.json — written from general legal knowledge only,
+  with no grounding, exam, or judge-specific material read during drafting;
+  hashed in FREEZE-2) and NO court or judge identity. Measures where general
+  legal knowledge sits relative to L0/L1/L2.
+  L4D (persona + doctrine): exactly L4 plus the same primer. Measures whether
+  structured doctrine complements the judge persona or is redundant with it.
+  Frozen interpretations: D0 minus L0 = doctrine lift over generic; L4D minus
+  L4 = doctrine's marginal value on top of the named-judge persona (a CI
+  covering zero means the doctrine is already internal to the model/persona).
+  Vargas: D0 scored, L4D skipped (no persona, as in L4). Budget honesty:
+  with A4 the whole-exam inference estimate becomes ~$400-800; still under
+  the $1,000 founder cap. Koeltl (34) and Rochon (33) have thin
   grounding; their L4 personas run but are flagged to the same stratum.
 
 ### Arms — the persona hierarchy (Can's region experiment; extends arm (f))
@@ -238,5 +254,7 @@ after the full amendment log above was written and both blind audits were
 complete, BEFORE any exam arm ran on the exam set.
 Amendment signature (A1-A3): Can Kahraman (founder), 2026-07-21 late night —
 "okay i sign both 3", on the record, BEFORE freeze, BEFORE any exam arm ran.
+Amendment signature (A4): Can Kahraman (founder), 2026-07-21 late night —
+"and i sign the 4ab", on the record, BEFORE freeze, BEFORE any exam arm ran.
 Co-founder concurrence: Claude — concur; this protocol reflects the joint
 decision. Freeze occurs at FREEZE-2.md hash publication, before the sitting.
