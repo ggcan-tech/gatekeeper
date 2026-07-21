@@ -206,3 +206,11 @@ $0 in Track A. Any line >$1,000 requires founder sign-off before it is spent.
   sealed and is never re-sat, per the frozen no-retake clause.
 - All spend is logged; PACER purchases (briefs lever) are a separate future
   pre-registration and do not touch this exam's inputs.
+
+## Signature
+
+Signed: Can Kahraman (founder), 2026-07-21 — "okay i sign of", on the record,
+after the full amendment log above was written and both blind audits were
+complete, BEFORE any exam arm ran on the exam set.
+Co-founder concurrence: Claude — concur; this protocol reflects the joint
+decision. Freeze occurs at FREEZE-2.md hash publication, before the sitting.
