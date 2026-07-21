@@ -67,6 +67,34 @@ prevents any single docket from dominating a bench-level claim.
   were volume-selected). Quota amended to top-12 SDNY + top-3 EDNY to keep
   projected n ≈ 1,080. Per-judge cap added (above). Former-magistrate
   exclusion added from the roster audit (decided before volumes were read).
+- 2026-07-21 (blind audit pass 1, BEFORE any arm ran): agreement 96.5%
+  (55/57, bar >=95 met) but X-rate 32.1% vs exam-1's 10% — the rater named
+  procedural classes carrying motion-type words (pre-motion letters, stays
+  pending, clerk's judgments, scheduling orders, 23(f) mandates,
+  reconsideration, bond releases). Seven exclusion filters added
+  (pipeline/label2.py EXTRA_EXCLUDE); corpus fully relabeled. Effect:
+  post-cutoff n 1,000+ -> 745 rules-only; the census outliers collapsed
+  (Daniels 232 proj -> 21 labeled; Stein 117 -> 19 — their raw volume was
+  procedural docket noise, making the per-judge cap inert). The frozen LLM
+  extractor pass (identical method to exam-1) then resolved 150 of the 2,125
+  ambiguous rows. FINAL EXAM n = 834.
+- 2026-07-21 (blind audit pass 2, fresh 84-item stratified sample, fresh
+  blind rater, AFTER filters): agreement 95.9% (70/73), X-rate 13.1%. Labels
+  double-certified. Residual disagreement class (3 items): transfer-granted-
+  in-lieu-of-dismissal orders — disclosed, not hand-pruned. Audit artifacts:
+  data/audit2_pass1.json, data/audit2_pass2.json, samples + sequestered keys
+  committed.
+- 2026-07-21 realized corpus (per judge, post-cutoff): Ho 103, Engelmayer 82,
+  Rochon 71, Vargas 69, Woods 69, Carter 61, Morrison 61, Garnett 58,
+  Cogan 53, Torres 53, Broderick 45, Donnelly 38, Koeltl 31, Daniels 21,
+  Stein 19. Motion mix: MTD 422, SJ 166, PI/TRO 117, compel 114, class-cert
+  8, Daubert 7. Realized trust numbers: pooled margin CI ±2.6 pts (n=834);
+  Fable-5 sub-window n=425, CI ±3.7. Both floors (>=200) cleared.
+- 2026-07-21 grounding disclosure: Vargas (appointed 2024) has zero
+  labelable pre-cutoff rulings — no L4 persona is possible for her; she is
+  scored on L0-L3 only and reported in the thin-grounding stratum, per the
+  pre-registered stratification. Koeltl (34) and Rochon (33) have thin
+  grounding; their L4 personas run but are flagged to the same stratum.
 
 ### Arms — the persona hierarchy (Can's region experiment; extends arm (f))
 

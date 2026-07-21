@@ -51,9 +51,18 @@ tendencies, over/under-confidence on a motion type). Keep what works. Max 700 wo
 Write only the revised persona document."""
 
 
+def _court_of(judge: str) -> str:
+    try:
+        sel = json.load(open("data/judges2.json"))["selected"]
+        m = {r["judge"]: ("EDNY" if r["court"] == "nyed" else "SDNY") for r in sel}
+        return m.get(judge, "SDNY")
+    except OSError:
+        return "SDNY"
+
+
 def predict_with_persona(persona: str, judge: str, item: dict) -> str:
     return arms.call_model(
-        arms.SYSTEM_BASE + f"\nYou are predicting Judge {judge}, SDNY.\n"
+        arms.SYSTEM_BASE + f"\nYou are predicting Judge {judge}, {_court_of(judge)}.\n"
         f"Decision profile of this judge, learned from their rulings:\n{persona}",
         arms.build_inputs(item))
 
@@ -123,7 +132,8 @@ def run_judge(judge: str, grounding: list, log) -> None:
 
 
 def main() -> None:
-    grounding = [json.loads(l) for l in open("data/grounding.jsonl", encoding="utf-8")]
+    gpath = os.environ.get("GROUNDING_PATH", "data/grounding.jsonl")
+    grounding = [json.loads(l) for l in open(gpath, encoding="utf-8")]
     judges = sorted({g["judge"] for g in grounding})
     with open("data/persona_history.jsonl", "a", encoding="utf-8") as log:
         for j in judges:
