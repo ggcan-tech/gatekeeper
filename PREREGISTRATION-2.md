@@ -93,7 +93,31 @@ prevents any single docket from dominating a bench-level claim.
 - 2026-07-21 grounding disclosure: Vargas (appointed 2024) has zero
   labelable pre-cutoff rulings — no L4 persona is possible for her; she is
   scored on L0-L3 only and reported in the thin-grounding stratum, per the
-  pre-registered stratification. Koeltl (34) and Rochon (33) have thin
+  pre-registered stratification.
+- 2026-07-21/22 (pre-freeze, BEFORE any arm ran; adversarially-verified fleet
+  proposals, signed by founder): three additions, none touching corpus,
+  labels, window, or existing arms.
+  (A1) Inference-robustness clause (analysis-only): every pooled margin CI is
+  reported twice — the naive item-level CI AND a wild cluster bootstrap CI
+  clustered by judge (999 resamples, seed 20260722). Frozen disclosure rule:
+  if the bootstrap half-width exceeds the naive half-width by more than 1.5x,
+  the bootstrap CI is the headline number wherever the naive one would appear.
+  (A2) Arm L4X, persona-derangement placebo: identical to L4 except each
+  judge's persona is replaced by ANOTHER same-court judge's frozen persona;
+  mapping fixed now in data/derangement_map.json (alphabetical cyclic shift
+  within court among persona-bearing judges; Vargas excluded as in L4) and
+  hashed in FREEZE-2. Frozen interpretation: L4 minus L4X estimates
+  judge-specific signal in the persona; a delta whose CI covers zero means
+  the persona carries court/genre signal, not judge signal — disclosed in
+  every named-judge claim.
+  (A3) Arm L4F, fictional-persona control: identical to L4 except the persona
+  document is a fixed fictional judge decision-profile
+  (data/persona2_fictional.md, written without reading any grounding or exam
+  row, hashed in FREEZE-2); the real judge name stays in the identity line.
+  Frozen interpretation: L4 minus L4F isolates the contribution of the
+  persona's CONTENT beyond persona-shaped text.
+  Budget honesty: with A2+A3 the whole-exam inference estimate becomes
+  ~$330-680 (previously "<$500"); still under the $1,000 founder cap. Koeltl (34) and Rochon (33) have thin
   grounding; their L4 personas run but are flagged to the same stratum.
 
 ### Arms — the persona hierarchy (Can's region experiment; extends arm (f))
@@ -212,5 +236,7 @@ $0 in Track A. Any line >$1,000 requires founder sign-off before it is spent.
 Signed: Can Kahraman (founder), 2026-07-21 — "okay i sign of", on the record,
 after the full amendment log above was written and both blind audits were
 complete, BEFORE any exam arm ran on the exam set.
+Amendment signature (A1-A3): Can Kahraman (founder), 2026-07-21 late night —
+"okay i sign both 3", on the record, BEFORE freeze, BEFORE any exam arm ran.
 Co-founder concurrence: Claude — concur; this protocol reflects the joint
 decision. Freeze occurs at FREEZE-2.md hash publication, before the sitting.
