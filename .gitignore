@@ -2,6 +2,7 @@
 .env
 token.txt
 openai_key.txt
+anthropic_key.txt
 
 # Raw pulled data (public court records, but large; regenerate via pipeline)
 data/*.jsonl
@@ -25,3 +26,8 @@ data/digests/
 data/persona*.md
 !data/predictions.jsonl
 !data/scorecard.json
+
+# Exam #2 freeze-bound artifacts (personas stay private; hashes bind them)
+!data/exam2.jsonl
+!data/grounding2.jsonl
+!data/labeled2.jsonl
