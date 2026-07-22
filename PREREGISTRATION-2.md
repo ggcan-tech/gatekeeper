@@ -256,5 +256,21 @@ Amendment signature (A1-A3): Can Kahraman (founder), 2026-07-21 late night —
 "okay i sign both 3", on the record, BEFORE freeze, BEFORE any exam arm ran.
 Amendment signature (A4): Can Kahraman (founder), 2026-07-21 late night —
 "and i sign the 4ab", on the record, BEFORE freeze, BEFORE any exam arm ran.
+
+Pre-freeze corrections (2026-07-23, terminology/fact only — no rule changed,
+before any exam arm ran):
+- (C1) Estimand 5 is renamed from "self-consistency ceiling estimate" to
+  "within-cell outcome homogeneity per motion type." The exam-1 proxy (65.1%)
+  is NOT a ceiling — the persona arm's 78.7% exceeds it — and true judge
+  self-consistency is unmeasurable from the public record. All "ceiling" and
+  "noise floor of law" language is retired from customer- and YC-facing
+  materials. Rationale in docs/trust-numbers.md (E6).
+- (C2) The 2026-07-21 disclosure that "Vargas has zero labelable pre-cutoff
+  rulings" was written before her CourtListener pull completed. Her realized
+  pre-cutoff grounding is now 48 rows, so she receives an L4 persona like any
+  other judge. L4 eligibility is mechanical (a frozen persona file exists for
+  the judge); the judge with zero pre-cutoff grounding is now Daniels, who is
+  scored L0-L3 and reported in the pre-registered zero-grounding stratum. No
+  rule changed; only which judge the existing rule applies to.
 Co-founder concurrence: Claude — concur; this protocol reflects the joint
 decision. Freeze occurs at FREEZE-2.md hash publication, before the sitting.

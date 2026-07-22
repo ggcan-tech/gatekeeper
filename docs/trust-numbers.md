@@ -77,9 +77,24 @@ courts, labeled by the same pipeline, reported separately.
 - Exam #2B future window with all 15 judges: n≈280 ≥ the 250/window the
   pre-registered stop rule requires.
 
-## Self-consistency ceiling (E6)
+## Within-cell outcome homogeneity — NOT a self-consistency ceiling (E6)
 
-Exam #1 proxy: 65.1% within-cell pair agreement (n=291 corpus). For a ±5 pt
-CI on per-motion-type consistency we need ≈350 near-cell pairs per motion
-type — achievable only on the expanded 15-judge corpus. This number bounds
-the honest absolute-accuracy promise (the 83-86 target must clear it).
+CORRECTION (2026-07-23, pre-freeze): earlier drafts called the 65.1% figure a
+"self-consistency ceiling" and "the noise floor of law," and claimed it bounds
+achievable accuracy. That was wrong, and the disproof is our own number: the
+persona arm scored 78.7% — above 65.1%. A real ceiling cannot be exceeded, so
+this was never a ceiling.
+
+What 65.1% actually is: within each (judge, motion_type) cell, the chance that
+two randomly drawn decisions share the same outcome. That quantity is a pure
+function of the cell's grant rate (a 79%-grant cell yields ~67% pair agreement
+by arithmetic alone); it measures how much outcome variation remains once you
+condition ONLY on judge and motion type — i.e. how much room case facts have to
+matter. It sits next to majority-class (67.0) because it is essentially the same
+statistic, not an independent ceiling.
+
+True judge self-consistency (would the SAME judge rule the SAME way on the SAME
+motion twice) is UNMEASURABLE from the public record — a judge never re-decides
+an identical motion. We do not claim it and no one can. Estimand 5 in
+PREREGISTRATION-2.md is reported under this corrected framing: "within-cell
+outcome homogeneity per motion type," with no ceiling or noise-floor language.
