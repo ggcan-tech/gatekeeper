@@ -266,11 +266,23 @@ before any exam arm ran):
   "noise floor of law" language is retired from customer- and YC-facing
   materials. Rationale in docs/trust-numbers.md (E6).
 - (C2) The 2026-07-21 disclosure that "Vargas has zero labelable pre-cutoff
-  rulings" was written before her CourtListener pull completed. Her realized
-  pre-cutoff grounding is now 48 rows, so she receives an L4 persona like any
-  other judge. L4 eligibility is mechanical (a frozen persona file exists for
-  the judge); the judge with zero pre-cutoff grounding is now Daniels, who is
-  scored L0-L3 and reported in the pre-registered zero-grounding stratum. No
-  rule changed; only which judge the existing rule applies to.
+  rulings" was written before her CourtListener pull completed. With the pull
+  finished (54/54) and labeling complete, ALL 15 judges have realized
+  pre-cutoff grounding and each receives an L4 persona. The zero-grounding
+  stratum is empty. Final per-judge grounding (rows, after the ~1% attribution
+  filter): Engelmayer 229, Woods 197, Ho 183, Carter 172, Torres 153,
+  Broderick 136, Cogan 134, Rochon 132, Donnelly 121, Garnett 109,
+  Morrison 105, Stein 78, Koeltl 77, Vargas 51, Daniels 26. The pre-registered
+  grounding-size stratification (estimand 4) is unchanged as a RULE; its
+  realized membership is now: thin stratum (<40 rows) = {Daniels}; the rest
+  normal. No rule changed.
+- (C3) Personas built during the 2026-07-21 session used an earlier, thinner
+  grounding snapshot (745 rows, 7 judges) and — for Cogan — grounding that
+  still contained ~15 cross-attributed MDL rows. Before freeze, ALL 15 judge
+  personas and both court-pool personas are rebuilt by the identical frozen
+  persona-loop method on the SAME final grounding snapshot (post
+  attribution-filter), so no judge's persona saw a different data vintage than
+  another's. This is pre-cutoff dev iteration (permitted, unlimited, before
+  scoring); every persona is hashed in FREEZE-2 before the sitting.
 Co-founder concurrence: Claude — concur; this protocol reflects the joint
 decision. Freeze occurs at FREEZE-2.md hash publication, before the sitting.
