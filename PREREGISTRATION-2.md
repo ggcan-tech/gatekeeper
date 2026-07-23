@@ -276,6 +276,12 @@ before any exam arm ran):
   grounding-size stratification (estimand 4) is unchanged as a RULE; its
   realized membership is now: thin stratum (<40 rows) = {Daniels}; the rest
   normal. No rule changed.
+- (C4) L2 court-pool personas are built by the frozen persona-loop method with
+  the validation slice capped at 60 items (env MAX_VAL). Rationale: 25% of a
+  ~1,500-row pooled corpus is a 385-item validation set unlike any per-judge
+  build (per-judge val ≈ 25-58); the cap keeps the pool's validation-set size
+  comparable to the per-judge personas. Judge personas are built with no cap
+  and are unchanged. Disclosed before any exam arm ran.
 - (C3) Personas built during the 2026-07-21 session used an earlier, thinner
   grounding snapshot (745 rows, 7 judges) and — for Cogan — grounding that
   still contained ~15 cross-attributed MDL rows. Before freeze, ALL 15 judge
