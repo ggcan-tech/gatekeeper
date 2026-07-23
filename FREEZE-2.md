@@ -57,3 +57,40 @@ a1f82ad7706acc308ed4733a1531bb79e75a61c8922dd24a987071613ee75b03  pipeline/leaka
 ```
 
 Persona / grounding / bios / doctrine / derangement documents may be withheld as product IP; the hashes above bind them. arms2.py imports the frozen exam-1 arms.py (itself hashed in FREEZE.md) and never edits it.
+
+---
+
+## ERRATUM E1 — 2026-07-23, post-freeze, BEFORE any result was scored or reported
+
+During the sitting, arms2.py crashed on every Judge Vargas item at the L4X
+(persona-derangement placebo) arm with `KeyError: 'Vargas'`. Root cause: an
+internal inconsistency between two frozen statements. The frozen
+data/derangement_map.json excludes Vargas ("Vargas excluded (no persona, as in
+L4)") — stale wording from the pre-C2 assumption that Vargas had zero pre-cutoff
+grounding. Correction C2 (logged in PREREGISTRATION-2.md before freeze) then gave
+Vargas a real L4 persona, so she is not in NO_PERSONA_JUDGES; the runner therefore
+attempted L4X for her and indexed the map she was deliberately excluded from.
+
+Fix (minimal, honoring the frozen map): the runner now SKIPS L4X for any judge the
+frozen derangement map excludes, instead of crashing — exactly what "Vargas
+excluded" already specified. Vargas is scored on all her other arms (majority,
+metadata, name_only, L0, L1, L2, L3, L4, L4F, D0, L4D); only her L4X placebo cell
+is SKIP. No other judge is affected.
+
+Scope of change, stated plainly:
+- **data/exam2.jsonl is UNCHANGED** — verified identical, hash
+  956d774321070bf9759c405e9c68e0321781ef94aa79df94c124b56a6f3f2823. The sealed
+  corpus never moved.
+- No exam item, label, persona, control arm, or scoring rule changed.
+- Only one supplementary placebo arm (L4X) for one judge (Vargas) is affected, and
+  the frozen map already excluded her from it.
+- This erratum was applied before predictions2.jsonl or scorecard2.json existed —
+  no result was seen, then changed.
+
+pipeline/arms2.py hash therefore changes:
+```
+was  ccf976f680219f4ec97125dcb9531756a48d3fd6f0f77fe9010e83f01cbc1287  pipeline/arms2.py
+now  b593636150ca85f95d1b6331ba1665357db38db65c5401997e1a6b6480d99136  pipeline/arms2.py
+```
+Every other hash in this manifest is unchanged. We publish this the same way we
+publish everything else: in writing, dated, with the reason.

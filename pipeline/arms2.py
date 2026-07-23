@@ -328,6 +328,13 @@ def main() -> None:
             for arm_name in MODEL_ARMS:
                 if arm_name in ("L4", "L4X", "L4D") and item["judge"] in NO_PERSONA_JUDGES:
                     continue
+                # Erratum E1 (post-freeze, pre-results): the frozen derangement map
+                # excludes Vargas ("Vargas excluded", stale from the pre-C2 no-persona
+                # assumption); C2 later gave her a persona so she is NOT in
+                # NO_PERSONA_JUDGES. Honor the frozen map: skip L4X for any judge it
+                # excludes rather than KeyError. Touches no exam item, no other arm.
+                if arm_name == "L4X" and item["judge"] not in ctx["derangement"]:
+                    continue
                 key = (model, arm_name, item["id"])
                 if key in done:
                     continue
@@ -367,6 +374,9 @@ def main() -> None:
                 for arm_name in MODEL_ARMS:
                     if arm_name in ("L4", "L4X", "L4D") and item["judge"] in NO_PERSONA_JUDGES:
                         row[f"{model}_{arm_name}"] = "SKIP"
+                        continue
+                    if arm_name == "L4X" and item["judge"] not in ctx["derangement"]:
+                        row[f"{model}_{arm_name}"] = "SKIP"  # erratum E1 (see call loop)
                         continue
                     row[f"{model}_{arm_name}"] = done.get((model, arm_name, item["id"]), "MISSING")
                 if armg:
