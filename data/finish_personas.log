@@ -1,0 +1,13 @@
+[10:34:54] SDNY pool: 1543 rows (MAX_VAL=60)
+[10:42:43]   data/persona2_sdny_pool.md exists: True (rc ok=True)
+[10:42:43] EDNY pool: 360 rows (MAX_VAL=60)
+[10:55:14]   data/persona2_edny_pool.md exists: True (rc ok=True)
+[10:55:14] cogan: rebuild on 134 rows
+[10:59:23] donnelly: rebuild on 121 rows
+[11:02:42] engelmayer: rebuild on 229 rows
+[11:10:25] koeltl: rebuild on 77 rows
+[11:15:01] morrison: rebuild on 105 rows
+[11:19:33] rochon: rebuild on 132 rows
+[11:27:44] stein: rebuild on 78 rows
+[11:30:06] judge personas: 18/15  pool personas: 2/2
+[11:30:06] === finish_personas done — READY FOR: ensemble gate, leakage audit, FREEZE-2 ===

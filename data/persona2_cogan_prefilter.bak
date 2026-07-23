@@ -1,0 +1,85 @@
+Judge Brian M. Cogan (E.D.N.Y.) — Revised Motion Tendencies Persona
+
+General approach
+- Pragmatic, text-focused, and efficient. He often clears motions quickly or narrows cases rather than writing sprawling rulings.
+- On merits, he is willing to grant meaningful relief, especially partial relief. In multi-claim or multi-defendant cases, trimming is common.
+- Do not assume either blanket plaintiff-friendliness or defense-friendliness; the key is whether the order is merits relief versus case-management.
+
+Core coding correction
+- This docket does contain many motion entries coded as Y/grant even when the order is procedural rather than a final merits ruling.
+- Especially for pending summary judgment or dismissal motions, orders extending time, setting opposition/reply dates, permitting filing, requiring re-service, or otherwise advancing the motion can be coded Y.
+- However, this should not be overstated: not every order touching a motion is a grant. The main recurring trap is pre-motion conference practice.
+
+Critical carveout: pre-motion conference / letter-motion practice
+- If the entry is a “Letter Motion for pre motion conference” or “Motion for Pre Motion Conference,” and the order says it is “denied as unnecessary” or “deemed unnecessary” because the letter will instead be treated as the motion itself, lean N, not Y.
+- Likewise, if the order says a pre-motion request is unnecessary and converts or deems the letter/application to constitute the motion to dismiss, that is usually not coded as granting the dismissal motion.
+- Distinguish sharply between:
+  1) relief on the actual motion to dismiss or motion for summary judgment; versus
+  2) denial-as-unnecessary of pre-motion conference requests, even if the judge streamlines matters by treating the letter as the motion.
+- “Deemed to constitute defendants’ motion to dismiss” is not itself a grant of the motion to dismiss.
+
+Summary judgment
+- Baseline: moderate chance of some relief, especially with a developed record or cross-motions.
+- But merits memoranda are mixed; do not overpredict Y just because the order is substantial.
+- Procedural SJ entries are still often coded Y when they affirmatively grant motion-related relief:
+  - extension of time to file SJ papers;
+  - scheduling opposition/reply on a pending SJ motion;
+  - permission to file cross-motions;
+  - re-service or filing directives tied to the motion.
+- On true merits SJ rulings, keep confidence lower and expect both grants and denials.
+
+Motion to dismiss
+- Maintain an above-average Y baseline overall, but reduce the tilt from prior versions because some motion-related management entries are actually N.
+- Strong Y signals:
+  - briefing schedule on an already-pending motion to dismiss;
+  - opposition/reply deadlines on the motion itself;
+  - re-service of motion papers;
+  - explicit partial dismissal language;
+  - amendment/streamlining tied to anticipated Rule 12 issues;
+  - merits language dismissing claims or defendants.
+- Important N signals:
+  - pre-motion conference letter/motion “denied as unnecessary”;
+  - order says the letter is deemed to be the motion, but does not grant dismissal;
+  - dismissal request denied as moot, unnecessary, or procedurally misplaced;
+  - specialized “motion to dismiss” entries that are really non-Rule-12 applications and are rejected.
+
+Discovery / motion to compel
+- Keep a pro-enforcement tilt on straightforward compel requests.
+- Where the discovery obligation is concrete and objections seem weak, he is willing to require compliance.
+
+How to read docket language
+- Strong Y indicators:
+  - “time to file … extended”
+  - “opposition … due”
+  - “reply … due”
+  - “motion papers shall be re-served”
+  - “motion to be filed by”
+  - “partial motion to dismiss”
+  - “claim is dismissed”
+  - “summary judgment is granted as to …”
+- Mixed / caution indicators:
+  - “deemed to constitute the motion”
+  - “conference request denied as unnecessary”
+  - “letter motion for pre-motion conference”
+  These often point to N if the only operative ruling is that the pre-motion request is unnecessary.
+- Strong N indicators:
+  - express refusal of dismissal;
+  - motion denied as moot/unnecessary;
+  - order clarifies requested dismissal is not the proper characterization;
+  - pre-motion conference request denied as unnecessary even while converting papers into the motion;
+  - merits memorandum reflecting unresolved factual disputes without narrowing relief.
+
+Operational heuristics
+- Summary judgment:
+  - procedural scheduling/extension orders tied to a pending SJ motion -> often Y.
+  - merits SJ memoranda -> mixed; avoid aggressive Y predictions.
+- Motion to dismiss:
+  - true motion-management orders on an actual pending MTD -> often Y.
+  - but pre-motion conference denials/conversions -> usually N.
+  - partial-dismissal contexts still favor Y when the order gives substantive narrowing relief.
+- If uncertain, ask: is the judge granting relief on the motion, or merely denying a pre-motion request while channeling the case into regular motion practice? The latter usually leans N.
+
+Confidence guidance
+- Lower confidence on merits SJ.
+- Moderate confidence on procedural Y calls, but only when the order affirmatively grants motion-related relief.
+- Increase confidence in N for “pre-motion conference denied/deemed unnecessary” entries, even if the judge treats the letter as the motion itself.

@@ -1,0 +1,26 @@
+{
+ "in": 86756,
+ "kept": 1620,
+ "excluded": 369,
+ "review": 2316,
+ "sig_drop": 7834,
+ "party_drop": 2886,
+ "rule_labeled_post_cutoff": 847,
+ "post_per_judge": {
+  "Broderick": 41,
+  "Carter": 67,
+  "Cogan": 62,
+  "Daniels": 21,
+  "Donnelly": 44,
+  "Engelmayer": 82,
+  "Garnett": 55,
+  "Ho": 92,
+  "Koeltl": 32,
+  "Morrison": 60,
+  "Rochon": 69,
+  "Stein": 20,
+  "Torres": 63,
+  "Vargas": 70,
+  "Woods": 69
+ }
+}

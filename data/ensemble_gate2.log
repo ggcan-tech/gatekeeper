@@ -1,0 +1,38 @@
+0/479  0.3/s
+25/479  0.3/s
+50/479  0.4/s
+75/479  0.4/s
+100/479  0.4/s
+125/479  0.3/s
+150/479  0.3/s
+175/479  0.3/s
+200/479  0.3/s
+225/479  0.3/s
+250/479  0.3/s
+275/479  0.3/s
+300/479  0.3/s
+325/479  0.3/s
+350/479  0.3/s
+375/479  0.3/s
+400/479  0.3/s
+425/479  0.3/s
+450/479  0.3/s
+475/479  0.3/s
+{
+  "n_val": 479,
+  "single_arm_accuracy": {
+    "L2": 86.22,
+    "L3": 81.84,
+    "L4": 89.35
+  },
+  "best_single_arm": "L4",
+  "best_single_accuracy": 89.35,
+  "ensemble_accuracy": 88.31,
+  "ensemble_minus_best_single_points": -1.04,
+  "gate_passed": false,
+  "decision": "arm_g SUPPLEMENTARY (ensemble did not beat best single arm on val; reported but not primary)",
+  "method": "majority vote of L2,L3,L4 \u2014 parameter-free, frozen in arms2.py",
+  "val_definition": "per-judge persona-loop val slice (SEED=42, 25%), held out of L4 training; L3 retrieval pool excludes val items",
+  "disclosed_limitation": "L2 pooled persona and other judges' retrieval pools saw these rows; per-row influence on a pooled persona is negligible.",
+  "generated": "2026-07-23T12:01:20"
+}

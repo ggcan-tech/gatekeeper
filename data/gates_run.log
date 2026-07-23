@@ -1,0 +1,75 @@
+ENSEMBLE_GATE_START
+0/479  0.3/s
+25/479  0.4/s
+50/479  0.4/s
+75/479  0.4/s
+100/479  0.3/s
+125/479  0.3/s
+150/479  0.3/s
+175/479  0.3/s
+200/479  0.3/s
+225/479  0.3/s
+250/479  0.3/s
+275/479  0.3/s
+300/479  0.3/s
+325/479  0.3/s
+350/479  0.3/s
+375/479  0.3/s
+400/479  0.3/s
+425/479  0.3/s
+450/479  0.3/s
+475/479  0.3/s
+{
+  "n_val": 479,
+  "single_arm_accuracy": {
+    "L2": 86.85,
+    "L3": 82.46,
+    "L4": 87.27
+  },
+  "best_single_arm": "L4",
+  "best_single_accuracy": 87.27,
+  "ensemble_accuracy": 87.47,
+  "ensemble_minus_best_single_points": 0.2,
+  "gate_passed": true,
+  "decision": "arm_g PRIMARY (ensemble >= best single arm on held-out pre-cutoff val)",
+  "method": "majority vote of L2,L3,L4 \u2014 parameter-free, frozen in arms2.py",
+  "val_definition": "per-judge persona-loop val slice (SEED=42, 25%), held out of L4 training; L3 retrieval pool excludes val items",
+  "disclosed_limitation": "L2 pooled persona and other judges' retrieval pools saw these rows; per-row influence on a pooled persona is negligible.",
+  "generated": "2026-07-23T12:02:14"
+}
+ENSEMBLE_GATE_DONE
+LEAKAGE_AUDIT_START
+0/834  0.8/s
+50/834  1.0/s
+100/834  0.9/s
+150/834  0.9/s
+200/834  0.9/s
+250/834  0.9/s
+300/834  1.0/s
+350/834  1.0/s
+400/834  1.0/s
+450/834  0.9/s
+500/834  0.9/s
+550/834  0.9/s
+600/834  0.9/s
+650/834  1.0/s
+700/834  1.0/s
+750/834  1.0/s
+800/834  1.0/s
+{
+  "n": 834,
+  "blinded_accuracy": 75.3,
+  "majority_accuracy": 75.42,
+  "margin_points": -0.12,
+  "discordant_blinded_right": 159,
+  "discordant_majority_right": 160,
+  "threshold_points": 3.0,
+  "z": -1.457,
+  "p_one_sided": 0.9274,
+  "audit_failed": false,
+  "verdict": "PASS \u2014 blinded arm does not beat majority+3",
+  "rule": "FAIL iff one-sided p<.05 that blinded > majority+3pts",
+  "generated": "2026-07-23T12:16:44"
+}
+LEAKAGE_AUDIT_DONE
+ALL_GATES_DONE

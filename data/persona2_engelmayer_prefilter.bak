@@ -1,0 +1,90 @@
+This judge should be modeled as **procedurally exacting, noticeably willing to dismiss deficient pleadings, and selective-but-real on summary judgment**. The biggest calibration remains: **do not underpredict grants on Rule 12 motions**, especially where the order gives leave to amend and warns that **“no further opportunities to amend will ordinarily be granted.”** Those are **grants**, and they appear often enough to move the baseline.
+
+## 1) Motions to dismiss: still grant-leaning, but not indiscriminately
+
+The baseline on **Rule 12(b)(6)** should remain **grant-leaning**. He is receptive to dismissing complaints that are:
+
+- thin or conclusory,
+- group-pleaded,
+- not tied to specific defendants,
+- legally defective on ordinary pleading grounds,
+- vulnerable on threshold doctrines,
+- contradicted by documents or internal inconsistency.
+
+He does **not** require an exotic defect. Routine pleading failure is enough.
+
+Important signals favoring **grant**:
+- leave to amend is offered;
+- deadline set for amended complaint;
+- warning that further amendment likely will not be allowed;
+- threshold/contract/arbitration issue presented;
+- complaint lacks defendant-specific facts.
+
+But correct the prior overcorrection: he will **deny** dismissal when the complaint is **detailed, coherent, and fact-specific**, especially if the motion asks him to draw inferences against the pleader, discount the alleged narrative, or resolve factual context too early. A well-pleaded employment/consumer/civil-rights style complaint can survive.
+
+Best rule:
+- **Default on 12(b)(6): moderate grant lean**
+- **Upgrade to strong grant** for sparse facts, group pleading, threshold bars, documentary contradiction, implausibility, or clear legal defects
+- **Shift to deny** when pleading is concrete and defendant-specific and the motion is mainly inference-driven
+
+## 2) Arbitration / contract-enforcement motions disguised as dismissals
+
+When a docketed “motion to dismiss” is actually a **motion to compel arbitration** or otherwise enforce a contract-based threshold mechanism, treat it as a **strong grant candidate**. He appears comfortable enforcing such threshold agreements on the papers.
+
+## 3) Summary judgment: selective, but more willing than a timid model suggests
+
+Do **not** treat this judge as reflexively denying summary judgment. He **will grant summary judgment, including partial summary judgment**, where there is:
+
+- an element-specific failure of proof,
+- a dispositive legal issue,
+- a document-driven chronology,
+- an objective record that removes genuine factual dispute.
+
+This is especially true when the motion narrows claims cleanly rather than trying to win through broad narrative attack.
+
+At the same time, avoid overpredicting grants in **fact-intensive employment/discrimination/retaliation** and similar cases turning on:
+- intent,
+- motive,
+- causation,
+- credibility,
+- competing explanations,
+- contextual reasonableness.
+
+Best rule:
+- **Grant** when the deficiency is objective, element-specific, or document-based
+- **Deny** when resolution depends on weighing competing narratives or motive-heavy facts
+- **Partial summary judgment** is a meaningful possibility and should not be discounted
+
+## 4) Discovery motions: cautious to denial-leaning unless properly presented
+
+For **true adversarial motions to compel discovery**, he appears **more denial-/deferral-leaning than grant-leaning**, especially when the request is informal, underdeveloped, premature, or presented by letter without a rigorous showing.
+
+Predict **denial or deferral** when:
+- the motion is really a discovery complaint by letter;
+- meet-and-confer/procedural prerequisites are weak;
+- the accusation of noncompliance is not well supported;
+- the dispute is not sharply framed.
+
+Predict **grant** more confidently only when:
+- the request is specific,
+- noncompliance is clear,
+- procedure has been followed,
+- and the relief sought is concrete and proportional.
+
+Separate from that, **stipulated or administrative protective/confidentiality requests** remain **strong grant** candidates.
+
+## 5) Injunctive relief / TROs
+
+Keep a **skeptical, high-bar** model. He appears to require a concrete showing of irreparable harm, legal entitlement, and practical administrability.
+
+## Overall prediction posture
+
+This judge rewards **procedural discipline, specificity, and record/text support**. The core tendencies are:
+
+- **Rule 12(b)(6): moderately grant-leaning**
+- **Arbitration/contract-threshold enforcement: strongly grant-leaning**
+- **Summary judgment: selective but genuinely grant-capable, including partial grants**
+- **Discovery motions to compel: cautious, often deny/defer if informal or underdeveloped**
+- **TRO/preliminary injunction: skeptical**
+
+Main correction: **keep the elevated dismissal-grant baseline, but not so high that detailed fact-specific complaints are overlooked; and on summary judgment, be willing to predict grants where the record shows an objective failure of proof.**

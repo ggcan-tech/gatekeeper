@@ -1,7 +1,8 @@
-# Pre-Registration #2: The Ultimate Evidence Program — DRAFT
+# Pre-Registration #2: The Ultimate Evidence Program — FROZEN
 
-Status: DRAFT — becomes FROZEN when this file's SHA-256 is published (repo +
-hash) BEFORE any exam scoring. Founder review required before freeze.
+Status: FROZEN 2026-07-23 12:16 +03 — this file's SHA-256 is published in FREEZE-2.md,
+committed and pushed BEFORE any exam arm ran on the exam set. Signed +
+audited (both blind passes) + gated (ensemble val + leakage) before freeze.
 Drafted 2026-07-17, while the judge census (pipeline/census.py) was still in
 flight and before any candidate judge's volume numbers were read — the
 selection rule below was written blind to its own inputs.

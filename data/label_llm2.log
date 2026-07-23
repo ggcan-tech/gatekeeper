@@ -1,0 +1,395 @@
+review pool 2279, already resolved 0, todo 2279
+0/2279 resolved=0
+50/2279 resolved=6
+100/2279 resolved=12
+150/2279 resolved=13
+200/2279 resolved=15
+250/2279 resolved=18
+300/2279 resolved=20
+350/2279 resolved=23
+400/2279 resolved=25
+450/2279 resolved=27
+500/2279 resolved=27
+550/2279 resolved=37
+600/2279 resolved=46
+650/2279 resolved=54
+700/2279 resolved=58
+750/2279 resolved=80
+800/2279 resolved=80
+850/2279 resolved=80
+900/2279 resolved=82
+950/2279 resolved=84
+1000/2279 resolved=87
+1050/2279 resolved=95
+1100/2279 resolved=95
+1150/2279 resolved=110
+1200/2279 resolved=112
+1250/2279 resolved=114
+1300/2279 resolved=114
+1350/2279 resolved=114
+1400/2279 resolved=114
+1450/2279 resolved=115
+1500/2279 resolved=115
+1550/2279 resolved=115
+1600/2279 resolved=120
+1650/2279 resolved=128
+1700/2279 resolved=128
+1750/2279 resolved=130
+1800/2279 resolved=136
+1850/2279 resolved=137
+1900/2279 resolved=140
+1950/2279 resolved=140
+2000/2279 resolved=142
+2050/2279 resolved=144
+2100/2279 resolved=148
+2150/2279 resolved=148
+2200/2279 resolved=156
+2250/2279 resolved=158
+resolved 162 / 2279 (excluded/unknown: 2117)
+review pool 2125, already resolved 2279, todo 33
+error on 425554520: HTTP Error 429: Too Many Requests
+0/33 resolved=0
+error on 425192742: HTTP Error 429: Too Many Requests
+error on 424856557: HTTP Error 429: Too Many Requests
+error on 424739345: HTTP Error 429: Too Many Requests
+error on 424739325: HTTP Error 429: Too Many Requests
+error on 424613704: HTTP Error 429: Too Many Requests
+error on 424488872: HTTP Error 429: Too Many Requests
+error on 424315034: HTTP Error 429: Too Many Requests
+error on 424259587: HTTP Error 429: Too Many Requests
+error on 424217857: HTTP Error 429: Too Many Requests
+error on 423805910: HTTP Error 429: Too Many Requests
+error on 423467114: HTTP Error 429: Too Many Requests
+error on 422828847: HTTP Error 429: Too Many Requests
+error on 422720205: HTTP Error 429: Too Many Requests
+error on 422440969: HTTP Error 429: Too Many Requests
+error on 421910580: HTTP Error 429: Too Many Requests
+error on 421699535: HTTP Error 429: Too Many Requests
+error on 421364018: HTTP Error 429: Too Many Requests
+error on 421270005: HTTP Error 429: Too Many Requests
+error on 421269955: HTTP Error 429: Too Many Requests
+error on 420973013: HTTP Error 429: Too Many Requests
+error on 420095441: HTTP Error 429: Too Many Requests
+error on 418967562: HTTP Error 429: Too Many Requests
+error on 418967552: HTTP Error 429: Too Many Requests
+error on 418967682: HTTP Error 429: Too Many Requests
+error on 418967664: HTTP Error 429: Too Many Requests
+error on 418967645: HTTP Error 429: Too Many Requests
+error on 418967626: HTTP Error 429: Too Many Requests
+error on 418967576: HTTP Error 429: Too Many Requests
+error on 418697465: HTTP Error 429: Too Many Requests
+error on 418475952: HTTP Error 429: Too Many Requests
+error on 418308214: HTTP Error 429: Too Many Requests
+resolved 0 / 33 (excluded/unknown: 33)
+review pool 2125, already resolved 2312, todo 0
+resolved 0 / 0 (excluded/unknown: 0)
+review pool 2125, already resolved 0, todo 2125
+error on 477037900: HTTP Error 429: Too Many Requests
+0/2125 resolved=0
+error on 474047631: HTTP Error 429: Too Many Requests
+error on 473784607: HTTP Error 429: Too Many Requests
+error on 473194234: HTTP Error 429: Too Many Requests
+error on 472651171: HTTP Error 429: Too Many Requests
+error on 472091798: HTTP Error 429: Too Many Requests
+error on 471578172: HTTP Error 429: Too Many Requests
+error on 470477151: HTTP Error 429: Too Many Requests
+error on 461796550: HTTP Error 429: Too Many Requests
+error on 453191288: HTTP Error 429: Too Many Requests
+error on 452480482: HTTP Error 429: Too Many Requests
+error on 452433554: HTTP Error 429: Too Many Requests
+error on 484094469: HTTP Error 429: Too Many Requests
+error on 483603154: HTTP Error 429: Too Many Requests
+error on 483297604: HTTP Error 429: Too Many Requests
+error on 483049248: HTTP Error 429: Too Many Requests
+error on 479600429: HTTP Error 429: Too Many Requests
+error on 482726823: HTTP Error 429: Too Many Requests
+error on 479119966: HTTP Error 429: Too Many Requests
+error on 482726822: HTTP Error 429: Too Many Requests
+error on 478880423: HTTP Error 429: Too Many Requests
+error on 482069087: HTTP Error 429: Too Many Requests
+error on 478304836: HTTP Error 429: Too Many Requests
+error on 476764638: HTTP Error 429: Too Many Requests
+error on 476442662: HTTP Error 429: Too Many Requests
+error on 476442429: HTTP Error 429: Too Many Requests
+error on 480977503: HTTP Error 429: Too Many Requests
+error on 472627438: HTTP Error 429: Too Many Requests
+error on 471292259: HTTP Error 429: Too Many Requests
+error on 471152238: HTTP Error 429: Too Many Requests
+error on 471152207: HTTP Error 429: Too Many Requests
+error on 471105731: HTTP Error 429: Too Many Requests
+error on 471006586: HTTP Error 429: Too Many Requests
+error on 470681656: HTTP Error 429: Too Many Requests
+error on 470012002: HTTP Error 429: Too Many Requests
+error on 480646186: HTTP Error 429: Too Many Requests
+error on 482366843: HTTP Error 429: Too Many Requests
+error on 467389116: HTTP Error 429: Too Many Requests
+error on 467102078: HTTP Error 429: Too Many Requests
+error on 466663449: HTTP Error 429: Too Many Requests
+error on 467782000: HTTP Error 429: Too Many Requests
+error on 465959896: HTTP Error 429: Too Many Requests
+error on 465881463: HTTP Error 429: Too Many Requests
+error on 465652285: HTTP Error 429: Too Many Requests
+error on 465342942: HTTP Error 429: Too Many Requests
+error on 465252990: HTTP Error 429: Too Many Requests
+error on 464592406: HTTP Error 429: Too Many Requests
+error on 464549569: HTTP Error 429: Too Many Requests
+error on 464089119: HTTP Error 429: Too Many Requests
+error on 464062606: HTTP Error 429: Too Many Requests
+error on 462821794: HTTP Error 429: Too Many Requests
+50/2125 resolved=0
+error on 462221592: HTTP Error 429: Too Many Requests
+error on 461695518: HTTP Error 429: Too Many Requests
+error on 460691790: HTTP Error 429: Too Many Requests
+error on 460063352: HTTP Error 429: Too Many Requests
+error on 459221837: HTTP Error 429: Too Many Requests
+error on 458644337: HTTP Error 429: Too Many Requests
+error on 457071636: HTTP Error 429: Too Many Requests
+error on 456938240: HTTP Error 429: Too Many Requests
+error on 456691221: HTTP Error 429: Too Many Requests
+error on 456614695: HTTP Error 429: Too Many Requests
+error on 455489657: HTTP Error 429: Too Many Requests
+error on 466009303: HTTP Error 429: Too Many Requests
+error on 454011312: HTTP Error 429: Too Many Requests
+review pool 2125, already resolved 0, todo 2125
+429 on 477037900 — retry in 30s
+429 on 477037900 — retry in 60s
+429 on 477037900 — retry in 90s
+429 on 477037900 — retry in 120s
+429 on 477037900 — retry in 150s
+error on 477037900: HTTP Error 429: Too Many Requests
+0/2125 resolved=0
+429 on 474047631 — retry in 30s
+429 on 474047631 — retry in 60s
+429 on 474047631 — retry in 90s
+429 on 474047631 — retry in 120s
+429 on 474047631 — retry in 150s
+error on 474047631: HTTP Error 429: Too Many Requests
+429 on 473784607 — retry in 30s
+429 on 473784607 — retry in 60s
+429 on 473784607 — retry in 90s
+429 on 473784607 — retry in 120s
+429 on 473784607 — retry in 150s
+error on 473784607: HTTP Error 429: Too Many Requests
+429 on 473194234 — retry in 30s
+429 on 473194234 — retry in 60s
+429 on 473194234 — retry in 90s
+429 on 473194234 — retry in 120s
+429 on 473194234 — retry in 150s
+error on 473194234: HTTP Error 429: Too Many Requests
+429 on 472651171 — retry in 30s
+429 on 472651171 — retry in 60s
+429 on 472651171 — retry in 90s
+429 on 472651171 — retry in 120s
+429 on 472651171 — retry in 150s
+error on 472651171: HTTP Error 429: Too Many Requests
+429 on 472091798 — retry in 30s
+429 on 472091798 — retry in 60s
+429 on 472091798 — retry in 90s
+429 on 472091798 — retry in 120s
+429 on 472091798 — retry in 150s
+error on 472091798: HTTP Error 429: Too Many Requests
+429 on 471578172 — retry in 30s
+429 on 471578172 — retry in 60s
+429 on 471578172 — retry in 90s
+429 on 471578172 — retry in 120s
+429 on 471578172 — retry in 150s
+error on 471578172: HTTP Error 429: Too Many Requests
+429 on 470477151 — retry in 30s
+429 on 470477151 — retry in 60s
+429 on 470477151 — retry in 90s
+429 on 470477151 — retry in 120s
+429 on 470477151 — retry in 150s
+error on 470477151: HTTP Error 429: Too Many Requests
+429 on 461796550 — retry in 30s
+429 on 461796550 — retry in 60s
+429 on 461796550 — retry in 90s
+429 on 461796550 — retry in 120s
+429 on 461796550 — retry in 150s
+error on 461796550: HTTP Error 429: Too Many Requests
+429 on 453191288 — retry in 30s
+429 on 453191288 — retry in 60s
+429 on 453191288 — retry in 90s
+429 on 453191288 — retry in 120s
+429 on 453191288 — retry in 150s
+error on 453191288: HTTP Error 429: Too Many Requests
+429 on 452480482 — retry in 30s
+429 on 452480482 — retry in 60s
+429 on 452480482 — retry in 90s
+429 on 452480482 — retry in 120s
+429 on 452480482 — retry in 150s
+error on 452480482: HTTP Error 429: Too Many Requests
+429 on 452433554 — retry in 30s
+429 on 452433554 — retry in 60s
+429 on 452433554 — retry in 90s
+429 on 452433554 — retry in 120s
+429 on 452433554 — retry in 150s
+error on 452433554: HTTP Error 429: Too Many Requests
+429 on 484094469 — retry in 30s
+429 on 484094469 — retry in 60s
+429 on 484094469 — retry in 90s
+429 on 484094469 — retry in 120s
+429 on 484094469 — retry in 150s
+error on 484094469: HTTP Error 429: Too Many Requests
+429 on 483603154 — retry in 30s
+429 on 483603154 — retry in 60s
+429 on 483603154 — retry in 90s
+429 on 483603154 — retry in 120s
+429 on 483603154 — retry in 150s
+error on 483603154: HTTP Error 429: Too Many Requests
+429 on 483297604 — retry in 30s
+429 on 483297604 — retry in 60s
+429 on 483297604 — retry in 90s
+429 on 483297604 — retry in 120s
+429 on 483297604 — retry in 150s
+error on 483297604: HTTP Error 429: Too Many Requests
+429 on 483049248 — retry in 30s
+429 on 483049248 — retry in 60s
+429 on 483049248 — retry in 90s
+429 on 483049248 — retry in 120s
+429 on 483049248 — retry in 150s
+error on 483049248: HTTP Error 429: Too Many Requests
+429 on 479600429 — retry in 30s
+429 on 479600429 — retry in 60s
+429 on 479600429 — retry in 90s
+429 on 479600429 — retry in 120s
+429 on 479600429 — retry in 150s
+error on 479600429: HTTP Error 429: Too Many Requests
+429 on 482726823 — retry in 30s
+429 on 482726823 — retry in 60s
+429 on 482726823 — retry in 90s
+429 on 482726823 — retry in 120s
+429 on 482726823 — retry in 150s
+error on 482726823: HTTP Error 429: Too Many Requests
+429 on 479119966 — retry in 30s
+429 on 479119966 — retry in 60s
+429 on 479119966 — retry in 90s
+429 on 479119966 — retry in 120s
+429 on 479119966 — retry in 150s
+error on 479119966: HTTP Error 429: Too Many Requests
+429 on 482726822 — retry in 30s
+429 on 482726822 — retry in 60s
+429 on 482726822 — retry in 90s
+429 on 482726822 — retry in 120s
+429 on 482726822 — retry in 150s
+error on 482726822: HTTP Error 429: Too Many Requests
+429 on 478880423 — retry in 30s
+429 on 478880423 — retry in 60s
+429 on 478880423 — retry in 90s
+429 on 478880423 — retry in 120s
+429 on 478880423 — retry in 150s
+error on 478880423: HTTP Error 429: Too Many Requests
+429 on 482069087 — retry in 30s
+429 on 482069087 — retry in 60s
+429 on 482069087 — retry in 90s
+429 on 482069087 — retry in 120s
+429 on 482069087 — retry in 150s
+error on 482069087: HTTP Error 429: Too Many Requests
+429 on 478304836 — retry in 30s
+429 on 478304836 — retry in 60s
+429 on 478304836 — retry in 90s
+429 on 478304836 — retry in 120s
+429 on 478304836 — retry in 150s
+error on 478304836: HTTP Error 429: Too Many Requests
+429 on 476764638 — retry in 30s
+429 on 476764638 — retry in 60s
+429 on 476764638 — retry in 90s
+429 on 476764638 — retry in 120s
+429 on 476764638 — retry in 150s
+error on 476764638: HTTP Error 429: Too Many Requests
+429 on 476442662 — retry in 30s
+429 on 476442662 — retry in 60s
+429 on 476442662 — retry in 90s
+429 on 476442662 — retry in 120s
+429 on 476442662 — retry in 150s
+error on 476442662: HTTP Error 429: Too Many Requests
+429 on 476442429 — retry in 30s
+429 on 476442429 — retry in 60s
+429 on 476442429 — retry in 90s
+429 on 476442429 — retry in 120s
+429 on 476442429 — retry in 150s
+error on 476442429: HTTP Error 429: Too Many Requests
+429 on 480977503 — retry in 30s
+429 on 480977503 — retry in 60s
+429 on 480977503 — retry in 90s
+429 on 480977503 — retry in 120s
+429 on 480977503 — retry in 150s
+error on 480977503: HTTP Error 429: Too Many Requests
+429 on 472627438 — retry in 30s
+429 on 472627438 — retry in 60s
+429 on 472627438 — retry in 90s
+429 on 472627438 — retry in 120s
+429 on 472627438 — retry in 150s
+error on 472627438: HTTP Error 429: Too Many Requests
+429 on 471292259 — retry in 30s
+429 on 471292259 — retry in 60s
+429 on 471292259 — retry in 90s
+429 on 471292259 — retry in 120s
+429 on 471292259 — retry in 150s
+error on 471292259: HTTP Error 429: Too Many Requests
+429 on 471152238 — retry in 30s
+429 on 471152238 — retry in 60s
+429 on 471152238 — retry in 90s
+429 on 471152238 — retry in 120s
+429 on 471152238 — retry in 150s
+error on 471152238: HTTP Error 429: Too Many Requests
+429 on 471152207 — retry in 30s
+429 on 471152207 — retry in 60s
+429 on 471152207 — retry in 90s
+429 on 471152207 — retry in 120s
+429 on 471152207 — retry in 150s
+error on 471152207: HTTP Error 429: Too Many Requests
+429 on 471105731 — retry in 30s
+429 on 471105731 — retry in 60s
+429 on 471105731 — retry in 90s
+429 on 471105731 — retry in 120s
+429 on 471105731 — retry in 150s
+error on 471105731: HTTP Error 429: Too Many Requests
+429 on 471006586 — retry in 30s
+429 on 471006586 — retry in 60s
+429 on 471006586 — retry in 90s
+429 on 471006586 — retry in 120s
+review pool 2125, already resolved 0, todo 2125
+0/2125 resolved=0
+50/2125 resolved=6
+100/2125 resolved=10
+150/2125 resolved=12
+200/2125 resolved=15
+250/2125 resolved=19
+300/2125 resolved=23
+350/2125 resolved=26
+400/2125 resolved=26
+450/2125 resolved=31
+500/2125 resolved=39
+550/2125 resolved=45
+600/2125 resolved=52
+650/2125 resolved=71
+700/2125 resolved=71
+750/2125 resolved=71
+800/2125 resolved=73
+850/2125 resolved=75
+900/2125 resolved=81
+950/2125 resolved=82
+1000/2125 resolved=82
+1050/2125 resolved=98
+1100/2125 resolved=100
+1150/2125 resolved=101
+1200/2125 resolved=101
+1250/2125 resolved=101
+1300/2125 resolved=101
+1350/2125 resolved=104
+1400/2125 resolved=105
+1450/2125 resolved=107
+1500/2125 resolved=116
+1550/2125 resolved=118
+1600/2125 resolved=118
+1650/2125 resolved=120
+1700/2125 resolved=124
+1750/2125 resolved=127
+1800/2125 resolved=127
+1850/2125 resolved=129
+1900/2125 resolved=131
+1950/2125 resolved=135
+2000/2125 resolved=135
+2050/2125 resolved=144
+2100/2125 resolved=148
+resolved 150 / 2125 (excluded/unknown: 1975)

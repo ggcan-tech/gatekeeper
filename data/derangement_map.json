@@ -1,0 +1,19 @@
+{
+  "rule": "alphabetical cyclic shift (+1) within court among persona-bearing judges; Vargas excluded (no persona, as in L4); fixed 2026-07-22 pre-freeze, hashed in FREEZE-2",
+  "map": {
+    "Broderick": "Carter",
+    "Carter": "Daniels",
+    "Daniels": "Engelmayer",
+    "Engelmayer": "Garnett",
+    "Garnett": "Ho",
+    "Ho": "Koeltl",
+    "Koeltl": "Rochon",
+    "Rochon": "Stein",
+    "Stein": "Torres",
+    "Torres": "Woods",
+    "Woods": "Broderick",
+    "Cogan": "Donnelly",
+    "Donnelly": "Morrison",
+    "Morrison": "Cogan"
+  }
+}

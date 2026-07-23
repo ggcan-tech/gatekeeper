@@ -1,0 +1,91 @@
+[23:31:53] === night2 start ===
+[23:31:53] exam2 hash at start: 956d774321070bf9759c405e9c68e0321781ef94aa79df94c124b56a6f3f2823
+[23:31:53] pull 49/54 — waiting
+[23:36:53] pull 49/54 — waiting
+[23:41:53] pull 49/54 — waiting
+[23:46:53] pull 49/54 — waiting
+[23:51:53] pull 49/54 — waiting
+[23:56:53] pull 49/54 — waiting
+[00:01:53] pull 49/54 — waiting
+[00:06:53] pull 49/54 — waiting
+[00:11:53] pull 49/54 — waiting
+[00:16:53] pull 49/54 — waiting
+[00:21:53] pull 49/54 — waiting
+[00:26:53] pull 49/54 — waiting
+[00:31:53] pull 51/54 — waiting
+[00:36:54] pull 51/54 — waiting
+[00:41:54] pull 52/54 — waiting
+[00:46:54] pull 52/54 — waiting
+[00:51:54] pull 52/54 — waiting
+[00:56:54] pull 52/54 — waiting
+[01:01:54] pull 52/54 — waiting
+[01:06:54] pull 52/54 — waiting
+[01:11:54] pull 52/54 — waiting
+[01:16:54] pull 52/54 — waiting
+[01:21:54] pull 52/54 — waiting
+[01:26:54] pull 52/54 — waiting
+[01:31:54] pull 52/54 — waiting
+[01:36:54] pull 52/54 — waiting
+[01:41:54] pull 52/54 — waiting
+[01:46:54] pull 52/54 — waiting
+[01:51:54] pull 52/54 — waiting
+[01:56:54] pull 52/54 — waiting
+[02:01:54] pull 52/54 — waiting
+[02:06:54] pull COMPLETE 54/54
+[02:06:54] $ python3 -u pipeline/label2.py > data/label2_night.log 2>&1
+[02:07:03]   -> exit 0
+[02:07:03] $ python3 -u pipeline/label_llm2.py >> data/label_llm2_night.log 2>&1
+[03:16:35]   -> exit 0
+[03:16:35] grounding2.jsonl: 1903 rows across 15 judges (dropped 21 attribution-mismatched)
+[03:16:35]     Engelmayer   229
+[03:16:35]     Woods        197
+[03:16:35]     Ho           183
+[03:16:35]     Carter       172
+[03:16:35]     Torres       153
+[03:16:35]     Broderick    136
+[03:16:35]     Cogan        134
+[03:16:35]     Rochon       132
+[03:16:35]     Donnelly     121
+[03:16:35]     Garnett      109
+[03:16:35]     Morrison     105
+[03:16:35]     Stein        78
+[03:16:35]     Koeltl       77
+[03:16:35]     Vargas       51
+[03:16:35]     Daniels      26
+[03:16:35] personas to build: ['Woods', 'Ho', 'Carter', 'Torres', 'Broderick', 'Garnett', 'Vargas', 'Daniels']
+[03:16:35] $ GROUNDING_PATH=data/grounding2_only_woods.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:23:27]   -> exit 0
+[03:23:27]   persona2_woods.md exists: True
+[03:23:27] $ GROUNDING_PATH=data/grounding2_only_ho.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:32:36]   -> exit 0
+[03:32:36]   persona2_ho.md exists: True
+[03:32:36] $ GROUNDING_PATH=data/grounding2_only_carter.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:37:54]   -> exit 0
+[03:37:54]   persona2_carter.md exists: True
+[03:37:54] $ GROUNDING_PATH=data/grounding2_only_torres.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:42:40]   -> exit 0
+[03:42:40]   persona2_torres.md exists: True
+[03:42:40] $ GROUNDING_PATH=data/grounding2_only_broderick.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:47:37]   -> exit 0
+[03:47:37]   persona2_broderick.md exists: True
+[03:47:37] $ GROUNDING_PATH=data/grounding2_only_garnett.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:51:35]   -> exit 0
+[03:51:35]   persona2_garnett.md exists: True
+[03:51:35] $ GROUNDING_PATH=data/grounding2_only_vargas.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:54:52]   -> exit 0
+[03:54:52]   persona2_vargas.md exists: True
+[03:54:52] $ GROUNDING_PATH=data/grounding2_only_daniels.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[03:55:41]   -> exit 0
+[03:55:41]   persona2_daniels.md exists: True
+[03:55:41] SDNY pool: 1543 rows
+[03:55:41] $ GROUNDING_PATH=data/grounding2_pool_sdny.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[04:29:53]   -> exit 1
+[04:29:53]   data/persona2_sdny_pool.md exists: False
+[04:29:53] EDNY pool: 360 rows
+[04:29:53] $ GROUNDING_PATH=data/grounding2_pool_edny.jsonl PERSONA_OUT_SUFFIX=2 python3 -u pipeline/persona_loop.py >> data/persona2.log 2>&1
+[04:30:08]   -> exit 1
+[04:30:08]   data/persona2_edny_pool.md exists: False
+[04:30:08] exam2 hash at end:   956d774321070bf9759c405e9c68e0321781ef94aa79df94c124b56a6f3f2823
+[04:30:08] EXAM2 UNCHANGED ✓
+[04:30:08] personas on disk (19): ['persona2_broderick.md', 'persona2_carter.md', 'persona2_cogan.md', 'persona2_daniels.md', 'persona2_donnelly.md', 'persona2_engelmayer.md', 'persona2_fictional.md', 'persona2_furman.md', 'persona2_garnett.md', 'persona2_ho.md', 'persona2_koeltl.md', 'persona2_liman.md', 'persona2_morrison.md', 'persona2_rochon.md', 'persona2_stein.md', 'persona2_subramanian.md', 'persona2_torres.md', 'persona2_vargas.md', 'persona2_woods.md']
+[04:30:08] === night2 done — READY FOR: ensemble gate, leakage audit, FREEZE-2, sitting ===

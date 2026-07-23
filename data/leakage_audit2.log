@@ -1,0 +1,32 @@
+0/834  0.6/s
+50/834  0.9/s
+100/834  0.8/s
+150/834  0.9/s
+200/834  0.9/s
+250/834  0.9/s
+300/834  0.9/s
+350/834  1.0/s
+400/834  1.0/s
+450/834  1.0/s
+500/834  1.0/s
+550/834  0.9/s
+600/834  1.0/s
+650/834  1.0/s
+700/834  1.0/s
+750/834  1.0/s
+800/834  1.0/s
+{
+  "n": 834,
+  "blinded_accuracy": 76.26,
+  "majority_accuracy": 75.42,
+  "margin_points": 0.84,
+  "discordant_blinded_right": 165,
+  "discordant_majority_right": 158,
+  "threshold_points": 3.0,
+  "z": -1.003,
+  "p_one_sided": 0.842,
+  "audit_failed": false,
+  "verdict": "PASS \u2014 blinded arm does not beat majority+3",
+  "rule": "FAIL iff one-sided p<.05 that blinded > majority+3pts",
+  "generated": "2026-07-23T12:15:43"
+}

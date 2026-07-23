@@ -1,0 +1,18 @@
+{
+  "n_val": 479,
+  "single_arm_accuracy": {
+    "L2": 86.85,
+    "L3": 82.46,
+    "L4": 87.27
+  },
+  "best_single_arm": "L4",
+  "best_single_accuracy": 87.27,
+  "ensemble_accuracy": 87.47,
+  "ensemble_minus_best_single_points": 0.2,
+  "gate_passed": true,
+  "decision": "arm_g PRIMARY (ensemble >= best single arm on held-out pre-cutoff val)",
+  "method": "majority vote of L2,L3,L4 \u2014 parameter-free, frozen in arms2.py",
+  "val_definition": "per-judge persona-loop val slice (SEED=42, 25%), held out of L4 training; L3 retrieval pool excludes val items",
+  "disclosed_limitation": "L2 pooled persona and other judges' retrieval pools saw these rows; per-row influence on a pooled persona is negligible.",
+  "generated": "2026-07-23T12:02:14"
+}

@@ -1,0 +1,357 @@
+[Cogan] grounding=152 train=114 val=38
+[Cogan] iter 1: val acc 60.5% (15 mistakes)
+[Cogan] iter 2: val acc 71.1% (11 mistakes)
+[Cogan] iter 3: val acc 78.9% (8 mistakes)
+[Cogan] iter 4: val acc 73.7% (10 mistakes)
+[Cogan] iter 5: val acc 76.3% (9 mistakes)
+[Cogan] iter 6: val acc 81.6% (7 mistakes)
+Traceback (most recent call last):
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 144, in <module>
+    main()
+    ~~~~^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 140, in main
+    run_judge(j, grounding, log)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 107, in run_judge
+    acc, mistakes = evaluate(persona, judge, val)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 74, in evaluate
+    pred = predict_with_persona(persona, judge, it)
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 64, in predict_with_persona
+    return arms.call_model(
+           ~~~~~~~~~~~~~~~^
+        arms.SYSTEM_BASE + f"\nYou are predicting Judge {judge}, {_court_of(judge)}.\n"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        f"Decision profile of this judge, learned from their rulings:\n{persona}",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        arms.build_inputs(item))
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/arms.py", line 78, in call_model
+    data = _post_chat(body)
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/arms.py", line 65, in _post_chat
+    with urllib.request.urlopen(req, timeout=180) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+[Cogan] grounding=148 train=111 val=37
+[Cogan] iter 1: val acc 64.9% (13 mistakes)
+[Cogan] iter 2: val acc 67.6% (12 mistakes)
+[Cogan] iter 3: val acc 67.6% (12 mistakes)
+[Cogan] iter 4: val acc 70.3% (11 mistakes)
+[Cogan] iter 5: val acc 94.6% (2 mistakes)
+[Cogan] iter 6: val acc 97.3% (1 mistakes)
+[Cogan] iter 7: val acc 86.5% (5 mistakes)
+[Cogan] iter 8: val acc 64.9% (13 mistakes)
+[Cogan] iter 9: val acc 62.2% (14 mistakes)
+[Cogan] plateau — stopping
+[Cogan] BEST persona at val acc 97.3% -> data/persona2_cogan.md
+[Donnelly] grounding=121 train=91 val=30
+[Donnelly] iter 1: val acc 76.7% (7 mistakes)
+[Donnelly] iter 2: val acc 86.7% (4 mistakes)
+[Donnelly] iter 3: val acc 96.7% (1 mistakes)
+[Donnelly] iter 4: val acc 93.3% (2 mistakes)
+[Donnelly] iter 5: val acc 73.3% (8 mistakes)
+[Donnelly] iter 6: val acc 93.3% (2 mistakes)
+[Donnelly] plateau — stopping
+[Donnelly] BEST persona at val acc 96.7% -> data/persona2_donnelly.md
+[Engelmayer] grounding=226 train=170 val=56
+[Engelmayer] iter 1: val acc 85.7% (8 mistakes)
+[Engelmayer] iter 2: val acc 83.9% (9 mistakes)
+[Engelmayer] iter 3: val acc 87.5% (7 mistakes)
+[Engelmayer] iter 4: val acc 58.9% (23 mistakes)
+[Engelmayer] iter 5: val acc 89.3% (6 mistakes)
+[Engelmayer] iter 6: val acc 91.1% (5 mistakes)
+[Engelmayer] iter 7: val acc 87.5% (7 mistakes)
+[Engelmayer] iter 8: val acc 82.1% (10 mistakes)
+[Engelmayer] iter 9: val acc 89.3% (6 mistakes)
+[Engelmayer] plateau — stopping
+[Engelmayer] BEST persona at val acc 91.1% -> data/persona2_engelmayer.md
+[Koeltl] grounding=34 train=24 val=10
+[Koeltl] iter 1: val acc 60.0% (4 mistakes)
+[Koeltl] iter 2: val acc 80.0% (2 mistakes)
+[Koeltl] iter 3: val acc 90.0% (1 mistakes)
+[Koeltl] iter 4: val acc 90.0% (1 mistakes)
+[Koeltl] iter 5: val acc 90.0% (1 mistakes)
+[Koeltl] iter 6: val acc 90.0% (1 mistakes)
+[Koeltl] plateau — stopping
+[Koeltl] BEST persona at val acc 90.0% -> data/persona2_koeltl.md
+[Morrison] grounding=105 train=79 val=26
+[Morrison] iter 1: val acc 61.5% (10 mistakes)
+[Morrison] iter 2: val acc 92.3% (2 mistakes)
+[Morrison] iter 3: val acc 96.2% (1 mistakes)
+[Morrison] iter 4: val acc 100.0% (0 mistakes)
+[Morrison] BEST persona at val acc 100.0% -> data/persona2_morrison.md
+[Rochon] grounding=33 train=23 val=10
+[Rochon] iter 1: val acc 80.0% (2 mistakes)
+[Rochon] iter 2: val acc 100.0% (0 mistakes)
+[Rochon] BEST persona at val acc 100.0% -> data/persona2_rochon.md
+[Stein] grounding=78 train=58 val=20
+[Stein] iter 1: val acc 95.0% (1 mistakes)
+[Stein] iter 2: val acc 90.0% (2 mistakes)
+[Stein] iter 3: val acc 100.0% (0 mistakes)
+[Stein] BEST persona at val acc 100.0% -> data/persona2_stein.md
+[Woods] grounding=197 train=148 val=49
+[Woods] iter 1: val acc 83.7% (8 mistakes)
+[Woods] iter 2: val acc 77.6% (11 mistakes)
+[Woods] iter 3: val acc 83.7% (8 mistakes)
+[Woods] iter 4: val acc 93.9% (3 mistakes)
+[Woods] iter 5: val acc 85.7% (7 mistakes)
+[Woods] iter 6: val acc 91.8% (4 mistakes)
+[Woods] iter 7: val acc 93.9% (3 mistakes)
+[Woods] plateau — stopping
+[Woods] BEST persona at val acc 93.9% -> data/persona2_woods.md
+[Ho] grounding=183 train=137 val=46
+[Ho] iter 1: val acc 78.3% (10 mistakes)
+[Ho] iter 2: val acc 76.1% (11 mistakes)
+[Ho] iter 3: val acc 73.9% (12 mistakes)
+[Ho] iter 4: val acc 89.1% (5 mistakes)
+[Ho] iter 5: val acc 91.3% (4 mistakes)
+[Ho] iter 6: val acc 89.1% (5 mistakes)
+[Ho] iter 7: val acc 93.5% (3 mistakes)
+[Ho] iter 8: val acc 93.5% (3 mistakes)
+[Ho] iter 9: val acc 89.1% (5 mistakes)
+[Ho] iter 10: val acc 73.9% (12 mistakes)
+[Ho] plateau — stopping
+[Ho] BEST persona at val acc 93.5% -> data/persona2_ho.md
+[Carter] grounding=172 train=129 val=43
+[Carter] iter 1: val acc 74.4% (11 mistakes)
+[Carter] iter 2: val acc 83.7% (7 mistakes)
+[Carter] iter 3: val acc 93.0% (3 mistakes)
+[Carter] iter 4: val acc 79.1% (9 mistakes)
+[Carter] iter 5: val acc 81.4% (8 mistakes)
+[Carter] iter 6: val acc 86.0% (6 mistakes)
+[Carter] plateau — stopping
+[Carter] BEST persona at val acc 93.0% -> data/persona2_carter.md
+[Torres] grounding=153 train=115 val=38
+[Torres] iter 1: val acc 89.5% (4 mistakes)
+[Torres] iter 2: val acc 84.2% (6 mistakes)
+[Torres] iter 3: val acc 94.7% (2 mistakes)
+[Torres] iter 4: val acc 94.7% (2 mistakes)
+[Torres] iter 5: val acc 94.7% (2 mistakes)
+[Torres] iter 6: val acc 81.6% (7 mistakes)
+[Torres] plateau — stopping
+[Torres] BEST persona at val acc 94.7% -> data/persona2_torres.md
+[Broderick] grounding=136 train=102 val=34
+[Broderick] iter 1: val acc 79.4% (7 mistakes)
+[Broderick] iter 2: val acc 79.4% (7 mistakes)
+[Broderick] iter 3: val acc 79.4% (7 mistakes)
+[Broderick] iter 4: val acc 82.4% (6 mistakes)
+[Broderick] iter 5: val acc 79.4% (7 mistakes)
+[Broderick] iter 6: val acc 82.4% (6 mistakes)
+[Broderick] iter 7: val acc 79.4% (7 mistakes)
+[Broderick] plateau — stopping
+[Broderick] BEST persona at val acc 82.4% -> data/persona2_broderick.md
+[Garnett] grounding=109 train=82 val=27
+[Garnett] iter 1: val acc 85.2% (4 mistakes)
+[Garnett] iter 2: val acc 77.8% (6 mistakes)
+[Garnett] iter 3: val acc 88.9% (3 mistakes)
+[Garnett] iter 4: val acc 66.7% (9 mistakes)
+[Garnett] iter 5: val acc 66.7% (9 mistakes)
+[Garnett] iter 6: val acc 85.2% (4 mistakes)
+[Garnett] plateau — stopping
+[Garnett] BEST persona at val acc 88.9% -> data/persona2_garnett.md
+[Vargas] grounding=51 train=38 val=13
+[Vargas] iter 1: val acc 76.9% (3 mistakes)
+[Vargas] iter 2: val acc 84.6% (2 mistakes)
+[Vargas] iter 3: val acc 84.6% (2 mistakes)
+[Vargas] iter 4: val acc 84.6% (2 mistakes)
+[Vargas] iter 5: val acc 92.3% (1 mistakes)
+[Vargas] iter 6: val acc 76.9% (3 mistakes)
+[Vargas] iter 7: val acc 84.6% (2 mistakes)
+[Vargas] iter 8: val acc 84.6% (2 mistakes)
+[Vargas] plateau — stopping
+[Vargas] BEST persona at val acc 92.3% -> data/persona2_vargas.md
+[Daniels] grounding=26 train=16 val=10
+[Daniels] iter 1: val acc 80.0% (2 mistakes)
+[Daniels] iter 2: val acc 100.0% (0 mistakes)
+[Daniels] BEST persona at val acc 100.0% -> data/persona2_daniels.md
+[SDNY_POOL] grounding=1543 train=1157 val=386
+[SDNY_POOL] iter 1: val acc 86.0% (54 mistakes)
+[SDNY_POOL] iter 2: val acc 74.9% (97 mistakes)
+[SDNY_POOL] iter 3: val acc 86.8% (51 mistakes)
+[SDNY_POOL] iter 4: val acc 74.1% (100 mistakes)
+[SDNY_POOL] iter 5: val acc 77.5% (87 mistakes)
+Traceback (most recent call last):
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 144, in <module>
+    main()
+    ~~~~^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 140, in main
+    run_judge(j, grounding, log)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 107, in run_judge
+    acc, mistakes = evaluate(persona, judge, val)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 74, in evaluate
+    pred = predict_with_persona(persona, judge, it)
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 64, in predict_with_persona
+    return arms.call_model(
+           ~~~~~~~~~~~~~~~^
+        arms.SYSTEM_BASE + f"\nYou are predicting Judge {judge}, {_court_of(judge)}.\n"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        f"Decision profile of this judge, learned from their rulings:\n{persona}",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        arms.build_inputs(item))
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/arms.py", line 78, in call_model
+    data = _post_chat(body)
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/arms.py", line 65, in _post_chat
+    with urllib.request.urlopen(req, timeout=180) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+[EDNY_POOL] grounding=360 train=270 val=90
+Traceback (most recent call last):
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 144, in <module>
+    main()
+    ~~~~^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 140, in main
+    run_judge(j, grounding, log)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 107, in run_judge
+    acc, mistakes = evaluate(persona, judge, val)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 74, in evaluate
+    pred = predict_with_persona(persona, judge, it)
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/persona_loop.py", line 64, in predict_with_persona
+    return arms.call_model(
+           ~~~~~~~~~~~~~~~^
+        arms.SYSTEM_BASE + f"\nYou are predicting Judge {judge}, {_court_of(judge)}.\n"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        f"Decision profile of this judge, learned from their rulings:\n{persona}",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        arms.build_inputs(item))
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/arms.py", line 78, in call_model
+    data = _post_chat(body)
+  File "/Users/cankahraman/ggggg/gatekeeper/pipeline/arms.py", line 65, in _post_chat
+    with urllib.request.urlopen(req, timeout=180) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+[SDNY_POOL] grounding=1543 train=1483 val=60
+[SDNY_POOL] iter 1: val acc 83.3% (10 mistakes)
+[SDNY_POOL] iter 2: val acc 93.3% (4 mistakes)
+[SDNY_POOL] iter 3: val acc 95.0% (3 mistakes)
+[SDNY_POOL] iter 4: val acc 83.3% (10 mistakes)
+[SDNY_POOL] iter 5: val acc 88.3% (7 mistakes)
+[SDNY_POOL] iter 6: val acc 78.3% (13 mistakes)
+[SDNY_POOL] plateau — stopping
+[SDNY_POOL] BEST persona at val acc 95.0% -> data/persona2_sdny_pool.md
+[EDNY_POOL] grounding=360 train=300 val=60
+[EDNY_POOL] iter 1: val acc 76.7% (14 mistakes)
+[EDNY_POOL] iter 2: val acc 65.0% (21 mistakes)
+[EDNY_POOL] iter 3: val acc 71.7% (17 mistakes)
+[EDNY_POOL] iter 4: val acc 80.0% (12 mistakes)
+[EDNY_POOL] iter 5: val acc 71.7% (17 mistakes)
+[EDNY_POOL] iter 6: val acc 61.7% (23 mistakes)
+[EDNY_POOL] iter 7: val acc 86.7% (8 mistakes)
+[EDNY_POOL] iter 8: val acc 75.0% (15 mistakes)
+[EDNY_POOL] iter 9: val acc 66.7% (20 mistakes)
+[EDNY_POOL] iter 10: val acc 61.7% (23 mistakes)
+[EDNY_POOL] plateau — stopping
+[EDNY_POOL] BEST persona at val acc 86.7% -> data/persona2_edny_pool.md
+[Cogan] grounding=134 train=100 val=34
+[Cogan] iter 1: val acc 64.7% (12 mistakes)
+[Cogan] iter 2: val acc 91.2% (3 mistakes)
+[Cogan] iter 3: val acc 64.7% (12 mistakes)
+[Cogan] iter 4: val acc 58.8% (14 mistakes)
+[Cogan] iter 5: val acc 91.2% (3 mistakes)
+[Cogan] plateau — stopping
+[Cogan] BEST persona at val acc 91.2% -> data/persona2_cogan.md
+[Donnelly] grounding=121 train=91 val=30
+[Donnelly] iter 1: val acc 73.3% (8 mistakes)
+[Donnelly] iter 2: val acc 73.3% (8 mistakes)
+[Donnelly] iter 3: val acc 66.7% (10 mistakes)
+[Donnelly] iter 4: val acc 66.7% (10 mistakes)
+[Donnelly] plateau — stopping
+[Donnelly] BEST persona at val acc 73.3% -> data/persona2_donnelly.md
+[Engelmayer] grounding=229 train=172 val=57
+[Engelmayer] iter 1: val acc 87.7% (7 mistakes)
+[Engelmayer] iter 2: val acc 86.0% (8 mistakes)
+[Engelmayer] iter 3: val acc 89.5% (6 mistakes)
+[Engelmayer] iter 4: val acc 75.4% (14 mistakes)
+[Engelmayer] iter 5: val acc 87.7% (7 mistakes)
+[Engelmayer] iter 6: val acc 87.7% (7 mistakes)
+[Engelmayer] plateau — stopping
+[Engelmayer] BEST persona at val acc 89.5% -> data/persona2_engelmayer.md
+[Koeltl] grounding=77 train=58 val=19
+[Koeltl] iter 1: val acc 68.4% (6 mistakes)
+[Koeltl] iter 2: val acc 78.9% (4 mistakes)
+[Koeltl] iter 3: val acc 68.4% (6 mistakes)
+[Koeltl] iter 4: val acc 84.2% (3 mistakes)
+[Koeltl] iter 5: val acc 68.4% (6 mistakes)
+[Koeltl] iter 6: val acc 63.2% (7 mistakes)
+[Koeltl] iter 7: val acc 68.4% (6 mistakes)
+[Koeltl] plateau — stopping
+[Koeltl] BEST persona at val acc 84.2% -> data/persona2_koeltl.md
+[Morrison] grounding=105 train=79 val=26
+[Morrison] iter 1: val acc 73.1% (7 mistakes)
+[Morrison] iter 2: val acc 80.8% (5 mistakes)
+[Morrison] iter 3: val acc 92.3% (2 mistakes)
+[Morrison] iter 4: val acc 73.1% (7 mistakes)
+[Morrison] iter 5: val acc 88.5% (3 mistakes)
+[Morrison] iter 6: val acc 76.9% (6 mistakes)
+[Morrison] plateau — stopping
+[Morrison] BEST persona at val acc 92.3% -> data/persona2_morrison.md
+[Rochon] grounding=132 train=99 val=33
+[Rochon] iter 1: val acc 75.8% (8 mistakes)
+[Rochon] iter 2: val acc 78.8% (7 mistakes)
+[Rochon] iter 3: val acc 78.8% (7 mistakes)
+[Rochon] iter 4: val acc 84.8% (5 mistakes)
+[Rochon] iter 5: val acc 78.8% (7 mistakes)
+[Rochon] iter 6: val acc 78.8% (7 mistakes)
+[Rochon] iter 7: val acc 87.9% (4 mistakes)
+[Rochon] iter 8: val acc 84.8% (5 mistakes)
+[Rochon] iter 9: val acc 87.9% (4 mistakes)
+[Rochon] iter 10: val acc 84.8% (5 mistakes)
+[Rochon] plateau — stopping
+[Rochon] BEST persona at val acc 87.9% -> data/persona2_rochon.md
+[Stein] grounding=78 train=58 val=20
+[Stein] iter 1: val acc 85.0% (3 mistakes)
+[Stein] iter 2: val acc 75.0% (5 mistakes)
+[Stein] iter 3: val acc 85.0% (3 mistakes)
+[Stein] iter 4: val acc 85.0% (3 mistakes)
+[Stein] plateau — stopping
+[Stein] BEST persona at val acc 85.0% -> data/persona2_stein.md

@@ -1,0 +1,59 @@
+Judge Nina R. Morrison appears strongly pragmatic and text-driven. In this dataset, she is notably receptive to routine case-management relief and should not be modeled with a generic anti-motion baseline. The biggest calibration point is to follow the actual docket text closely, especially where the motion-type label overstates the merits significance of what was actually decided.
+
+Core tendencies:
+
+1. Text over label — aggressively
+- The motion classifier can mislabel entries. Judge Morrison’s docket often includes entries tagged as dispositive motions that are actually about scheduling, conferences, leave, filing logistics, or implementation of prior rulings.
+- If the docket text is a minute entry, conference note, scheduling directive, filing authorization, or other practical case-management action, treat it as such even if the label says “summary judgment,” “dismiss,” or another merits motion.
+- Do not import a deny-lean from the label when the text reflects administrative relief or courtroom management.
+
+2. Discovery / protective-order motions: strong GRANT lean
+- Many discovery entries are really confidentiality orders, AEO designations, witness/security protections, or joint discovery-management proposals.
+- Predict GRANT by default for protective-order style requests, especially when the text suggests the motion is joint, proposed, unopposed, or entered “so ordered.”
+- Only pull back where the text clearly shows overbreadth, contested prejudice, or failure to show good cause.
+
+3. Motions to dismiss: neutral-to-grant, not reflexive deny
+- Prior errors came from excessive skepticism toward Rule 12 relief.
+- When the docket states that the court “ORDERED” the motion and references “the reasons stated in the attached Memorandum & Order,” that is usually a straightforward GRANT signal.
+- Use at least a neutral baseline for true dismissal motions, and lean GRANT when the entry is phrased as a formal ruling order rather than as argument, referral, or briefing management.
+
+4. Summary-judgment entries: separate true merits rulings from case-management entries
+- Do not assume a summary-judgment label means the court resolved the merits.
+- If the text is a minute entry for a conference, pretrial event, scheduling discussion, briefing schedule, or similar proceeding, treat that as administrative relief with a meaningful GRANT tendency if the motion was effectively accommodated or addressed.
+- For true summary-judgment rulings, use a cautious neutral baseline rather than automatic denial.
+- A mislabeled administrative entry should not be predicted as DENY simply because summary judgment is often difficult to obtain.
+
+5. Procedural leave and filing permissions: modest-to-strong GRANT lean
+- Judge Morrison appears receptive to practical requests that facilitate full presentation of issues: leave to file, supplements, sur-replies, extensions tied to briefing, and similar requests.
+- When the actual relief is permission-based or logistical, predict GRANT more often than DENY unless there are obvious signs of delay, abuse, or repeated noncompliance.
+
+6. Case-management pragmatism
+- This judge seems willing to enter practical orders that move cases forward efficiently.
+- Elevated GRANT prior for narrow, administrable requests involving scheduling, conferences, confidentiality, filing mechanics, sealing-related management, and implementation details.
+- Minute entries reflecting that a conference was held, issues were addressed, schedules were set, or next steps were ordered often indicate the court granted some operative relief, even if not in merits terms.
+
+7. Formal order language matters, but conference/minute language matters too
+- Strong GRANT signals:
+  - “ORDER”
+  - “so ordered”
+  - “for the reasons stated in the attached Memorandum & Order”
+  - “joint proposed”
+  - “leave to file”
+- Also treat these as meaningful grant-friendly signals when context supports it:
+  - “Minute Entry”
+  - “proceedings held before Judge”
+  - pretrial / initial conference language
+  - text indicating the court authorized, scheduled, permitted, or directed action.
+
+Confidence guidance:
+- Increase confidence for GRANT when the text expressly reflects an entered order, so-ordering, granted leave, or practical implementation.
+- Lower confidence when the disposition appears mixed, partial, or the text is too sparse.
+- Most important correction: when label and text conflict, follow the text decisively. A dispositive-motion label attached to a conference or administrative minute entry should usually be treated as case-management relief, not a merits denial.
+
+Practical rules:
+- “Motion for Protective Order” → usually GRANT.
+- “Joint/proposed protective order” → strong GRANT.
+- “Motion to Dismiss … ORDER … attached Memorandum & Order” → usually GRANT.
+- “Leave to file / supplement / sur-reply” → lean GRANT.
+- “Summary judgment” label + conference/minute-entry text → do not default to DENY; often treat as administrative GRANT/relief.
+- When label and text conflict, follow the text.

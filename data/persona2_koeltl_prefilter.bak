@@ -1,0 +1,55 @@
+Judge persona (revised)
+
+Overall style
+- This judge is more willing than a neutral baseline to grant merits-significant motions, especially motions to dismiss, summary judgment, and some preliminary injunction/TRO requests.
+- Prior errors were driven by overpredicting denials on merits motions and, separately, by being too quick to treat procedural management in discovery as an implicit grant. Correct both.
+- Do not default to “deny” merely because a motion is consequential. But also do not convert judicial case-management steps into grants unless the docket clearly shows relief was awarded.
+
+Merits motions: generally grant-friendlier than average
+- Shift the baseline modestly toward grant for:
+  - Rule 12 motions to dismiss;
+  - summary judgment;
+  - preliminary injunction/TRO requests with full briefing.
+- This judge appears comfortable resolving major issues on the papers or after argument when the legal record is sufficiently developed.
+
+Motion to dismiss tendencies
+- Increase the grant rate relative to a neutral baseline.
+- Oral argument on a motion to dismiss is not a denial signal here; it can precede a grant.
+- If the docket/order suggests “granted in part and denied in part,” predict grant for binary purposes.
+- Stronger grant indicators:
+  - focused argument on legal sufficiency or threshold defects;
+  - active judicial management aimed at resolving the motion;
+  - abbreviated docket text referencing an order on the dismissal motion after briefing/argument.
+
+Summary judgment tendencies
+- Keep a strong grant lean.
+- “Clerk’s Judgment re: Order” after summary judgment briefing is a highly reliable signal that summary judgment was granted.
+- In government enforcement, labor, or wage cases, if the government/plaintiff moved and the docket ends in a monetary judgment, strongly favor grant.
+- Prior model error was undercalling grants in exactly this posture; correct aggressively.
+
+Preliminary injunction / TRO tendencies
+- Be less skeptical than average when the court has allowed extensive briefing, reply/surreply practice, or otherwise built a full record.
+- Permission to file a surreply or ensuring one side “has the final word” is a modest grant-supportive signal because it suggests serious merits engagement.
+- Do not assume extraordinary relief will be denied just because it is extraordinary; this judge is willing to grant where urgency and merits are well presented.
+
+Discovery and case-management motions
+- Be more cautious on motions to compel. This judge may respond to discovery disputes by directing meet-and-confer efforts, sequencing protective-order practice, or otherwise deferring coercive relief.
+- A docket entry stating the court “ordered the parties to meet and confer,” “file a motion for protective order,” or otherwise redirected the parties procedurally should lean denial or at least non-grant for the pending motion to compel, unless the text expressly says the motion was granted in whole or part.
+- Do not treat judicial intervention in a discovery dispute as equivalent to granting the underlying motion. Management is not relief.
+- For discovery motions generally, require clearer textual evidence of affirmative relief than you would for merits motions.
+
+How to read limited docket text
+- “Order … Motion to Dismiss” after oral argument: grant-leaning unless text clearly says denied.
+- “Clerk’s Judgment re: Order” after summary judgment: very strong grant signal.
+- Surreply/final-word orders in PI practice: modest grant signal.
+- Meet-and-confer / protective-order directives on a motion to compel: denial-leaning for that motion unless the docket expressly grants some requested relief.
+- If ruling text is partial or abbreviated and references multiple rulings, avoid reflexive denial defaults on merits motions; mixed rulings often still count as grants.
+
+Calibration
+- Main correction: underprediction of grants on MTD/SJ/PI, but overprediction of grants on discovery compel motions when the court merely managed the dispute.
+- Lean grant in close calls for MTD/SJ/PI where the court has engaged deeply with the merits.
+- Lean deny or uncertain on compel/discovery motions absent explicit award of compelled production, sanctions, or similar concrete relief.
+
+Practical prediction rule
+- If the docket shows deep merits engagement and movement toward final resolution, this judge is somewhat more grant-prone than average.
+- If the docket shows procedural steering—especially meet-and-confer or protective-order sequencing in discovery—do not mistake that for a grant.

@@ -1,0 +1,15 @@
+{
+  "n": 834,
+  "blinded_accuracy": 75.3,
+  "majority_accuracy": 75.42,
+  "margin_points": -0.12,
+  "discordant_blinded_right": 159,
+  "discordant_majority_right": 160,
+  "threshold_points": 3.0,
+  "z": -1.457,
+  "p_one_sided": 0.9274,
+  "audit_failed": false,
+  "verdict": "PASS \u2014 blinded arm does not beat majority+3",
+  "rule": "FAIL iff one-sided p<.05 that blinded > majority+3pts",
+  "generated": "2026-07-23T12:16:44"
+}
