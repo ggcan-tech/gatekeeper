@@ -98,6 +98,14 @@ def run_judge(judge: str, grounding: list, log) -> None:
     rng = random.Random(SEED)
     rng.shuffle(items)
     n_val = max(10, round(len(items) * VALIDATION_SLICE))
+    # MAX_VAL cap (env, default off): for the pooled-court personas (L2), 25% of a
+    # ~1,500-row pool is a 385-item validation set unlike any per-judge build
+    # (per-judge val ≈ 25-58). Capping to ~60 keeps the pool's validation-set size
+    # comparable to the per-judge personas and makes the loop affordable. Judge
+    # builds run with MAX_VAL unset, so they are unchanged. Disclosed as C4.
+    max_val = int(os.environ.get("MAX_VAL", "0"))
+    if max_val and n_val > max_val:
+        n_val = max_val
     val, train = items[:n_val], items[n_val:]
     print(f"[{judge}] grounding={len(items)} train={len(train)} val={len(val)}")
 
