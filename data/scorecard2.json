@@ -1,0 +1,6124 @@
+{
+  "exam": "2A",
+  "kind": "estimation report \u2014 no win/lose verdict (PREREGISTRATION-2.md Track A)",
+  "generated": "2026-07-24",
+  "input": "data/predictions2.jsonl",
+  "grounding": "data/grounding2.jsonl",
+  "n_rows": 834,
+  "models": {
+    "gpt": {
+      "n_rows": 834,
+      "arms": [
+        "majority",
+        "metadata",
+        "name_only",
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L4X",
+        "L4F",
+        "D0",
+        "L4D",
+        "ensemble"
+      ],
+      "window": "all rows"
+    },
+    "fable": {
+      "n_rows": 425,
+      "arms": [
+        "majority",
+        "metadata",
+        "name_only",
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L4X",
+        "L4F",
+        "D0",
+        "L4D",
+        "ensemble"
+      ],
+      "window": "fable_window rows only, own controls"
+    }
+  },
+  "notes": {
+    "scoring": "X (abstain) scored wrong, in denominator; SKIP out of that arm's denominator; MISSING counted, out of accuracy",
+    "ci": "Wilson 95% for proportions; paired deltas: normal approx on discordant pairs (estimation, not a test)",
+    "underpowered": "cells with n<100 flagged per docs/trust-numbers.md; CIs still shown",
+    "two_numbers_rule": "every replica-arm absolute accuracy carries edge_over_name_only alongside",
+    "boot": "A1: every POOLED paired delta carries ci95_boot_points (wild cluster bootstrap by judge, Rademacher weights, 999 resamples, seed 20260722); boot_headline=true where boot half-width > 1.5x naive \u2014 there the boot CI is the headline number"
+  },
+  "answer_counts": {
+    "gpt": {
+      "majority": {
+        "Y": 834,
+        "N": 0,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "metadata": {
+        "Y": 498,
+        "N": 336,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "name_only": {
+        "Y": 523,
+        "N": 311,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L0": {
+        "Y": 506,
+        "N": 328,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L1": {
+        "Y": 535,
+        "N": 299,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L2": {
+        "Y": 653,
+        "N": 181,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L3": {
+        "Y": 629,
+        "N": 205,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L4": {
+        "Y": 608,
+        "N": 226,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L4X": {
+        "Y": 547,
+        "N": 218,
+        "X": 0,
+        "SKIP": 69,
+        "MISSING": 0
+      },
+      "L4F": {
+        "Y": 488,
+        "N": 346,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "D0": {
+        "Y": 545,
+        "N": 289,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L4D": {
+        "Y": 599,
+        "N": 235,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "ensemble": {
+        "Y": 635,
+        "N": 199,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      }
+    },
+    "fable": {
+      "majority": {
+        "Y": 425,
+        "N": 0,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "metadata": {
+        "Y": 294,
+        "N": 131,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "name_only": {
+        "Y": 301,
+        "N": 124,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L0": {
+        "Y": 286,
+        "N": 139,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L1": {
+        "Y": 300,
+        "N": 125,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L2": {
+        "Y": 312,
+        "N": 113,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L3": {
+        "Y": 300,
+        "N": 125,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L4": {
+        "Y": 300,
+        "N": 124,
+        "X": 1,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L4X": {
+        "Y": 284,
+        "N": 108,
+        "X": 0,
+        "SKIP": 33,
+        "MISSING": 0
+      },
+      "L4F": {
+        "Y": 298,
+        "N": 127,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "D0": {
+        "Y": 302,
+        "N": 123,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "L4D": {
+        "Y": 306,
+        "N": 119,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      },
+      "ensemble": {
+        "Y": 309,
+        "N": 116,
+        "X": 0,
+        "SKIP": 0,
+        "MISSING": 0
+      }
+    }
+  },
+  "hierarchy_curve": {
+    "gpt": {
+      "pooled": {
+        "majority": {
+          "n": 834,
+          "correct": 629,
+          "acc_points": 75.42,
+          "ci95_points": [
+            72.39,
+            78.22
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false
+        },
+        "metadata": {
+          "n": 834,
+          "correct": 621,
+          "acc_points": 74.46,
+          "ci95_points": [
+            71.39,
+            77.3
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false
+        },
+        "name_only": {
+          "n": 834,
+          "correct": 632,
+          "acc_points": 75.78,
+          "ci95_points": [
+            72.76,
+            78.56
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false
+        },
+        "L0": {
+          "n": 834,
+          "correct": 629,
+          "acc_points": 75.42,
+          "ci95_points": [
+            72.39,
+            78.22
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": -0.36,
+            "ci95_points": [
+              -2.63,
+              1.91
+            ],
+            "discordant_b": 45,
+            "discordant_c": 48,
+            "ci95_boot_points": [
+              -3.27,
+              2.57
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L1": {
+          "n": 834,
+          "correct": 640,
+          "acc_points": 76.74,
+          "ci95_points": [
+            73.75,
+            79.48
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": 0.96,
+            "ci95_points": [
+              -1.12,
+              3.03
+            ],
+            "discordant_b": 43,
+            "discordant_c": 35,
+            "ci95_boot_points": [
+              -1.83,
+              3.47
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L2": {
+          "n": 834,
+          "correct": 730,
+          "acc_points": 87.53,
+          "ci95_points": [
+            85.11,
+            89.6
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": 11.75,
+            "ci95_points": [
+              8.93,
+              14.58
+            ],
+            "discordant_b": 127,
+            "discordant_c": 29,
+            "ci95_boot_points": [
+              9.74,
+              13.74
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L3": {
+          "n": 834,
+          "correct": 704,
+          "acc_points": 84.41,
+          "ci95_points": [
+            81.79,
+            86.72
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": 8.63,
+            "ci95_points": [
+              5.96,
+              11.31
+            ],
+            "discordant_b": 104,
+            "discordant_c": 32,
+            "ci95_boot_points": [
+              7.37,
+              9.91
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L4": {
+          "n": 834,
+          "correct": 685,
+          "acc_points": 82.13,
+          "ci95_points": [
+            79.39,
+            84.58
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": 6.35,
+            "ci95_points": [
+              3.74,
+              8.97
+            ],
+            "discordant_b": 90,
+            "discordant_c": 37,
+            "ci95_boot_points": [
+              3.48,
+              9.21
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L4X": {
+          "n": 765,
+          "correct": 623,
+          "acc_points": 81.44,
+          "ci95_points": [
+            78.53,
+            84.03
+          ],
+          "x_count": 0,
+          "skip_count": 69,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 765,
+            "delta_points": 4.84,
+            "ci95_points": [
+              1.99,
+              7.68
+            ],
+            "discordant_b": 81,
+            "discordant_c": 44,
+            "ci95_boot_points": [
+              3.25,
+              6.53
+            ],
+            "boot_n_judges": 14,
+            "boot_headline": false
+          }
+        },
+        "L4F": {
+          "n": 834,
+          "correct": 631,
+          "acc_points": 75.66,
+          "ci95_points": [
+            72.63,
+            78.45
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": -0.12,
+            "ci95_points": [
+              -2.55,
+              2.31
+            ],
+            "discordant_b": 53,
+            "discordant_c": 54,
+            "ci95_boot_points": [
+              -3.1,
+              2.71
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "D0": {
+          "n": 834,
+          "correct": 654,
+          "acc_points": 78.42,
+          "ci95_points": [
+            75.5,
+            81.08
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": 2.64,
+            "ci95_points": [
+              0.2,
+              5.07
+            ],
+            "discordant_b": 65,
+            "discordant_c": 43,
+            "ci95_boot_points": [
+              0.64,
+              4.63
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L4D": {
+          "n": 834,
+          "correct": 682,
+          "acc_points": 81.77,
+          "ci95_points": [
+            79.01,
+            84.25
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": 6.0,
+            "ci95_points": [
+              3.33,
+              8.66
+            ],
+            "discordant_b": 91,
+            "discordant_c": 41,
+            "ci95_boot_points": [
+              1.72,
+              10.17
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": true
+          }
+        },
+        "ensemble": {
+          "n": 834,
+          "correct": 718,
+          "acc_points": 86.09,
+          "ci95_points": [
+            83.58,
+            88.27
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 834,
+            "delta_points": 10.31,
+            "ci95_points": [
+              7.73,
+              12.9
+            ],
+            "discordant_b": 108,
+            "discordant_c": 22,
+            "ci95_boot_points": [
+              8.03,
+              12.64
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        }
+      },
+      "per_motion_type": {
+        "motion_to_dismiss": {
+          "majority": {
+            "n": 422,
+            "correct": 352,
+            "acc_points": 83.41,
+            "ci95_points": [
+              79.57,
+              86.66
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "metadata": {
+            "n": 422,
+            "correct": 319,
+            "acc_points": 75.59,
+            "ci95_points": [
+              71.28,
+              79.45
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "name_only": {
+            "n": 422,
+            "correct": 328,
+            "acc_points": 77.73,
+            "ci95_points": [
+              73.52,
+              81.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "L0": {
+            "n": 422,
+            "correct": 325,
+            "acc_points": 77.01,
+            "ci95_points": [
+              72.77,
+              80.77
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": -0.71,
+              "ci95_points": [
+                -4.34,
+                2.92
+              ],
+              "discordant_b": 29,
+              "discordant_c": 32
+            }
+          },
+          "L1": {
+            "n": 422,
+            "correct": 328,
+            "acc_points": 77.73,
+            "ci95_points": [
+              73.52,
+              81.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -3.22,
+                3.22
+              ],
+              "discordant_b": 24,
+              "discordant_c": 24
+            }
+          },
+          "L2": {
+            "n": 422,
+            "correct": 375,
+            "acc_points": 88.86,
+            "ci95_points": [
+              85.5,
+              91.52
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": 11.14,
+              "ci95_points": [
+                7.2,
+                15.07
+              ],
+              "discordant_b": 62,
+              "discordant_c": 15
+            }
+          },
+          "L3": {
+            "n": 422,
+            "correct": 361,
+            "acc_points": 85.55,
+            "ci95_points": [
+              81.87,
+              88.58
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": 7.82,
+              "ci95_points": [
+                4.21,
+                11.43
+              ],
+              "discordant_b": 48,
+              "discordant_c": 15
+            }
+          },
+          "L4": {
+            "n": 422,
+            "correct": 356,
+            "acc_points": 84.36,
+            "ci95_points": [
+              80.59,
+              87.51
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": 6.64,
+              "ci95_points": [
+                2.97,
+                10.3
+              ],
+              "discordant_b": 46,
+              "discordant_c": 18
+            }
+          },
+          "L4X": {
+            "n": 398,
+            "correct": 322,
+            "acc_points": 80.9,
+            "ci95_points": [
+              76.75,
+              84.46
+            ],
+            "x_count": 0,
+            "skip_count": 24,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 398,
+              "delta_points": 2.51,
+              "ci95_points": [
+                -1.42,
+                6.44
+              ],
+              "discordant_b": 37,
+              "discordant_c": 27
+            }
+          },
+          "L4F": {
+            "n": 422,
+            "correct": 321,
+            "acc_points": 76.07,
+            "ci95_points": [
+              71.77,
+              79.89
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": -1.66,
+              "ci95_points": [
+                -5.28,
+                1.97
+              ],
+              "discordant_b": 27,
+              "discordant_c": 34
+            }
+          },
+          "D0": {
+            "n": 422,
+            "correct": 355,
+            "acc_points": 84.12,
+            "ci95_points": [
+              80.33,
+              87.3
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": 6.4,
+              "ci95_points": [
+                2.82,
+                9.97
+              ],
+              "discordant_b": 44,
+              "discordant_c": 17
+            }
+          },
+          "L4D": {
+            "n": 422,
+            "correct": 356,
+            "acc_points": 84.36,
+            "ci95_points": [
+              80.59,
+              87.51
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": 6.64,
+              "ci95_points": [
+                2.75,
+                10.52
+              ],
+              "discordant_b": 50,
+              "discordant_c": 22
+            }
+          },
+          "ensemble": {
+            "n": 422,
+            "correct": 365,
+            "acc_points": 86.49,
+            "ci95_points": [
+              82.9,
+              89.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 422,
+              "delta_points": 8.77,
+              "ci95_points": [
+                5.18,
+                12.36
+              ],
+              "discordant_b": 50,
+              "discordant_c": 13
+            }
+          }
+        },
+        "summary_judgment": {
+          "majority": {
+            "n": 166,
+            "correct": 133,
+            "acc_points": 80.12,
+            "ci95_points": [
+              73.4,
+              85.48
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "metadata": {
+            "n": 166,
+            "correct": 119,
+            "acc_points": 71.69,
+            "ci95_points": [
+              64.4,
+              77.99
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "name_only": {
+            "n": 166,
+            "correct": 125,
+            "acc_points": 75.3,
+            "ci95_points": [
+              68.22,
+              81.24
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "L0": {
+            "n": 166,
+            "correct": 124,
+            "acc_points": 74.7,
+            "ci95_points": [
+              67.58,
+              80.7
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": -0.6,
+              "ci95_points": [
+                -5.17,
+                3.97
+              ],
+              "discordant_b": 7,
+              "discordant_c": 8
+            }
+          },
+          "L1": {
+            "n": 166,
+            "correct": 127,
+            "acc_points": 76.51,
+            "ci95_points": [
+              69.5,
+              82.31
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": 1.2,
+              "ci95_points": [
+                -3.51,
+                5.92
+              ],
+              "discordant_b": 9,
+              "discordant_c": 7
+            }
+          },
+          "L2": {
+            "n": 166,
+            "correct": 148,
+            "acc_points": 89.16,
+            "ci95_points": [
+              83.51,
+              93.03
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": 13.86,
+              "ci95_points": [
+                7.41,
+                20.3
+              ],
+              "discordant_b": 28,
+              "discordant_c": 5
+            }
+          },
+          "L3": {
+            "n": 166,
+            "correct": 140,
+            "acc_points": 84.34,
+            "ci95_points": [
+              78.04,
+              89.08
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": 9.04,
+              "ci95_points": [
+                2.83,
+                15.24
+              ],
+              "discordant_b": 22,
+              "discordant_c": 7
+            }
+          },
+          "L4": {
+            "n": 166,
+            "correct": 136,
+            "acc_points": 81.93,
+            "ci95_points": [
+              75.37,
+              87.04
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": 6.63,
+              "ci95_points": [
+                0.35,
+                12.9
+              ],
+              "discordant_b": 20,
+              "discordant_c": 9
+            }
+          },
+          "L4X": {
+            "n": 151,
+            "correct": 126,
+            "acc_points": 83.44,
+            "ci95_points": [
+              76.7,
+              88.53
+            ],
+            "x_count": 0,
+            "skip_count": 15,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 151,
+              "delta_points": 6.62,
+              "ci95_points": [
+                0.09,
+                13.16
+              ],
+              "discordant_b": 18,
+              "discordant_c": 8
+            }
+          },
+          "L4F": {
+            "n": 166,
+            "correct": 123,
+            "acc_points": 74.1,
+            "ci95_points": [
+              66.94,
+              80.16
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": -1.2,
+              "ci95_points": [
+                -7.22,
+                4.81
+              ],
+              "discordant_b": 12,
+              "discordant_c": 14
+            }
+          },
+          "D0": {
+            "n": 166,
+            "correct": 128,
+            "acc_points": 77.11,
+            "ci95_points": [
+              70.15,
+              82.84
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": 1.81,
+              "ci95_points": [
+                -4.09,
+                7.7
+              ],
+              "discordant_b": 14,
+              "discordant_c": 11
+            }
+          },
+          "L4D": {
+            "n": 166,
+            "correct": 137,
+            "acc_points": 82.53,
+            "ci95_points": [
+              76.04,
+              87.55
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": 7.23,
+              "ci95_points": [
+                0.86,
+                13.6
+              ],
+              "discordant_b": 21,
+              "discordant_c": 9
+            }
+          },
+          "ensemble": {
+            "n": 166,
+            "correct": 146,
+            "acc_points": 87.95,
+            "ci95_points": [
+              82.12,
+              92.06
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 166,
+              "delta_points": 12.65,
+              "ci95_points": [
+                6.36,
+                18.94
+              ],
+              "discordant_b": 26,
+              "discordant_c": 5
+            }
+          }
+        },
+        "preliminary_injunction_tro": {
+          "majority": {
+            "n": 117,
+            "correct": 64,
+            "acc_points": 54.7,
+            "ci95_points": [
+              45.67,
+              63.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "metadata": {
+            "n": 117,
+            "correct": 91,
+            "acc_points": 77.78,
+            "ci95_points": [
+              69.43,
+              84.36
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "name_only": {
+            "n": 117,
+            "correct": 90,
+            "acc_points": 76.92,
+            "ci95_points": [
+              68.51,
+              83.63
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "L0": {
+            "n": 117,
+            "correct": 90,
+            "acc_points": 76.92,
+            "ci95_points": [
+              68.51,
+              83.63
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -4.1,
+                4.1
+              ],
+              "discordant_b": 3,
+              "discordant_c": 3
+            }
+          },
+          "L1": {
+            "n": 117,
+            "correct": 91,
+            "acc_points": 77.78,
+            "ci95_points": [
+              69.43,
+              84.36
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 0.85,
+              "ci95_points": [
+                -2.89,
+                4.6
+              ],
+              "discordant_b": 3,
+              "discordant_c": 2
+            }
+          },
+          "L2": {
+            "n": 117,
+            "correct": 98,
+            "acc_points": 83.76,
+            "ci95_points": [
+              76.02,
+              89.35
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 6.84,
+              "ci95_points": [
+                -0.92,
+                14.6
+              ],
+              "discordant_b": 15,
+              "discordant_c": 7
+            }
+          },
+          "L3": {
+            "n": 117,
+            "correct": 99,
+            "acc_points": 84.62,
+            "ci95_points": [
+              76.99,
+              90.04
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 7.69,
+              "ci95_points": [
+                0.52,
+                14.86
+              ],
+              "discordant_b": 14,
+              "discordant_c": 5
+            }
+          },
+          "L4": {
+            "n": 117,
+            "correct": 94,
+            "acc_points": 80.34,
+            "ci95_points": [
+              72.23,
+              86.53
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 3.42,
+              "ci95_points": [
+                -2.82,
+                9.66
+              ],
+              "discordant_b": 9,
+              "discordant_c": 5
+            }
+          },
+          "L4X": {
+            "n": 104,
+            "correct": 85,
+            "acc_points": 81.73,
+            "ci95_points": [
+              73.22,
+              87.98
+            ],
+            "x_count": 0,
+            "skip_count": 13,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 104,
+              "delta_points": 5.77,
+              "ci95_points": [
+                -1.19,
+                12.73
+              ],
+              "discordant_b": 10,
+              "discordant_c": 4
+            }
+          },
+          "L4F": {
+            "n": 117,
+            "correct": 91,
+            "acc_points": 77.78,
+            "ci95_points": [
+              69.43,
+              84.36
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 0.85,
+              "ci95_points": [
+                -3.57,
+                5.28
+              ],
+              "discordant_b": 4,
+              "discordant_c": 3
+            }
+          },
+          "D0": {
+            "n": 117,
+            "correct": 85,
+            "acc_points": 72.65,
+            "ci95_points": [
+              63.95,
+              79.91
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": -4.27,
+              "ci95_points": [
+                -8.64,
+                0.09
+              ],
+              "discordant_b": 1,
+              "discordant_c": 6
+            }
+          },
+          "L4D": {
+            "n": 117,
+            "correct": 92,
+            "acc_points": 78.63,
+            "ci95_points": [
+              70.36,
+              85.09
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 1.71,
+              "ci95_points": [
+                -3.02,
+                6.44
+              ],
+              "discordant_b": 5,
+              "discordant_c": 3
+            }
+          },
+          "ensemble": {
+            "n": 117,
+            "correct": 102,
+            "acc_points": 87.18,
+            "ci95_points": [
+              79.92,
+              92.07
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 117,
+              "delta_points": 10.26,
+              "ci95_points": [
+                4.76,
+                15.75
+              ],
+              "discordant_b": 12,
+              "discordant_c": 0
+            }
+          }
+        },
+        "motion_to_compel_discovery": {
+          "majority": {
+            "n": 114,
+            "correct": 70,
+            "acc_points": 61.4,
+            "ci95_points": [
+              52.23,
+              69.83
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "metadata": {
+            "n": 114,
+            "correct": 83,
+            "acc_points": 72.81,
+            "ci95_points": [
+              64.0,
+              80.13
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "name_only": {
+            "n": 114,
+            "correct": 79,
+            "acc_points": 69.3,
+            "ci95_points": [
+              60.32,
+              77.02
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "L0": {
+            "n": 114,
+            "correct": 81,
+            "acc_points": 71.05,
+            "ci95_points": [
+              62.15,
+              78.58
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 1.75,
+              "ci95_points": [
+                -3.67,
+                7.18
+              ],
+              "discordant_b": 6,
+              "discordant_c": 4
+            }
+          },
+          "L1": {
+            "n": 114,
+            "correct": 84,
+            "acc_points": 73.68,
+            "ci95_points": [
+              64.92,
+              80.9
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 4.39,
+              "ci95_points": [
+                -0.09,
+                8.86
+              ],
+              "discordant_b": 6,
+              "discordant_c": 1
+            }
+          },
+          "L2": {
+            "n": 114,
+            "correct": 98,
+            "acc_points": 85.96,
+            "ci95_points": [
+              78.41,
+              91.17
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 16.67,
+              "ci95_points": [
+                9.01,
+                24.32
+              ],
+              "discordant_b": 21,
+              "discordant_c": 2
+            }
+          },
+          "L3": {
+            "n": 114,
+            "correct": 94,
+            "acc_points": 82.46,
+            "ci95_points": [
+              74.45,
+              88.35
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 13.16,
+              "ci95_points": [
+                5.27,
+                21.04
+              ],
+              "discordant_b": 19,
+              "discordant_c": 4
+            }
+          },
+          "L4": {
+            "n": 114,
+            "correct": 89,
+            "acc_points": 78.07,
+            "ci95_points": [
+              69.63,
+              84.68
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 8.77,
+              "ci95_points": [
+                1.66,
+                15.89
+              ],
+              "discordant_b": 14,
+              "discordant_c": 4
+            }
+          },
+          "L4X": {
+            "n": 98,
+            "correct": 80,
+            "acc_points": 81.63,
+            "ci95_points": [
+              72.83,
+              88.05
+            ],
+            "x_count": 0,
+            "skip_count": 16,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 98,
+              "delta_points": 11.22,
+              "ci95_points": [
+                2.79,
+                19.65
+              ],
+              "discordant_b": 15,
+              "discordant_c": 4
+            }
+          },
+          "L4F": {
+            "n": 114,
+            "correct": 87,
+            "acc_points": 76.32,
+            "ci95_points": [
+              67.73,
+              83.18
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 7.02,
+              "ci95_points": [
+                1.2,
+                12.83
+              ],
+              "discordant_b": 10,
+              "discordant_c": 2
+            }
+          },
+          "D0": {
+            "n": 114,
+            "correct": 75,
+            "acc_points": 65.79,
+            "ci95_points": [
+              56.69,
+              73.86
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": -3.51,
+              "ci95_points": [
+                -9.43,
+                2.41
+              ],
+              "discordant_b": 4,
+              "discordant_c": 8
+            }
+          },
+          "L4D": {
+            "n": 114,
+            "correct": 86,
+            "acc_points": 75.44,
+            "ci95_points": [
+              66.79,
+              82.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 6.14,
+              "ci95_points": [
+                -1.27,
+                13.55
+              ],
+              "discordant_b": 13,
+              "discordant_c": 6
+            }
+          },
+          "ensemble": {
+            "n": 114,
+            "correct": 95,
+            "acc_points": 83.33,
+            "ci95_points": [
+              75.43,
+              89.06
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 114,
+              "delta_points": 14.04,
+              "ci95_points": [
+                6.39,
+                21.68
+              ],
+              "discordant_b": 19,
+              "discordant_c": 3
+            }
+          }
+        },
+        "class_certification": {
+          "majority": {
+            "n": 8,
+            "correct": 6,
+            "acc_points": 75.0,
+            "ci95_points": [
+              40.93,
+              92.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "metadata": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "name_only": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "L0": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L1": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L2": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L3": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4X": {
+            "n": 7,
+            "correct": 5,
+            "acc_points": 71.43,
+            "ci95_points": [
+              35.89,
+              91.78
+            ],
+            "x_count": 0,
+            "skip_count": 1,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4F": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "D0": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4D": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "ensemble": {
+            "n": 8,
+            "correct": 5,
+            "acc_points": 62.5,
+            "ci95_points": [
+              30.57,
+              86.32
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          }
+        },
+        "daubert_expert_exclusion": {
+          "majority": {
+            "n": 7,
+            "correct": 4,
+            "acc_points": 57.14,
+            "ci95_points": [
+              25.05,
+              84.18
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "metadata": {
+            "n": 7,
+            "correct": 4,
+            "acc_points": 57.14,
+            "ci95_points": [
+              25.05,
+              84.18
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "name_only": {
+            "n": 7,
+            "correct": 5,
+            "acc_points": 71.43,
+            "ci95_points": [
+              35.89,
+              91.78
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "L0": {
+            "n": 7,
+            "correct": 4,
+            "acc_points": 57.14,
+            "ci95_points": [
+              25.05,
+              84.18
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": -14.29,
+              "ci95_points": [
+                -40.21,
+                11.64
+              ],
+              "discordant_b": 0,
+              "discordant_c": 1
+            }
+          },
+          "L1": {
+            "n": 7,
+            "correct": 5,
+            "acc_points": 71.43,
+            "ci95_points": [
+              35.89,
+              91.78
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -39.6,
+                39.6
+              ],
+              "discordant_b": 1,
+              "discordant_c": 1
+            }
+          },
+          "L2": {
+            "n": 7,
+            "correct": 6,
+            "acc_points": 85.71,
+            "ci95_points": [
+              48.69,
+              97.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 14.29,
+              "ci95_points": [
+                -11.64,
+                40.21
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          },
+          "L3": {
+            "n": 7,
+            "correct": 5,
+            "acc_points": 71.43,
+            "ci95_points": [
+              35.89,
+              91.78
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -39.6,
+                39.6
+              ],
+              "discordant_b": 1,
+              "discordant_c": 1
+            }
+          },
+          "L4": {
+            "n": 7,
+            "correct": 5,
+            "acc_points": 71.43,
+            "ci95_points": [
+              35.89,
+              91.78
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -39.6,
+                39.6
+              ],
+              "discordant_b": 1,
+              "discordant_c": 1
+            }
+          },
+          "L4X": {
+            "n": 7,
+            "correct": 5,
+            "acc_points": 71.43,
+            "ci95_points": [
+              35.89,
+              91.78
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -39.6,
+                39.6
+              ],
+              "discordant_b": 1,
+              "discordant_c": 1
+            }
+          },
+          "L4F": {
+            "n": 7,
+            "correct": 4,
+            "acc_points": 57.14,
+            "ci95_points": [
+              25.05,
+              84.18
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": -14.29,
+              "ci95_points": [
+                -40.21,
+                11.64
+              ],
+              "discordant_b": 0,
+              "discordant_c": 1
+            }
+          },
+          "D0": {
+            "n": 7,
+            "correct": 6,
+            "acc_points": 85.71,
+            "ci95_points": [
+              48.69,
+              97.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 14.29,
+              "ci95_points": [
+                -33.04,
+                61.61
+              ],
+              "discordant_b": 2,
+              "discordant_c": 1
+            }
+          },
+          "L4D": {
+            "n": 7,
+            "correct": 6,
+            "acc_points": 85.71,
+            "ci95_points": [
+              48.69,
+              97.43
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 14.29,
+              "ci95_points": [
+                -33.04,
+                61.61
+              ],
+              "discordant_b": 2,
+              "discordant_c": 1
+            }
+          },
+          "ensemble": {
+            "n": 7,
+            "correct": 5,
+            "acc_points": 71.43,
+            "ci95_points": [
+              35.89,
+              91.78
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -39.6,
+                39.6
+              ],
+              "discordant_b": 1,
+              "discordant_c": 1
+            }
+          }
+        }
+      }
+    },
+    "fable": {
+      "pooled": {
+        "majority": {
+          "n": 425,
+          "correct": 325,
+          "acc_points": 76.47,
+          "ci95_points": [
+            72.21,
+            80.26
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false
+        },
+        "metadata": {
+          "n": 425,
+          "correct": 364,
+          "acc_points": 85.65,
+          "ci95_points": [
+            81.99,
+            88.66
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false
+        },
+        "name_only": {
+          "n": 425,
+          "correct": 369,
+          "acc_points": 86.82,
+          "ci95_points": [
+            83.28,
+            89.71
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false
+        },
+        "L0": {
+          "n": 425,
+          "correct": 350,
+          "acc_points": 82.35,
+          "ci95_points": [
+            78.44,
+            85.68
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": -4.47,
+            "ci95_points": [
+              -6.74,
+              -2.2
+            ],
+            "discordant_b": 3,
+            "discordant_c": 22,
+            "ci95_boot_points": [
+              -6.96,
+              -1.95
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L1": {
+          "n": 425,
+          "correct": 364,
+          "acc_points": 85.65,
+          "ci95_points": [
+            81.99,
+            88.66
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": -1.18,
+            "ci95_points": [
+              -2.96,
+              0.61
+            ],
+            "discordant_b": 5,
+            "discordant_c": 10,
+            "ci95_boot_points": [
+              -2.41,
+              0.09
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L2": {
+          "n": 425,
+          "correct": 374,
+          "acc_points": 88.0,
+          "ci95_points": [
+            84.57,
+            90.75
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": 1.18,
+            "ci95_points": [
+              -1.03,
+              3.39
+            ],
+            "discordant_b": 14,
+            "discordant_c": 9,
+            "ci95_boot_points": [
+              -0.32,
+              2.63
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L3": {
+          "n": 425,
+          "correct": 364,
+          "acc_points": 85.65,
+          "ci95_points": [
+            81.99,
+            88.66
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": -1.18,
+            "ci95_points": [
+              -3.66,
+              1.3
+            ],
+            "discordant_b": 12,
+            "discordant_c": 17,
+            "ci95_boot_points": [
+              -3.53,
+              1.25
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L4": {
+          "n": 425,
+          "correct": 366,
+          "acc_points": 86.12,
+          "ci95_points": [
+            82.51,
+            89.08
+          ],
+          "x_count": 1,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": -0.71,
+            "ci95_points": [
+              -3.1,
+              1.69
+            ],
+            "discordant_b": 12,
+            "discordant_c": 15,
+            "ci95_boot_points": [
+              -3.07,
+              1.65
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L4X": {
+          "n": 392,
+          "correct": 338,
+          "acc_points": 86.22,
+          "ci95_points": [
+            82.46,
+            89.29
+          ],
+          "x_count": 0,
+          "skip_count": 33,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 392,
+            "delta_points": -0.77,
+            "ci95_points": [
+              -3.06,
+              1.52
+            ],
+            "discordant_b": 9,
+            "discordant_c": 12,
+            "ci95_boot_points": [
+              -2.36,
+              0.84
+            ],
+            "boot_n_judges": 14,
+            "boot_headline": false
+          }
+        },
+        "L4F": {
+          "n": 425,
+          "correct": 370,
+          "acc_points": 87.06,
+          "ci95_points": [
+            83.53,
+            89.92
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": 0.24,
+            "ci95_points": [
+              -1.98,
+              2.45
+            ],
+            "discordant_b": 12,
+            "discordant_c": 11,
+            "ci95_boot_points": [
+              -1.53,
+              2.32
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "D0": {
+          "n": 425,
+          "correct": 368,
+          "acc_points": 86.59,
+          "ci95_points": [
+            83.02,
+            89.5
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": -0.24,
+            "ci95_points": [
+              -2.02,
+              1.55
+            ],
+            "discordant_b": 7,
+            "discordant_c": 8,
+            "ci95_boot_points": [
+              -1.85,
+              1.38
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "L4D": {
+          "n": 425,
+          "correct": 370,
+          "acc_points": 87.06,
+          "ci95_points": [
+            83.53,
+            89.92
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": 0.24,
+            "ci95_points": [
+              -2.25,
+              2.72
+            ],
+            "discordant_b": 15,
+            "discordant_c": 14,
+            "ci95_boot_points": [
+              -1.44,
+              1.97
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        },
+        "ensemble": {
+          "n": 425,
+          "correct": 371,
+          "acc_points": 87.29,
+          "ci95_points": [
+            83.79,
+            90.13
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 425,
+            "delta_points": 0.47,
+            "ci95_points": [
+              -1.79,
+              2.73
+            ],
+            "discordant_b": 13,
+            "discordant_c": 11,
+            "ci95_boot_points": [
+              -1.78,
+              2.74
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          }
+        }
+      },
+      "per_motion_type": {
+        "motion_to_dismiss": {
+          "majority": {
+            "n": 217,
+            "correct": 187,
+            "acc_points": 86.18,
+            "ci95_points": [
+              80.95,
+              90.14
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "metadata": {
+            "n": 217,
+            "correct": 179,
+            "acc_points": 82.49,
+            "ci95_points": [
+              76.88,
+              86.97
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "name_only": {
+            "n": 217,
+            "correct": 182,
+            "acc_points": 83.87,
+            "ci95_points": [
+              78.4,
+              88.17
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false
+          },
+          "L0": {
+            "n": 217,
+            "correct": 172,
+            "acc_points": 79.26,
+            "ci95_points": [
+              73.38,
+              84.12
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": -4.61,
+              "ci95_points": [
+                -7.68,
+                -1.54
+              ],
+              "discordant_b": 1,
+              "discordant_c": 11
+            }
+          },
+          "L1": {
+            "n": 217,
+            "correct": 183,
+            "acc_points": 84.33,
+            "ci95_points": [
+              78.9,
+              88.57
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 0.46,
+              "ci95_points": [
+                -1.93,
+                2.85
+              ],
+              "discordant_b": 4,
+              "discordant_c": 3
+            }
+          },
+          "L2": {
+            "n": 217,
+            "correct": 189,
+            "acc_points": 87.1,
+            "ci95_points": [
+              81.98,
+              90.92
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 3.23,
+              "ci95_points": [
+                -0.0,
+                6.45
+              ],
+              "discordant_b": 10,
+              "discordant_c": 3
+            }
+          },
+          "L3": {
+            "n": 217,
+            "correct": 186,
+            "acc_points": 85.71,
+            "ci95_points": [
+              80.44,
+              89.75
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 1.84,
+              "ci95_points": [
+                -1.76,
+                5.45
+              ],
+              "discordant_b": 10,
+              "discordant_c": 6
+            }
+          },
+          "L4": {
+            "n": 217,
+            "correct": 183,
+            "acc_points": 84.33,
+            "ci95_points": [
+              78.9,
+              88.57
+            ],
+            "x_count": 1,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 0.46,
+              "ci95_points": [
+                -2.8,
+                3.72
+              ],
+              "discordant_b": 7,
+              "discordant_c": 6
+            }
+          },
+          "L4X": {
+            "n": 206,
+            "correct": 177,
+            "acc_points": 85.92,
+            "ci95_points": [
+              80.51,
+              90.02
+            ],
+            "x_count": 0,
+            "skip_count": 11,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 206,
+              "delta_points": 1.94,
+              "ci95_points": [
+                -1.06,
+                4.94
+              ],
+              "discordant_b": 7,
+              "discordant_c": 3
+            }
+          },
+          "L4F": {
+            "n": 217,
+            "correct": 187,
+            "acc_points": 86.18,
+            "ci95_points": [
+              80.95,
+              90.14
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 2.3,
+              "ci95_points": [
+                -0.94,
+                5.55
+              ],
+              "discordant_b": 9,
+              "discordant_c": 4
+            }
+          },
+          "D0": {
+            "n": 217,
+            "correct": 187,
+            "acc_points": 86.18,
+            "ci95_points": [
+              80.95,
+              90.14
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 2.3,
+              "ci95_points": [
+                -0.07,
+                4.67
+              ],
+              "discordant_b": 6,
+              "discordant_c": 1
+            }
+          },
+          "L4D": {
+            "n": 217,
+            "correct": 185,
+            "acc_points": 85.25,
+            "ci95_points": [
+              79.92,
+              89.36
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 1.38,
+              "ci95_points": [
+                -2.34,
+                5.1
+              ],
+              "discordant_b": 10,
+              "discordant_c": 7
+            }
+          },
+          "ensemble": {
+            "n": 217,
+            "correct": 187,
+            "acc_points": 86.18,
+            "ci95_points": [
+              80.95,
+              90.14
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": false,
+            "edge_over_name_only": {
+              "n_pairs": 217,
+              "delta_points": 2.3,
+              "ci95_points": [
+                -0.94,
+                5.55
+              ],
+              "discordant_b": 9,
+              "discordant_c": 4
+            }
+          }
+        },
+        "summary_judgment": {
+          "majority": {
+            "n": 96,
+            "correct": 77,
+            "acc_points": 80.21,
+            "ci95_points": [
+              71.14,
+              86.95
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "metadata": {
+            "n": 96,
+            "correct": 86,
+            "acc_points": 89.58,
+            "ci95_points": [
+              81.88,
+              94.24
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "name_only": {
+            "n": 96,
+            "correct": 87,
+            "acc_points": 90.62,
+            "ci95_points": [
+              83.13,
+              94.99
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "L0": {
+            "n": 96,
+            "correct": 85,
+            "acc_points": 88.54,
+            "ci95_points": [
+              80.64,
+              93.48
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -2.08,
+              "ci95_points": [
+                -7.07,
+                2.9
+              ],
+              "discordant_b": 2,
+              "discordant_c": 4
+            }
+          },
+          "L1": {
+            "n": 96,
+            "correct": 85,
+            "acc_points": 88.54,
+            "ci95_points": [
+              80.64,
+              93.48
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -2.08,
+              "ci95_points": [
+                -4.94,
+                0.77
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "L2": {
+            "n": 96,
+            "correct": 88,
+            "acc_points": 91.67,
+            "ci95_points": [
+              84.41,
+              95.72
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": 1.04,
+              "ci95_points": [
+                -2.49,
+                4.57
+              ],
+              "discordant_b": 2,
+              "discordant_c": 1
+            }
+          },
+          "L3": {
+            "n": 96,
+            "correct": 85,
+            "acc_points": 88.54,
+            "ci95_points": [
+              80.64,
+              93.48
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -2.08,
+              "ci95_points": [
+                -7.07,
+                2.9
+              ],
+              "discordant_b": 2,
+              "discordant_c": 4
+            }
+          },
+          "L4": {
+            "n": 96,
+            "correct": 83,
+            "acc_points": 86.46,
+            "ci95_points": [
+              78.2,
+              91.91
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -4.17,
+              "ci95_points": [
+                -9.88,
+                1.55
+              ],
+              "discordant_b": 2,
+              "discordant_c": 6
+            }
+          },
+          "L4X": {
+            "n": 87,
+            "correct": 76,
+            "acc_points": 87.36,
+            "ci95_points": [
+              78.76,
+              92.79
+            ],
+            "x_count": 0,
+            "skip_count": 9,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 87,
+              "delta_points": -3.45,
+              "ci95_points": [
+                -8.43,
+                1.54
+              ],
+              "discordant_b": 1,
+              "discordant_c": 4
+            }
+          },
+          "L4F": {
+            "n": 96,
+            "correct": 86,
+            "acc_points": 89.58,
+            "ci95_points": [
+              81.88,
+              94.24
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -1.04,
+              "ci95_points": [
+                -5.6,
+                3.52
+              ],
+              "discordant_b": 2,
+              "discordant_c": 3
+            }
+          },
+          "D0": {
+            "n": 96,
+            "correct": 84,
+            "acc_points": 87.5,
+            "ci95_points": [
+              79.41,
+              92.7
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -3.12,
+              "ci95_points": [
+                -6.61,
+                0.36
+              ],
+              "discordant_b": 0,
+              "discordant_c": 3
+            }
+          },
+          "L4D": {
+            "n": 96,
+            "correct": 86,
+            "acc_points": 89.58,
+            "ci95_points": [
+              81.88,
+              94.24
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -1.04,
+              "ci95_points": [
+                -5.6,
+                3.52
+              ],
+              "discordant_b": 2,
+              "discordant_c": 3
+            }
+          },
+          "ensemble": {
+            "n": 96,
+            "correct": 86,
+            "acc_points": 89.58,
+            "ci95_points": [
+              81.88,
+              94.24
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 96,
+              "delta_points": -1.04,
+              "ci95_points": [
+                -5.6,
+                3.52
+              ],
+              "discordant_b": 2,
+              "discordant_c": 3
+            }
+          }
+        },
+        "preliminary_injunction_tro": {
+          "majority": {
+            "n": 54,
+            "correct": 24,
+            "acc_points": 44.44,
+            "ci95_points": [
+              32.0,
+              57.62
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "metadata": {
+            "n": 54,
+            "correct": 48,
+            "acc_points": 88.89,
+            "ci95_points": [
+              77.81,
+              94.81
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "name_only": {
+            "n": 54,
+            "correct": 47,
+            "acc_points": 87.04,
+            "ci95_points": [
+              75.58,
+              93.58
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "L0": {
+            "n": 54,
+            "correct": 46,
+            "acc_points": 85.19,
+            "ci95_points": [
+              73.4,
+              92.3
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": -1.85,
+              "ci95_points": [
+                -5.45,
+                1.74
+              ],
+              "discordant_b": 0,
+              "discordant_c": 1
+            }
+          },
+          "L1": {
+            "n": 54,
+            "correct": 46,
+            "acc_points": 85.19,
+            "ci95_points": [
+              73.4,
+              92.3
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": -1.85,
+              "ci95_points": [
+                -8.12,
+                4.42
+              ],
+              "discordant_b": 1,
+              "discordant_c": 2
+            }
+          },
+          "L2": {
+            "n": 54,
+            "correct": 44,
+            "acc_points": 81.48,
+            "ci95_points": [
+              69.16,
+              89.62
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": -5.56,
+              "ci95_points": [
+                -13.54,
+                2.42
+              ],
+              "discordant_b": 1,
+              "discordant_c": 4
+            }
+          },
+          "L3": {
+            "n": 54,
+            "correct": 43,
+            "acc_points": 79.63,
+            "ci95_points": [
+              67.1,
+              88.23
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": -7.41,
+              "ci95_points": [
+                -14.39,
+                -0.42
+              ],
+              "discordant_b": 0,
+              "discordant_c": 4
+            }
+          },
+          "L4": {
+            "n": 54,
+            "correct": 48,
+            "acc_points": 88.89,
+            "ci95_points": [
+              77.81,
+              94.81
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": 1.85,
+              "ci95_points": [
+                -4.42,
+                8.12
+              ],
+              "discordant_b": 2,
+              "discordant_c": 1
+            }
+          },
+          "L4X": {
+            "n": 47,
+            "correct": 38,
+            "acc_points": 80.85,
+            "ci95_points": [
+              67.46,
+              89.58
+            ],
+            "x_count": 0,
+            "skip_count": 7,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 47,
+              "delta_points": -4.26,
+              "ci95_points": [
+                -10.03,
+                1.52
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "L4F": {
+            "n": 54,
+            "correct": 44,
+            "acc_points": 81.48,
+            "ci95_points": [
+              69.16,
+              89.62
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": -5.56,
+              "ci95_points": [
+                -11.67,
+                0.55
+              ],
+              "discordant_b": 0,
+              "discordant_c": 3
+            }
+          },
+          "D0": {
+            "n": 54,
+            "correct": 45,
+            "acc_points": 83.33,
+            "ci95_points": [
+              71.26,
+              90.98
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": -3.7,
+              "ci95_points": [
+                -8.74,
+                1.33
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "L4D": {
+            "n": 54,
+            "correct": 47,
+            "acc_points": 87.04,
+            "ci95_points": [
+              75.58,
+              93.58
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -7.26,
+                7.26
+              ],
+              "discordant_b": 2,
+              "discordant_c": 2
+            }
+          },
+          "ensemble": {
+            "n": 54,
+            "correct": 45,
+            "acc_points": 83.33,
+            "ci95_points": [
+              71.26,
+              90.98
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 54,
+              "delta_points": -3.7,
+              "ci95_points": [
+                -10.9,
+                3.49
+              ],
+              "discordant_b": 1,
+              "discordant_c": 3
+            }
+          }
+        },
+        "motion_to_compel_discovery": {
+          "majority": {
+            "n": 50,
+            "correct": 31,
+            "acc_points": 62.0,
+            "ci95_points": [
+              48.15,
+              74.14
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "metadata": {
+            "n": 50,
+            "correct": 45,
+            "acc_points": 90.0,
+            "ci95_points": [
+              78.64,
+              95.65
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "name_only": {
+            "n": 50,
+            "correct": 47,
+            "acc_points": 94.0,
+            "ci95_points": [
+              83.78,
+              97.94
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "L0": {
+            "n": 50,
+            "correct": 43,
+            "acc_points": 86.0,
+            "ci95_points": [
+              73.81,
+              93.05
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -8.0,
+              "ci95_points": [
+                -15.52,
+                -0.48
+              ],
+              "discordant_b": 0,
+              "discordant_c": 4
+            }
+          },
+          "L1": {
+            "n": 50,
+            "correct": 44,
+            "acc_points": 88.0,
+            "ci95_points": [
+              76.2,
+              94.38
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -6.0,
+              "ci95_points": [
+                -12.58,
+                0.58
+              ],
+              "discordant_b": 0,
+              "discordant_c": 3
+            }
+          },
+          "L2": {
+            "n": 50,
+            "correct": 46,
+            "acc_points": 92.0,
+            "ci95_points": [
+              81.16,
+              96.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -2.0,
+              "ci95_points": [
+                -5.88,
+                1.88
+              ],
+              "discordant_b": 0,
+              "discordant_c": 1
+            }
+          },
+          "L3": {
+            "n": 50,
+            "correct": 45,
+            "acc_points": 90.0,
+            "ci95_points": [
+              78.64,
+              95.65
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -4.0,
+              "ci95_points": [
+                -9.43,
+                1.43
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "L4": {
+            "n": 50,
+            "correct": 45,
+            "acc_points": 90.0,
+            "ci95_points": [
+              78.64,
+              95.65
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -4.0,
+              "ci95_points": [
+                -9.43,
+                1.43
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "L4X": {
+            "n": 45,
+            "correct": 40,
+            "acc_points": 88.89,
+            "ci95_points": [
+              76.5,
+              95.16
+            ],
+            "x_count": 0,
+            "skip_count": 5,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 45,
+              "delta_points": -6.67,
+              "ci95_points": [
+                -13.95,
+                0.62
+              ],
+              "discordant_b": 0,
+              "discordant_c": 3
+            }
+          },
+          "L4F": {
+            "n": 50,
+            "correct": 47,
+            "acc_points": 94.0,
+            "ci95_points": [
+              83.78,
+              97.94
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "D0": {
+            "n": 50,
+            "correct": 45,
+            "acc_points": 90.0,
+            "ci95_points": [
+              78.64,
+              95.65
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -4.0,
+              "ci95_points": [
+                -9.43,
+                1.43
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "L4D": {
+            "n": 50,
+            "correct": 45,
+            "acc_points": 90.0,
+            "ci95_points": [
+              78.64,
+              95.65
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -4.0,
+              "ci95_points": [
+                -9.43,
+                1.43
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "ensemble": {
+            "n": 50,
+            "correct": 46,
+            "acc_points": 92.0,
+            "ci95_points": [
+              81.16,
+              96.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 50,
+              "delta_points": -2.0,
+              "ci95_points": [
+                -5.88,
+                1.88
+              ],
+              "discordant_b": 0,
+              "discordant_c": 1
+            }
+          }
+        },
+        "class_certification": {
+          "majority": {
+            "n": 3,
+            "correct": 3,
+            "acc_points": 100.0,
+            "ci95_points": [
+              43.85,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "metadata": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "name_only": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "L0": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L1": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L2": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L3": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4X": {
+            "n": 2,
+            "correct": 2,
+            "acc_points": 100.0,
+            "ci95_points": [
+              34.24,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 1,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 2,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4F": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "D0": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L4D": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "ensemble": {
+            "n": 3,
+            "correct": 2,
+            "acc_points": 66.67,
+            "ci95_points": [
+              20.77,
+              93.85
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          }
+        },
+        "daubert_expert_exclusion": {
+          "majority": {
+            "n": 5,
+            "correct": 3,
+            "acc_points": 60.0,
+            "ci95_points": [
+              23.07,
+              88.24
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "metadata": {
+            "n": 5,
+            "correct": 4,
+            "acc_points": 80.0,
+            "ci95_points": [
+              37.55,
+              96.38
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "name_only": {
+            "n": 5,
+            "correct": 4,
+            "acc_points": 80.0,
+            "ci95_points": [
+              37.55,
+              96.38
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true
+          },
+          "L0": {
+            "n": 5,
+            "correct": 2,
+            "acc_points": 40.0,
+            "ci95_points": [
+              11.76,
+              76.93
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": -40.0,
+              "ci95_points": [
+                -82.94,
+                2.94
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            }
+          },
+          "L1": {
+            "n": 5,
+            "correct": 4,
+            "acc_points": 80.0,
+            "ci95_points": [
+              37.55,
+              96.38
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          },
+          "L2": {
+            "n": 5,
+            "correct": 5,
+            "acc_points": 100.0,
+            "ci95_points": [
+              56.55,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 20.0,
+              "ci95_points": [
+                -15.06,
+                55.06
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          },
+          "L3": {
+            "n": 5,
+            "correct": 3,
+            "acc_points": 60.0,
+            "ci95_points": [
+              23.07,
+              88.24
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": -20.0,
+              "ci95_points": [
+                -55.06,
+                15.06
+              ],
+              "discordant_b": 0,
+              "discordant_c": 1
+            }
+          },
+          "L4": {
+            "n": 5,
+            "correct": 5,
+            "acc_points": 100.0,
+            "ci95_points": [
+              56.55,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 20.0,
+              "ci95_points": [
+                -15.06,
+                55.06
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          },
+          "L4X": {
+            "n": 5,
+            "correct": 5,
+            "acc_points": 100.0,
+            "ci95_points": [
+              56.55,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 20.0,
+              "ci95_points": [
+                -15.06,
+                55.06
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          },
+          "L4F": {
+            "n": 5,
+            "correct": 4,
+            "acc_points": 80.0,
+            "ci95_points": [
+              37.55,
+              96.38
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -55.44,
+                55.44
+              ],
+              "discordant_b": 1,
+              "discordant_c": 1
+            }
+          },
+          "D0": {
+            "n": 5,
+            "correct": 5,
+            "acc_points": 100.0,
+            "ci95_points": [
+              56.55,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 20.0,
+              "ci95_points": [
+                -15.06,
+                55.06
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          },
+          "L4D": {
+            "n": 5,
+            "correct": 5,
+            "acc_points": 100.0,
+            "ci95_points": [
+              56.55,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 20.0,
+              "ci95_points": [
+                -15.06,
+                55.06
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          },
+          "ensemble": {
+            "n": 5,
+            "correct": 5,
+            "acc_points": 100.0,
+            "ci95_points": [
+              56.55,
+              100.0
+            ],
+            "x_count": 0,
+            "skip_count": 0,
+            "missing_count": 0,
+            "underpowered": true,
+            "edge_over_name_only": {
+              "n_pairs": 5,
+              "delta_points": 20.0,
+              "ci95_points": [
+                -15.06,
+                55.06
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "judge_relevance_index": {
+    "note": "ACTUAL grant rates from labels \u2014 corpus property, model-independent",
+    "full_window": {
+      "motion_to_dismiss": {
+        "n_items": 422,
+        "n_judges_qualifying": 15,
+        "min_items_per_judge": 10,
+        "per_judge": {
+          "Broderick": {
+            "n": 29,
+            "grant_rate_points": 82.76,
+            "ci95_points": [
+              65.45,
+              92.4
+            ]
+          },
+          "Carter": {
+            "n": 33,
+            "grant_rate_points": 75.76,
+            "ci95_points": [
+              58.98,
+              87.17
+            ]
+          },
+          "Cogan": {
+            "n": 24,
+            "grant_rate_points": 66.67,
+            "ci95_points": [
+              46.71,
+              82.03
+            ]
+          },
+          "Daniels": {
+            "n": 10,
+            "grant_rate_points": 80.0,
+            "ci95_points": [
+              49.02,
+              94.33
+            ]
+          },
+          "Donnelly": {
+            "n": 22,
+            "grant_rate_points": 86.36,
+            "ci95_points": [
+              66.67,
+              95.25
+            ]
+          },
+          "Engelmayer": {
+            "n": 52,
+            "grant_rate_points": 94.23,
+            "ci95_points": [
+              84.36,
+              98.02
+            ]
+          },
+          "Garnett": {
+            "n": 31,
+            "grant_rate_points": 74.19,
+            "ci95_points": [
+              56.75,
+              86.3
+            ]
+          },
+          "Ho": {
+            "n": 41,
+            "grant_rate_points": 73.17,
+            "ci95_points": [
+              58.07,
+              84.31
+            ]
+          },
+          "Koeltl": {
+            "n": 16,
+            "grant_rate_points": 93.75,
+            "ci95_points": [
+              71.67,
+              98.89
+            ]
+          },
+          "Morrison": {
+            "n": 24,
+            "grant_rate_points": 70.83,
+            "ci95_points": [
+              50.83,
+              85.09
+            ]
+          },
+          "Rochon": {
+            "n": 37,
+            "grant_rate_points": 91.89,
+            "ci95_points": [
+              78.7,
+              97.2
+            ]
+          },
+          "Stein": {
+            "n": 12,
+            "grant_rate_points": 75.0,
+            "ci95_points": [
+              46.77,
+              91.11
+            ]
+          },
+          "Torres": {
+            "n": 24,
+            "grant_rate_points": 95.83,
+            "ci95_points": [
+              79.76,
+              99.26
+            ]
+          },
+          "Vargas": {
+            "n": 24,
+            "grant_rate_points": 79.17,
+            "ci95_points": [
+              59.53,
+              90.76
+            ]
+          },
+          "Woods": {
+            "n": 43,
+            "grant_rate_points": 95.35,
+            "ci95_points": [
+              84.54,
+              98.72
+            ]
+          }
+        },
+        "spread_points": 29.16,
+        "max_judge": "Torres",
+        "min_judge": "Cogan"
+      },
+      "summary_judgment": {
+        "n_items": 166,
+        "n_judges_qualifying": 9,
+        "min_items_per_judge": 10,
+        "per_judge": {
+          "Carter": {
+            "n": 13,
+            "grant_rate_points": 76.92,
+            "ci95_points": [
+              49.74,
+              91.82
+            ]
+          },
+          "Cogan": {
+            "n": 17,
+            "grant_rate_points": 88.24,
+            "ci95_points": [
+              65.66,
+              96.71
+            ]
+          },
+          "Garnett": {
+            "n": 13,
+            "grant_rate_points": 84.62,
+            "ci95_points": [
+              57.77,
+              95.67
+            ]
+          },
+          "Ho": {
+            "n": 27,
+            "grant_rate_points": 77.78,
+            "ci95_points": [
+              59.24,
+              89.39
+            ]
+          },
+          "Morrison": {
+            "n": 11,
+            "grant_rate_points": 54.55,
+            "ci95_points": [
+              28.01,
+              78.73
+            ]
+          },
+          "Rochon": {
+            "n": 18,
+            "grant_rate_points": 88.89,
+            "ci95_points": [
+              67.2,
+              96.9
+            ]
+          },
+          "Torres": {
+            "n": 11,
+            "grant_rate_points": 81.82,
+            "ci95_points": [
+              52.3,
+              94.86
+            ]
+          },
+          "Vargas": {
+            "n": 15,
+            "grant_rate_points": 100.0,
+            "ci95_points": [
+              79.61,
+              100.0
+            ]
+          },
+          "Woods": {
+            "n": 15,
+            "grant_rate_points": 80.0,
+            "ci95_points": [
+              54.81,
+              92.95
+            ]
+          }
+        },
+        "spread_points": 45.45,
+        "max_judge": "Vargas",
+        "min_judge": "Morrison"
+      },
+      "preliminary_injunction_tro": {
+        "n_items": 117,
+        "n_judges_qualifying": 5,
+        "min_items_per_judge": 10,
+        "per_judge": {
+          "Broderick": {
+            "n": 11,
+            "grant_rate_points": 63.64,
+            "ci95_points": [
+              35.38,
+              84.83
+            ]
+          },
+          "Ho": {
+            "n": 17,
+            "grant_rate_points": 64.71,
+            "ci95_points": [
+              41.3,
+              82.69
+            ]
+          },
+          "Rochon": {
+            "n": 10,
+            "grant_rate_points": 70.0,
+            "ci95_points": [
+              39.68,
+              89.22
+            ]
+          },
+          "Torres": {
+            "n": 14,
+            "grant_rate_points": 28.57,
+            "ci95_points": [
+              11.72,
+              54.65
+            ]
+          },
+          "Vargas": {
+            "n": 13,
+            "grant_rate_points": 61.54,
+            "ci95_points": [
+              35.52,
+              82.29
+            ]
+          }
+        },
+        "spread_points": 41.43,
+        "max_judge": "Rochon",
+        "min_judge": "Torres"
+      },
+      "motion_to_compel_discovery": {
+        "n_items": 114,
+        "n_judges_qualifying": 5,
+        "min_items_per_judge": 10,
+        "per_judge": {
+          "Cogan": {
+            "n": 10,
+            "grant_rate_points": 50.0,
+            "ci95_points": [
+              23.66,
+              76.34
+            ]
+          },
+          "Engelmayer": {
+            "n": 15,
+            "grant_rate_points": 73.33,
+            "ci95_points": [
+              48.05,
+              89.1
+            ]
+          },
+          "Ho": {
+            "n": 17,
+            "grant_rate_points": 70.59,
+            "ci95_points": [
+              46.87,
+              86.72
+            ]
+          },
+          "Morrison": {
+            "n": 19,
+            "grant_rate_points": 78.95,
+            "ci95_points": [
+              56.67,
+              91.49
+            ]
+          },
+          "Vargas": {
+            "n": 16,
+            "grant_rate_points": 56.25,
+            "ci95_points": [
+              33.18,
+              76.9
+            ]
+          }
+        },
+        "spread_points": 28.95,
+        "max_judge": "Morrison",
+        "min_judge": "Cogan"
+      },
+      "class_certification": {
+        "n_items": 8,
+        "n_judges_qualifying": 0,
+        "min_items_per_judge": 10,
+        "per_judge": {},
+        "spread_points": null,
+        "note": "fewer than 2 judges with >=10 items"
+      },
+      "daubert_expert_exclusion": {
+        "n_items": 7,
+        "n_judges_qualifying": 0,
+        "min_items_per_judge": 10,
+        "per_judge": {},
+        "spread_points": null,
+        "note": "fewer than 2 judges with >=10 items"
+      }
+    },
+    "fable_window": {
+      "motion_to_dismiss": {
+        "n_items": 217,
+        "n_judges_qualifying": 11,
+        "min_items_per_judge": 10,
+        "per_judge": {
+          "Broderick": {
+            "n": 12,
+            "grant_rate_points": 91.67,
+            "ci95_points": [
+              64.61,
+              98.51
+            ]
+          },
+          "Carter": {
+            "n": 19,
+            "grant_rate_points": 78.95,
+            "ci95_points": [
+              56.67,
+              91.49
+            ]
+          },
+          "Cogan": {
+            "n": 11,
+            "grant_rate_points": 72.73,
+            "ci95_points": [
+              43.44,
+              90.25
+            ]
+          },
+          "Donnelly": {
+            "n": 14,
+            "grant_rate_points": 85.71,
+            "ci95_points": [
+              60.06,
+              95.99
+            ]
+          },
+          "Engelmayer": {
+            "n": 26,
+            "grant_rate_points": 100.0,
+            "ci95_points": [
+              87.13,
+              100.0
+            ]
+          },
+          "Garnett": {
+            "n": 16,
+            "grant_rate_points": 68.75,
+            "ci95_points": [
+              44.4,
+              85.84
+            ]
+          },
+          "Ho": {
+            "n": 32,
+            "grant_rate_points": 71.88,
+            "ci95_points": [
+              54.63,
+              84.44
+            ]
+          },
+          "Rochon": {
+            "n": 19,
+            "grant_rate_points": 94.74,
+            "ci95_points": [
+              75.36,
+              99.06
+            ]
+          },
+          "Torres": {
+            "n": 14,
+            "grant_rate_points": 92.86,
+            "ci95_points": [
+              68.53,
+              98.73
+            ]
+          },
+          "Vargas": {
+            "n": 11,
+            "grant_rate_points": 100.0,
+            "ci95_points": [
+              74.12,
+              100.0
+            ]
+          },
+          "Woods": {
+            "n": 16,
+            "grant_rate_points": 93.75,
+            "ci95_points": [
+              71.67,
+              98.89
+            ]
+          }
+        },
+        "spread_points": 31.25,
+        "max_judge": "Engelmayer",
+        "min_judge": "Garnett"
+      },
+      "summary_judgment": {
+        "n_items": 96,
+        "n_judges_qualifying": 2,
+        "min_items_per_judge": 10,
+        "per_judge": {
+          "Ho": {
+            "n": 19,
+            "grant_rate_points": 73.68,
+            "ci95_points": [
+              51.21,
+              88.19
+            ]
+          },
+          "Rochon": {
+            "n": 11,
+            "grant_rate_points": 90.91,
+            "ci95_points": [
+              62.26,
+              98.38
+            ]
+          }
+        },
+        "spread_points": 17.23,
+        "max_judge": "Rochon",
+        "min_judge": "Ho"
+      },
+      "preliminary_injunction_tro": {
+        "n_items": 54,
+        "n_judges_qualifying": 0,
+        "min_items_per_judge": 10,
+        "per_judge": {},
+        "spread_points": null,
+        "note": "fewer than 2 judges with >=10 items"
+      },
+      "motion_to_compel_discovery": {
+        "n_items": 50,
+        "n_judges_qualifying": 1,
+        "min_items_per_judge": 10,
+        "per_judge": {
+          "Morrison": {
+            "n": 12,
+            "grant_rate_points": 66.67,
+            "ci95_points": [
+              39.06,
+              86.19
+            ]
+          }
+        },
+        "spread_points": null,
+        "note": "fewer than 2 judges with >=10 items"
+      },
+      "class_certification": {
+        "n_items": 3,
+        "n_judges_qualifying": 0,
+        "min_items_per_judge": 10,
+        "per_judge": {},
+        "spread_points": null,
+        "note": "fewer than 2 judges with >=10 items"
+      },
+      "daubert_expert_exclusion": {
+        "n_items": 5,
+        "n_judges_qualifying": 0,
+        "min_items_per_judge": 10,
+        "per_judge": {},
+        "spread_points": null,
+        "note": "fewer than 2 judges with >=10 items"
+      }
+    }
+  },
+  "dual_model_attribution": {
+    "gpt": {
+      "model_floor_name_only_minus_majority": {
+        "n_pairs": 834,
+        "delta_points": 0.36,
+        "ci95_points": [
+          -3.78,
+          4.5
+        ],
+        "discordant_b": 157,
+        "discordant_c": 154,
+        "ci95_boot_points": [
+          -3.06,
+          4.01
+        ],
+        "boot_n_judges": 15,
+        "boot_headline": false
+      },
+      "best_replica_arm": "L2",
+      "system_lift_best_minus_name_only": {
+        "n_pairs": 834,
+        "delta_points": 11.75,
+        "ci95_points": [
+          8.93,
+          14.58
+        ],
+        "discordant_b": 127,
+        "discordant_c": 29,
+        "ci95_boot_points": [
+          9.74,
+          13.74
+        ],
+        "boot_n_judges": 15,
+        "boot_headline": false
+      },
+      "best_replica_absolute": {
+        "n": 834,
+        "correct": 730,
+        "acc_points": 87.53,
+        "ci95_points": [
+          85.11,
+          89.6
+        ],
+        "x_count": 0,
+        "skip_count": 0,
+        "missing_count": 0,
+        "underpowered": false,
+        "edge_over_name_only": {
+          "n_pairs": 834,
+          "delta_points": 11.75,
+          "ci95_points": [
+            8.93,
+            14.58
+          ],
+          "discordant_b": 127,
+          "discordant_c": 29,
+          "ci95_boot_points": [
+            9.74,
+            13.74
+          ],
+          "boot_n_judges": 15,
+          "boot_headline": false
+        }
+      }
+    },
+    "fable": {
+      "model_floor_name_only_minus_majority": {
+        "n_pairs": 425,
+        "delta_points": 10.35,
+        "ci95_points": [
+          5.31,
+          15.39
+        ],
+        "discordant_b": 84,
+        "discordant_c": 40,
+        "ci95_boot_points": [
+          5.31,
+          15.54
+        ],
+        "boot_n_judges": 15,
+        "boot_headline": false
+      },
+      "best_replica_arm": "L2",
+      "system_lift_best_minus_name_only": {
+        "n_pairs": 425,
+        "delta_points": 1.18,
+        "ci95_points": [
+          -1.03,
+          3.39
+        ],
+        "discordant_b": 14,
+        "discordant_c": 9,
+        "ci95_boot_points": [
+          -0.32,
+          2.63
+        ],
+        "boot_n_judges": 15,
+        "boot_headline": false
+      },
+      "best_replica_absolute": {
+        "n": 425,
+        "correct": 374,
+        "acc_points": 88.0,
+        "ci95_points": [
+          84.57,
+          90.75
+        ],
+        "x_count": 0,
+        "skip_count": 0,
+        "missing_count": 0,
+        "underpowered": false,
+        "edge_over_name_only": {
+          "n_pairs": 425,
+          "delta_points": 1.18,
+          "ci95_points": [
+            -1.03,
+            3.39
+          ],
+          "discordant_b": 14,
+          "discordant_c": 9,
+          "ci95_boot_points": [
+            -0.32,
+            2.63
+          ],
+          "boot_n_judges": 15,
+          "boot_headline": false
+        }
+      }
+    }
+  },
+  "named_vs_court_delta": {
+    "grounding_rows_per_judge": {
+      "Broderick": 136,
+      "Carter": 172,
+      "Cogan": 134,
+      "Daniels": 26,
+      "Donnelly": 121,
+      "Engelmayer": 229,
+      "Garnett": 109,
+      "Ho": 183,
+      "Koeltl": 77,
+      "Morrison": 105,
+      "Rochon": 132,
+      "Stein": 78,
+      "Torres": 153,
+      "Vargas": 51,
+      "Woods": 197
+    },
+    "strata": {
+      "0_rows": "no pre-cutoff grounding (L4 SKIP by construction)",
+      "thin_lt40": "1-39 pre-cutoff grounding rows",
+      "normal_ge40": ">=40 pre-cutoff grounding rows"
+    },
+    "per_model": {
+      "gpt": {
+        "pooled": {
+          "n_pairs": 834,
+          "delta_points": -5.4,
+          "ci95_points": [
+            -7.71,
+            -3.09
+          ],
+          "discordant_b": 27,
+          "discordant_c": 72,
+          "ci95_boot_points": [
+            -8.45,
+            -2.35
+          ],
+          "boot_n_judges": 15,
+          "boot_headline": false
+        },
+        "per_motion_type": {
+          "motion_to_dismiss": {
+            "n_pairs": 422,
+            "delta_points": -4.5,
+            "ci95_points": [
+              -7.45,
+              -1.56
+            ],
+            "discordant_b": 11,
+            "discordant_c": 30
+          },
+          "summary_judgment": {
+            "n_pairs": 166,
+            "delta_points": -7.23,
+            "ci95_points": [
+              -12.91,
+              -1.55
+            ],
+            "discordant_b": 6,
+            "discordant_c": 18
+          },
+          "preliminary_injunction_tro": {
+            "n_pairs": 117,
+            "delta_points": -3.42,
+            "ci95_points": [
+              -10.88,
+              4.05
+            ],
+            "discordant_b": 8,
+            "discordant_c": 12
+          },
+          "motion_to_compel_discovery": {
+            "n_pairs": 114,
+            "delta_points": -7.89,
+            "ci95_points": [
+              -13.92,
+              -1.87
+            ],
+            "discordant_b": 2,
+            "discordant_c": 11
+          },
+          "class_certification": {
+            "n_pairs": 8,
+            "delta_points": 0.0,
+            "ci95_points": [
+              0.0,
+              0.0
+            ],
+            "discordant_b": 0,
+            "discordant_c": 0
+          },
+          "daubert_expert_exclusion": {
+            "n_pairs": 7,
+            "delta_points": -14.29,
+            "ci95_points": [
+              -40.21,
+              11.64
+            ],
+            "discordant_b": 0,
+            "discordant_c": 1
+          }
+        },
+        "by_grounding_stratum": {
+          "0_rows": {
+            "judges": [],
+            "n_rows": 0,
+            "L4_minus_L2": {
+              "n_pairs": 0,
+              "delta_points": null,
+              "ci95_points": null,
+              "discordant_b": 0,
+              "discordant_c": 0,
+              "note": "no items where both arms gave a valid answer"
+            }
+          },
+          "thin_lt40": {
+            "judges": [
+              "Daniels"
+            ],
+            "n_rows": 21,
+            "L4_minus_L2": {
+              "n_pairs": 21,
+              "delta_points": 9.52,
+              "ci95_points": [
+                -8.69,
+                27.74
+              ],
+              "discordant_b": 3,
+              "discordant_c": 1
+            }
+          },
+          "normal_ge40": {
+            "judges": [
+              "Broderick",
+              "Carter",
+              "Cogan",
+              "Donnelly",
+              "Engelmayer",
+              "Garnett",
+              "Ho",
+              "Koeltl",
+              "Morrison",
+              "Rochon",
+              "Stein",
+              "Torres",
+              "Vargas",
+              "Woods"
+            ],
+            "n_rows": 813,
+            "L4_minus_L2": {
+              "n_pairs": 813,
+              "delta_points": -5.78,
+              "ci95_points": [
+                -8.1,
+                -3.47
+              ],
+              "discordant_b": 24,
+              "discordant_c": 71
+            }
+          }
+        }
+      },
+      "fable": {
+        "pooled": {
+          "n_pairs": 425,
+          "delta_points": -1.88,
+          "ci95_points": [
+            -4.48,
+            0.72
+          ],
+          "discordant_b": 12,
+          "discordant_c": 20,
+          "ci95_boot_points": [
+            -4.27,
+            0.46
+          ],
+          "boot_n_judges": 15,
+          "boot_headline": false
+        },
+        "per_motion_type": {
+          "motion_to_dismiss": {
+            "n_pairs": 217,
+            "delta_points": -2.76,
+            "ci95_points": [
+              -6.58,
+              1.05
+            ],
+            "discordant_b": 6,
+            "discordant_c": 12
+          },
+          "summary_judgment": {
+            "n_pairs": 96,
+            "delta_points": -5.21,
+            "ci95_points": [
+              -10.51,
+              0.09
+            ],
+            "discordant_b": 1,
+            "discordant_c": 6
+          },
+          "preliminary_injunction_tro": {
+            "n_pairs": 54,
+            "delta_points": 7.41,
+            "ci95_points": [
+              0.42,
+              14.39
+            ],
+            "discordant_b": 4,
+            "discordant_c": 0
+          },
+          "motion_to_compel_discovery": {
+            "n_pairs": 50,
+            "delta_points": -2.0,
+            "ci95_points": [
+              -8.77,
+              4.77
+            ],
+            "discordant_b": 1,
+            "discordant_c": 2
+          },
+          "class_certification": {
+            "n_pairs": 3,
+            "delta_points": 0.0,
+            "ci95_points": [
+              0.0,
+              0.0
+            ],
+            "discordant_b": 0,
+            "discordant_c": 0
+          },
+          "daubert_expert_exclusion": {
+            "n_pairs": 5,
+            "delta_points": 0.0,
+            "ci95_points": [
+              0.0,
+              0.0
+            ],
+            "discordant_b": 0,
+            "discordant_c": 0
+          }
+        },
+        "by_grounding_stratum": {
+          "0_rows": {
+            "judges": [],
+            "n_rows": 0,
+            "L4_minus_L2": {
+              "n_pairs": 0,
+              "delta_points": null,
+              "ci95_points": null,
+              "discordant_b": 0,
+              "discordant_c": 0,
+              "note": "no items where both arms gave a valid answer"
+            }
+          },
+          "thin_lt40": {
+            "judges": [
+              "Daniels"
+            ],
+            "n_rows": 13,
+            "L4_minus_L2": {
+              "n_pairs": 13,
+              "delta_points": 7.69,
+              "ci95_points": [
+                -6.79,
+                22.18
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          },
+          "normal_ge40": {
+            "judges": [
+              "Broderick",
+              "Carter",
+              "Cogan",
+              "Donnelly",
+              "Engelmayer",
+              "Garnett",
+              "Ho",
+              "Koeltl",
+              "Morrison",
+              "Rochon",
+              "Stein",
+              "Torres",
+              "Vargas",
+              "Woods"
+            ],
+            "n_rows": 412,
+            "L4_minus_L2": {
+              "n_pairs": 412,
+              "delta_points": -2.18,
+              "ci95_points": [
+                -4.82,
+                0.46
+              ],
+              "discordant_b": 11,
+              "discordant_c": 20
+            }
+          }
+        }
+      }
+    }
+  },
+  "self_consistency_v2": {
+    "status": "computed separately by self_consistency.py"
+  },
+  "best_arm_absolute": {
+    "gpt": {
+      "arm": "L2",
+      "candidates": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "D0",
+        "L4D",
+        "ensemble"
+      ],
+      "pooled": {
+        "n": 834,
+        "correct": 730,
+        "acc_points": 87.53,
+        "ci95_points": [
+          85.11,
+          89.6
+        ],
+        "x_count": 0,
+        "skip_count": 0,
+        "missing_count": 0,
+        "underpowered": false,
+        "edge_over_name_only": {
+          "n_pairs": 834,
+          "delta_points": 11.75,
+          "ci95_points": [
+            8.93,
+            14.58
+          ],
+          "discordant_b": 127,
+          "discordant_c": 29,
+          "ci95_boot_points": [
+            9.74,
+            13.74
+          ],
+          "boot_n_judges": 15,
+          "boot_headline": false
+        }
+      },
+      "per_motion_type": {
+        "motion_to_dismiss": {
+          "n": 422,
+          "correct": 375,
+          "acc_points": 88.86,
+          "ci95_points": [
+            85.5,
+            91.52
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 422,
+            "delta_points": 11.14,
+            "ci95_points": [
+              7.2,
+              15.07
+            ],
+            "discordant_b": 62,
+            "discordant_c": 15
+          }
+        },
+        "summary_judgment": {
+          "n": 166,
+          "correct": 148,
+          "acc_points": 89.16,
+          "ci95_points": [
+            83.51,
+            93.03
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 166,
+            "delta_points": 13.86,
+            "ci95_points": [
+              7.41,
+              20.3
+            ],
+            "discordant_b": 28,
+            "discordant_c": 5
+          }
+        },
+        "preliminary_injunction_tro": {
+          "n": 117,
+          "correct": 98,
+          "acc_points": 83.76,
+          "ci95_points": [
+            76.02,
+            89.35
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 117,
+            "delta_points": 6.84,
+            "ci95_points": [
+              -0.92,
+              14.6
+            ],
+            "discordant_b": 15,
+            "discordant_c": 7
+          }
+        },
+        "motion_to_compel_discovery": {
+          "n": 114,
+          "correct": 98,
+          "acc_points": 85.96,
+          "ci95_points": [
+            78.41,
+            91.17
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 114,
+            "delta_points": 16.67,
+            "ci95_points": [
+              9.01,
+              24.32
+            ],
+            "discordant_b": 21,
+            "discordant_c": 2
+          }
+        },
+        "class_certification": {
+          "n": 8,
+          "correct": 5,
+          "acc_points": 62.5,
+          "ci95_points": [
+            30.57,
+            86.32
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": true,
+          "edge_over_name_only": {
+            "n_pairs": 8,
+            "delta_points": 0.0,
+            "ci95_points": [
+              0.0,
+              0.0
+            ],
+            "discordant_b": 0,
+            "discordant_c": 0
+          }
+        },
+        "daubert_expert_exclusion": {
+          "n": 7,
+          "correct": 6,
+          "acc_points": 85.71,
+          "ci95_points": [
+            48.69,
+            97.43
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": true,
+          "edge_over_name_only": {
+            "n_pairs": 7,
+            "delta_points": 14.29,
+            "ci95_points": [
+              -11.64,
+              40.21
+            ],
+            "discordant_b": 1,
+            "discordant_c": 0
+          }
+        }
+      }
+    },
+    "fable": {
+      "arm": "L2",
+      "candidates": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "D0",
+        "L4D",
+        "ensemble"
+      ],
+      "pooled": {
+        "n": 425,
+        "correct": 374,
+        "acc_points": 88.0,
+        "ci95_points": [
+          84.57,
+          90.75
+        ],
+        "x_count": 0,
+        "skip_count": 0,
+        "missing_count": 0,
+        "underpowered": false,
+        "edge_over_name_only": {
+          "n_pairs": 425,
+          "delta_points": 1.18,
+          "ci95_points": [
+            -1.03,
+            3.39
+          ],
+          "discordant_b": 14,
+          "discordant_c": 9,
+          "ci95_boot_points": [
+            -0.32,
+            2.63
+          ],
+          "boot_n_judges": 15,
+          "boot_headline": false
+        }
+      },
+      "per_motion_type": {
+        "motion_to_dismiss": {
+          "n": 217,
+          "correct": 189,
+          "acc_points": 87.1,
+          "ci95_points": [
+            81.98,
+            90.92
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": false,
+          "edge_over_name_only": {
+            "n_pairs": 217,
+            "delta_points": 3.23,
+            "ci95_points": [
+              -0.0,
+              6.45
+            ],
+            "discordant_b": 10,
+            "discordant_c": 3
+          }
+        },
+        "summary_judgment": {
+          "n": 96,
+          "correct": 88,
+          "acc_points": 91.67,
+          "ci95_points": [
+            84.41,
+            95.72
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": true,
+          "edge_over_name_only": {
+            "n_pairs": 96,
+            "delta_points": 1.04,
+            "ci95_points": [
+              -2.49,
+              4.57
+            ],
+            "discordant_b": 2,
+            "discordant_c": 1
+          }
+        },
+        "preliminary_injunction_tro": {
+          "n": 54,
+          "correct": 44,
+          "acc_points": 81.48,
+          "ci95_points": [
+            69.16,
+            89.62
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": true,
+          "edge_over_name_only": {
+            "n_pairs": 54,
+            "delta_points": -5.56,
+            "ci95_points": [
+              -13.54,
+              2.42
+            ],
+            "discordant_b": 1,
+            "discordant_c": 4
+          }
+        },
+        "motion_to_compel_discovery": {
+          "n": 50,
+          "correct": 46,
+          "acc_points": 92.0,
+          "ci95_points": [
+            81.16,
+            96.85
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": true,
+          "edge_over_name_only": {
+            "n_pairs": 50,
+            "delta_points": -2.0,
+            "ci95_points": [
+              -5.88,
+              1.88
+            ],
+            "discordant_b": 0,
+            "discordant_c": 1
+          }
+        },
+        "class_certification": {
+          "n": 3,
+          "correct": 2,
+          "acc_points": 66.67,
+          "ci95_points": [
+            20.77,
+            93.85
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": true,
+          "edge_over_name_only": {
+            "n_pairs": 3,
+            "delta_points": 0.0,
+            "ci95_points": [
+              0.0,
+              0.0
+            ],
+            "discordant_b": 0,
+            "discordant_c": 0
+          }
+        },
+        "daubert_expert_exclusion": {
+          "n": 5,
+          "correct": 5,
+          "acc_points": 100.0,
+          "ci95_points": [
+            56.55,
+            100.0
+          ],
+          "x_count": 0,
+          "skip_count": 0,
+          "missing_count": 0,
+          "underpowered": true,
+          "edge_over_name_only": {
+            "n_pairs": 5,
+            "delta_points": 20.0,
+            "ci95_points": [
+              -15.06,
+              55.06
+            ],
+            "discordant_b": 1,
+            "discordant_c": 0
+          }
+        }
+      }
+    }
+  },
+  "amendment_deltas": {
+    "definitions": {
+      "L4_minus_L4X": "judge-specific signal in the persona (A2 derangement placebo)",
+      "L4_minus_L4F": "persona CONTENT beyond persona-shaped text (A3 fictional control)",
+      "D0_minus_L0": "doctrine lift over generic (A4)",
+      "L4D_minus_L4": "doctrine's marginal value on top of the named-judge persona (A4)"
+    },
+    "per_model": {
+      "gpt": {
+        "L4_minus_L4X": {
+          "pooled": {
+            "n_pairs": 765,
+            "delta_points": 1.05,
+            "ci95_points": [
+              -1.66,
+              3.76
+            ],
+            "discordant_b": 60,
+            "discordant_c": 52,
+            "ci95_boot_points": [
+              -2.24,
+              4.03
+            ],
+            "boot_n_judges": 14,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 398,
+              "delta_points": 3.77,
+              "ci95_points": [
+                0.14,
+                7.4
+              ],
+              "discordant_b": 35,
+              "discordant_c": 20
+            },
+            "summary_judgment": {
+              "n_pairs": 151,
+              "delta_points": -0.66,
+              "ci95_points": [
+                -6.89,
+                5.56
+              ],
+              "discordant_b": 11,
+              "discordant_c": 12
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 104,
+              "delta_points": -2.88,
+              "ci95_points": [
+                -10.16,
+                4.39
+              ],
+              "discordant_b": 6,
+              "discordant_c": 9
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 98,
+              "delta_points": -3.06,
+              "ci95_points": [
+                -11.28,
+                5.16
+              ],
+              "discordant_b": 7,
+              "discordant_c": 10
+            },
+            "class_certification": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 7,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -39.6,
+                39.6
+              ],
+              "discordant_b": 1,
+              "discordant_c": 1
+            }
+          }
+        },
+        "L4_minus_L4F": {
+          "pooled": {
+            "n_pairs": 834,
+            "delta_points": 6.47,
+            "ci95_points": [
+              3.61,
+              9.34
+            ],
+            "discordant_b": 103,
+            "discordant_c": 49,
+            "ci95_boot_points": [
+              4.49,
+              8.45
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 422,
+              "delta_points": 8.29,
+              "ci95_points": [
+                4.09,
+                12.5
+              ],
+              "discordant_b": 60,
+              "discordant_c": 25
+            },
+            "summary_judgment": {
+              "n_pairs": 166,
+              "delta_points": 7.83,
+              "ci95_points": [
+                1.15,
+                14.51
+              ],
+              "discordant_b": 23,
+              "discordant_c": 10
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 117,
+              "delta_points": 2.56,
+              "ci95_points": [
+                -3.46,
+                8.59
+              ],
+              "discordant_b": 8,
+              "discordant_c": 5
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 114,
+              "delta_points": 1.75,
+              "ci95_points": [
+                -5.93,
+                9.44
+              ],
+              "discordant_b": 11,
+              "discordant_c": 9
+            },
+            "class_certification": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 7,
+              "delta_points": 14.29,
+              "ci95_points": [
+                -11.64,
+                40.21
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          }
+        },
+        "D0_minus_L0": {
+          "pooled": {
+            "n_pairs": 834,
+            "delta_points": 3.0,
+            "ci95_points": [
+              0.51,
+              5.49
+            ],
+            "discordant_b": 69,
+            "discordant_c": 44,
+            "ci95_boot_points": [
+              -0.25,
+              6.17
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 422,
+              "delta_points": 7.11,
+              "ci95_points": [
+                3.4,
+                10.82
+              ],
+              "discordant_b": 48,
+              "discordant_c": 18
+            },
+            "summary_judgment": {
+              "n_pairs": 166,
+              "delta_points": 2.41,
+              "ci95_points": [
+                -3.36,
+                8.18
+              ],
+              "discordant_b": 14,
+              "discordant_c": 10
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 117,
+              "delta_points": -4.27,
+              "ci95_points": [
+                -8.64,
+                0.09
+              ],
+              "discordant_b": 1,
+              "discordant_c": 6
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 114,
+              "delta_points": -5.26,
+              "ci95_points": [
+                -11.62,
+                1.1
+              ],
+              "discordant_b": 4,
+              "discordant_c": 10
+            },
+            "class_certification": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 7,
+              "delta_points": 28.57,
+              "ci95_points": [
+                -4.89,
+                62.04
+              ],
+              "discordant_b": 2,
+              "discordant_c": 0
+            }
+          }
+        },
+        "L4D_minus_L4": {
+          "pooled": {
+            "n_pairs": 834,
+            "delta_points": -0.36,
+            "ci95_points": [
+              -2.0,
+              1.29
+            ],
+            "discordant_b": 23,
+            "discordant_c": 26,
+            "ci95_boot_points": [
+              -2.31,
+              1.49
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 422,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -2.08,
+                2.08
+              ],
+              "discordant_b": 10,
+              "discordant_c": 10
+            },
+            "summary_judgment": {
+              "n_pairs": 166,
+              "delta_points": 0.6,
+              "ci95_points": [
+                -3.31,
+                4.52
+              ],
+              "discordant_b": 6,
+              "discordant_c": 5
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 117,
+              "delta_points": -1.71,
+              "ci95_points": [
+                -7.0,
+                3.58
+              ],
+              "discordant_b": 4,
+              "discordant_c": 6
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 114,
+              "delta_points": -2.63,
+              "ci95_points": [
+                -7.15,
+                1.89
+              ],
+              "discordant_b": 2,
+              "discordant_c": 5
+            },
+            "class_certification": {
+              "n_pairs": 8,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 7,
+              "delta_points": 14.29,
+              "ci95_points": [
+                -11.64,
+                40.21
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          }
+        }
+      },
+      "fable": {
+        "L4_minus_L4X": {
+          "pooled": {
+            "n_pairs": 392,
+            "delta_points": 0.51,
+            "ci95_points": [
+              -2.14,
+              3.16
+            ],
+            "discordant_b": 15,
+            "discordant_c": 13,
+            "ci95_boot_points": [
+              -1.57,
+              2.54
+            ],
+            "boot_n_judges": 14,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 206,
+              "delta_points": -0.97,
+              "ci95_points": [
+                -4.77,
+                2.83
+              ],
+              "discordant_b": 7,
+              "discordant_c": 9
+            },
+            "summary_judgment": {
+              "n_pairs": 87,
+              "delta_points": 0.0,
+              "ci95_points": [
+                -5.52,
+                5.52
+              ],
+              "discordant_b": 3,
+              "discordant_c": 3
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 47,
+              "delta_points": 6.38,
+              "ci95_points": [
+                -0.61,
+                13.37
+              ],
+              "discordant_b": 3,
+              "discordant_c": 0
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 45,
+              "delta_points": 2.22,
+              "ci95_points": [
+                -5.29,
+                9.74
+              ],
+              "discordant_b": 2,
+              "discordant_c": 1
+            },
+            "class_certification": {
+              "n_pairs": 2,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 5,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          }
+        },
+        "L4_minus_L4F": {
+          "pooled": {
+            "n_pairs": 425,
+            "delta_points": -0.94,
+            "ci95_points": [
+              -3.47,
+              1.58
+            ],
+            "discordant_b": 13,
+            "discordant_c": 17,
+            "ci95_boot_points": [
+              -3.27,
+              1.28
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 217,
+              "delta_points": -1.84,
+              "ci95_points": [
+                -5.45,
+                1.76
+              ],
+              "discordant_b": 6,
+              "discordant_c": 10
+            },
+            "summary_judgment": {
+              "n_pairs": 96,
+              "delta_points": -3.12,
+              "ci95_points": [
+                -8.49,
+                2.24
+              ],
+              "discordant_b": 2,
+              "discordant_c": 5
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 54,
+              "delta_points": 7.41,
+              "ci95_points": [
+                0.42,
+                14.39
+              ],
+              "discordant_b": 4,
+              "discordant_c": 0
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 50,
+              "delta_points": -4.0,
+              "ci95_points": [
+                -9.43,
+                1.43
+              ],
+              "discordant_b": 0,
+              "discordant_c": 2
+            },
+            "class_certification": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 5,
+              "delta_points": 20.0,
+              "ci95_points": [
+                -15.06,
+                55.06
+              ],
+              "discordant_b": 1,
+              "discordant_c": 0
+            }
+          }
+        },
+        "D0_minus_L0": {
+          "pooled": {
+            "n_pairs": 425,
+            "delta_points": 4.24,
+            "ci95_points": [
+              1.92,
+              6.55
+            ],
+            "discordant_b": 22,
+            "discordant_c": 4,
+            "ci95_boot_points": [
+              2.03,
+              6.45
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 217,
+              "delta_points": 6.91,
+              "ci95_points": [
+                3.54,
+                10.29
+              ],
+              "discordant_b": 15,
+              "discordant_c": 0
+            },
+            "summary_judgment": {
+              "n_pairs": 96,
+              "delta_points": -1.04,
+              "ci95_points": [
+                -4.57,
+                2.49
+              ],
+              "discordant_b": 1,
+              "discordant_c": 2
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 54,
+              "delta_points": -1.85,
+              "ci95_points": [
+                -5.45,
+                1.74
+              ],
+              "discordant_b": 0,
+              "discordant_c": 1
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 50,
+              "delta_points": 4.0,
+              "ci95_points": [
+                -3.76,
+                11.76
+              ],
+              "discordant_b": 3,
+              "discordant_c": 1
+            },
+            "class_certification": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 5,
+              "delta_points": 60.0,
+              "ci95_points": [
+                17.06,
+                102.94
+              ],
+              "discordant_b": 3,
+              "discordant_c": 0
+            }
+          }
+        },
+        "L4D_minus_L4": {
+          "pooled": {
+            "n_pairs": 425,
+            "delta_points": 0.94,
+            "ci95_points": [
+              -0.78,
+              2.66
+            ],
+            "discordant_b": 9,
+            "discordant_c": 5,
+            "ci95_boot_points": [
+              -0.55,
+              2.47
+            ],
+            "boot_n_judges": 15,
+            "boot_headline": false
+          },
+          "per_motion_type": {
+            "motion_to_dismiss": {
+              "n_pairs": 217,
+              "delta_points": 0.92,
+              "ci95_points": [
+                -1.29,
+                3.13
+              ],
+              "discordant_b": 4,
+              "discordant_c": 2
+            },
+            "summary_judgment": {
+              "n_pairs": 96,
+              "delta_points": 3.12,
+              "ci95_points": [
+                -1.4,
+                7.65
+              ],
+              "discordant_b": 4,
+              "discordant_c": 1
+            },
+            "preliminary_injunction_tro": {
+              "n_pairs": 54,
+              "delta_points": -1.85,
+              "ci95_points": [
+                -8.12,
+                4.42
+              ],
+              "discordant_b": 1,
+              "discordant_c": 2
+            },
+            "motion_to_compel_discovery": {
+              "n_pairs": 50,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "class_certification": {
+              "n_pairs": 3,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            },
+            "daubert_expert_exclusion": {
+              "n_pairs": 5,
+              "delta_points": 0.0,
+              "ci95_points": [
+                0.0,
+                0.0
+              ],
+              "discordant_b": 0,
+              "discordant_c": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

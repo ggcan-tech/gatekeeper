@@ -1,0 +1,6 @@
+{
+ "alias": "claude-fable-5",
+ "response_model": "claude-fable-5",
+ "sitting_date": "2026-07-24",
+ "fable_cutoff_used": "2026-01-31"
+}

@@ -31,3 +31,4 @@ data/persona*.md
 !data/exam2.jsonl
 !data/grounding2.jsonl
 !data/labeled2.jsonl
+!data/predictions2.jsonl

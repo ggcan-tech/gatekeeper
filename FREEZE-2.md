@@ -94,3 +94,28 @@ now  b593636150ca85f95d1b6331ba1665357db38db65c5401997e1a6b6480d99136  pipeline/
 ```
 Every other hash in this manifest is unchanged. We publish this the same way we
 publish everything else: in writing, dated, with the reason.
+
+---
+
+## ERRATUM E2 — 2026-07-24, post-sitting, BEFORE publication
+
+The pre-freeze val gate declared arm (g) PRIMARY (this manifest, above), but
+arms2.py never wrote an `{model}_ensemble` column, so the frozen-primary arm was
+silently absent from the first scorecard2.json render (generated 2026-07-23,
+never published). Arm (g) is parameter-free and frozen in
+pipeline/ensemble_gate2.py: majority vote of the recorded {L2, L3, L4} answers
+("Y" iff >=2 vote Y). It is a pure mechanical function of answers already given
+at the single sitting — no model was re-called, no answer changed, no exam item
+touched.
+
+Fix: pipeline/derive_ensemble2.py (committed) derives the two ensemble columns
+from data/predictions2.jsonl and the frozen (unchanged, still-hashed) score2.py
+re-renders the scorecard. Verified by full JSON diff: the only changes are the
+ADDED ensemble entries and the `generated` date — every previously scored number
+is byte-identical.
+
+Result, under the two-numbers rule: arm (g) GPT 86.09% absolute, +10.31 edge
+over name-only [7.73, 12.90] — it does NOT beat the best single arm (L2, 87.53%)
+on the exam, despite passing the pre-cutoff val gate (+0.2 there). Fable arm (g)
+87.29%, +0.47 [-1.79, 2.73]. Reported because its registration was frozen, not
+because it flatters us.
